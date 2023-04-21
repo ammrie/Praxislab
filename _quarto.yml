@@ -6,19 +6,28 @@ website:
   page-navigation: true  
   title: "gisma knowledge base"
   site-url: https://gisma-courses.github.io/gisma-knowledge-base
-
+  
+  repo-url: https://github.com/gisma-courses/gisma-knowledge-base
+  repo-actions: [edit, issue]
+  
+  page-footer: "gisma (2021)" 
+ 
   sidebar:
-    logo: https://github.com/gisma-courses/gisma-knowledge-base/blob/master/images/climatroof-sp.jpg
     pinned: true
     align: center
     tools: 
+      - icon: github
+        href: https://github.com/gisma-courses/gisma-knowledge-base
+        text: "gisma repo"  
       - icon: sun
         text: "dark theme"
       - icon: moon
         text: "light theme"
+
+
     style: "docked"
     search: true
-    collapse-level: 2
+    collapse-level: 1
     contents:
       - section: "Welcome"
         contents:
@@ -35,9 +44,6 @@ format:
     code-copy: true
     css: styles.css
     toc: true
-    
-execute:
-  freeze: auto
 
 filters:
   - include-files.lua
