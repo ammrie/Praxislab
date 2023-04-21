@@ -13,8 +13,8 @@ website:
     align: center
     courses: 
       - icon: globe
-        href: 
-        text: "NASA-Openscapes website"
+        href: https://gisma-courses.github.io/gi-modules/
+        text: "gisma spatial science ressources"
   
 
 format:
