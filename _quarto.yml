@@ -7,15 +7,23 @@ website:
   title: "gisma knowledge base"
   site-url: https://gisma-courses.github.io/gisma-knowledge-base
 
- sidebar:
+  sidebar:
     logo: https://github.com/gisma-courses/gisma-knowledge-base/blob/master/images/climatroof-sp.jpg
     pinned: true
     align: center
-    courses: 
+    tools: 
       - icon: globe
         href: https://gisma-courses.github.io/gi-modules/
         text: "gisma spatial science ressources"
-  
+    style: "docked"
+    search: true
+    collapse-level: 2
+    contents:
+      - section: "Welcome"
+        contents:
+          - index.qmd
+          - about.qmd
+
 
 format:
   html:
@@ -30,3 +38,6 @@ format:
 execute:
   freeze: auto
 
+filters:
+  - include-files.lua
+  - quarto
