@@ -1,13 +1,10 @@
 project: 
   type: website
-
+  output-dir: docs
 website:
   page-navigation: true  
   title: "gisma knowledge base"
   site-url: https://gisma-courses.github.io/gisma-knowledge-base
-
-website:
-  title: "gisma-base"
   navbar:
     left:
       - href: index.qmd
