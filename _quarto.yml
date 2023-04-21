@@ -11,14 +11,11 @@ website:
     logo: https://github.com/gisma-courses/gisma-knowledge-base/blob/master/images/climatroof-sp.jpg
     pinned: true
     align: center
-    tools: 
+    courses: 
       - icon: globe
-        href: https://nasa-openscapes.github.io
+        href: 
         text: "NASA-Openscapes website"
-      - icon: github
-        href: https://github.com/nasa-openscapes/2021-Cloud-Hackathon
-        text: "2021 Cloud Hackathon repo"
-    
+  
 
 format:
   html:
