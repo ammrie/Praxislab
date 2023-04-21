@@ -1,0 +1,27 @@
+project: 
+  type: website
+
+website:
+  page-navigation: true  
+  title: "gisma knowledge base"
+  site-url: https://gisma-courses.github.io/gisma-knowledge-base
+
+website:
+  title: "gisma-base"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: [cosmo, theme-dark.scss]
+    code-background: true
+    code-copy: true
+    css: styles.css
+    toc: true
+
+
