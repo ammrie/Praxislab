@@ -1,5 +1,7 @@
 ---
 title: "gisma-base"
+editor_options: 
+  chunk_output_type: console
 ---
 
 

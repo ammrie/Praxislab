@@ -13,6 +13,7 @@ website:
   page-footer: "gisma (2021)" 
  
   sidebar:
+    logo: https://gisma-courses.github.io/gc/assets/images/gisma-13.jpg
     pinned: true
     align: center
     tools: 
@@ -31,8 +32,8 @@ website:
     contents:
       - section: "Welcome"
         contents:
-          - index.qmd
-          - about.qmd
+          - index.md
+          - about.md
 
 
 format:
