@@ -12,9 +12,10 @@ website:
     pinned: true
     align: center
     tools: 
-      - icon: globe
-        href: https://gisma-courses.github.io/gi-modules/
-        text: "gisma spatial science ressources"
+      - icon: sun
+        text: "dark theme"
+      - icon: moon
+        text: "light theme"
     style: "docked"
     search: true
     collapse-level: 2
