@@ -8,7 +8,7 @@ website:
   site-url: https://gisma-courses.github.io/gisma-knowledge-base
   navbar:
     left:
-      - href: index.qmd
+      - href: index.md
         text: Home
       - about.qmd
 
