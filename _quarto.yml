@@ -6,11 +6,19 @@ website:
   page-navigation: true  
   title: "gisma knowledge base"
   site-url: https://gisma-courses.github.io/gisma-knowledge-base
-  navbar:
-    left:
-      - href: index.md
-        text: Home
-      - about.qmd
+
+ sidebar:
+    logo: images/climatroof-sp.jpg
+    pinned: true
+    align: center
+    tools: 
+      - icon: globe
+        href: https://nasa-openscapes.github.io
+        text: "NASA-Openscapes website"
+      - icon: github
+        href: https://github.com/nasa-openscapes/2021-Cloud-Hackathon
+        text: "2021 Cloud Hackathon repo"
+    
 
 format:
   html:
