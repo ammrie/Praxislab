@@ -1,47 +1,17 @@
 ---
-title: "Fine Offset: Weather and environmental sensors "
+title: "Microclimate stations"
 editor: visual
 ---
 
-# Introduction
+# Basics
 
 
-Currently 5 WiFi Hubs with 8 sensors and one base station each are connected via via LoRa radio. The base station is equipped with wind vector, precipitation irradiance and temperature/humidity sensors. The WiFi Hub in turn uses any accessible WLAN to pass on the data in this case via mobile network to a data server.
+Currently several WiFi Hubs with varying sensors and one base station each are connected via LoRa radio. The base station is equipped with wind vector, precipitation irradiance and temperature/humidity sensors. The WiFi Hub in turn uses any accessible WLAN to pass on the data via mobile network to a data server.
 
-## Sensor Specification
+# Mobile soil moisture/temperature unit
 
-### GW1000/DP1500 WiFi hub:
+## Hardware 
 
--   Frequency: 868Mhz
--   Air temperature range: -10°C to +60°C, resolution: 0.1°C, accuracy: +/- 1°C
--   Air humidity range: 10% - 99%, Resolution: 1%, accuracy: +/- 5%.
--   Air pressure range: 300-1100hPa, resolution: 0.1 hPa, accuracy: +/- 5hPa
--   Power supply: USB 5V
+## Setup
 
-### DP50 temperature/humidity sensor:
-
--   Frequency: 868Mhz
--   Air temperature range: -10°C to +60°C, resolution: 0.1.°C, accuracy: +/- 1°C
--   Air humidity range: 10% - 99%, resolution: 1%, accuracy: +/- 5%.
--   Transmission interval: 48 seconds
--   Power supply: 2 x 1.5V AA batteries
-
-### Base Unit:
-
--   Frequency: 868Mhz
--   Temperature range: -40°C to +60°C, accuracy: +/- 1°C
--   Air humidity range: 10% - 99%, accuracy: +/- 5%
--   Precipitation: range 0-9999mm, resolution +/- 0.25mm, accuracy: +/- 10%
--   Wind speed: 0-50m/s, accuracy: +/- 3.5 km/h or 10%
--   Wind speed/gust calculation every 16 s
--   Wind direction accuracy: +/- 1°
--   UVI: range: 0 - 15 index, UV accuracy: +/- 15%
--   Solar radiation: range 0 - 200k Lux, accuracy +/- 15%
--   Measuring interval outdoor unit: 16 seconds
--   Power supply: Outdoor unit: 2 x 1.5V AA batteries. The primary energy source is the solar panel. The batteries provide backup power when solar energy is limited.
-
-## Calibration Concept
-
-The low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is implemented. In a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers. In a second step the sensors are calibrated against an operational running high price reference station in the field.
-
-For the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool.
+## FAQ
