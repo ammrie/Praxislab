@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "flightplan.html#software",
+    "href": "flightplan.html#software",
+    "title": "Planning UAV survey flights",
+    "section": "Software",
+    "text": "Software"
+  },
+  {
+    "objectID": "flightplan.html#hardware",
+    "href": "flightplan.html#hardware",
+    "title": "Planning UAV survey flights",
+    "section": "Hardware",
+    "text": "Hardware"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -19,5 +33,19 @@
     "title": "Frequently asked Questions",
     "section": "",
     "text": "Answers"
+  },
+  {
+    "objectID": "uav-index.html#software",
+    "href": "uav-index.html#software",
+    "title": "Low Budget UAVs in Science",
+    "section": "Software",
+    "text": "Software"
+  },
+  {
+    "objectID": "uav-index.html#hardware",
+    "href": "uav-index.html#hardware",
+    "title": "Low Budget UAVs in Science",
+    "section": "Hardware",
+    "text": "Hardware"
   }
 ]
