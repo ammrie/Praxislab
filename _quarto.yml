@@ -52,7 +52,7 @@ website:
 
           - index.md
           - about.md
-      - section: "Low Cost UAV Workflows"
+      - section: "Low Cost UAV"
         contents:
           - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-introduction/
             text: Basic Readings        
