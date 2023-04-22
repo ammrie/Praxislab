@@ -12,7 +12,6 @@ editor_options:
 ![](/images/climatroof-sp.jpg)
 
 
-This is a Quarto website.
+Welcome to the gisma knowledgebase web space
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
+This site concisely summarizes workflow knowledge and resources on a wide variety of GI, sensor-based data collection and modeling topics. It is explicitly designed as a practice-focused knowledge workshop
