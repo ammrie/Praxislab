@@ -4,15 +4,15 @@ project:
   
 website:
   open-graph: true
-  page-navigation: true  
+  page-navigation: false  
   title: "gisma knowledge base"
   site-url: https://gisma-courses.github.io/gisma-knowledge-base
   
   repo-url: https://github.com/gisma-courses/gisma-knowledge-base
   repo-actions: [edit, issue]
-  
+    
   page-footer: "gisma (2021)" 
- 
+
   sidebar:
     logo: https://gisma-courses.github.io/gc/assets/images/gisma-13.jpg
     pinned: true
