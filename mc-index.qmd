@@ -1,0 +1,8 @@
+---
+title: "Fine Offset: Weather and environmental sensors "
+editor: visual
+---
+# Introduction
+The sensors from Fine Offset are re-branded and partly modified by the resellers. We currently use sensors from froggit DP-series and ecowitt GW-1000/1500 series.
+
+The currently used sensors are from Fine Offset Electronics which are identical in construction with the froggit as the so-called DP series and from ecowitt with the original series identification GW-1000.

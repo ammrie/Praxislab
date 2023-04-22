@@ -49,10 +49,15 @@ website:
         contents:
           - index.md
           - about.md
-      - section: "UAV"
+      - section: "Low Cost UAV Workflows"
         contents:
           - uav-index.qmd
-          - flightplan.qmd
+          - planning.qmd
+          - products.qmd
+      - section: "Micro-Climate"
+        contents:
+          - mc-index.qmd
+          - sensors.qmd
 
 
 format:
