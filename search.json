@@ -4,7 +4,7 @@
     "href": "mc-index.html",
     "title": "Fine Offset: Weather and environmental sensors",
     "section": "",
-    "text": "Introduction\nThe sensors from Fine Offset are re-branded and partly modified by the resellers. We currently use sensors from froggit DP-series and ecowitt GW-1000/1500 series.\nThe currently used sensors are from Fine Offset Electronics which are identical in construction with the froggit as the so-called DP series and from ecowitt with the original series identification GW-1000."
+    "text": "Basics\nThe sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from froggit (German Shop) and ecowitt (US shop). More precise the DP-/GW SmartHubs WiFi Gateway with temperature,humidity & Pressure which is developed by fine offset.\nThe unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors. Currently, depending on the gateway,\na maximum of 8 sensors can be connected:\n\nDP150/WN51 soil temperature sensors,\nDP50/WH31 multi channel temperature and humidity sensors\nWN34 wire probe thermometer\nDP10/WN35 leaf wetness sensors\nDP100 soil moisture sensors;\n\na maximum of 4:\n\nDP200/WH41/WH43 PM2.5/PM10 sensors\nWH45 Water leak sensors\n\na maximum of 2:\n\nDP250/WH45 CO2 / PM2.5 / PM10 / temperatur / moisture sensor\nDP60/WH57 Lightning sensor\n\nFor the basic weather parameters as rain, wind vector insolation temperature and humidity one of the compatible outdoor basis units as the DP1100 or WH3000\n\n\nConcept"
   },
   {
     "objectID": "about.html",
