@@ -19,11 +19,15 @@ website:
   #    repo: gisma-courses/mm218.dev
   navbar:
     right:
-      - text: "Home"
+      - icon: house
+        text: Home
         href: index.html
-      - text: "FAQ"
+      - icon: question
+        text: FAQ
         href: faq.qmd
-
+      - icon: calendar
+        text: Ilias
+        href: https://ilias.uni-marburg.de/login.php?target=&client_id=UNIMR&cmd=force_login
     tools: 
       - icon: github
         href: https://github.com/gisma-courses/gisma-knowledge-base
@@ -45,6 +49,10 @@ website:
         contents:
           - index.md
           - about.md
+      - section: "UAV"
+        contents:
+          - uav-index.qmd
+          - flightplan.qmd
 
 
 format:
