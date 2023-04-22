@@ -9,7 +9,7 @@ twitter-card:
 editor_options: 
   chunk_output_type: console
 ---
-![](../images/climatroof-sp.jpg)
+![](/images/climatroof-sp.jpg)
 
 
 This is a Quarto website.
