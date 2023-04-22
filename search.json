@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "flightplan.html#software",
-    "href": "flightplan.html#software",
-    "title": "Planning UAV survey flights",
-    "section": "Software",
-    "text": "Software"
-  },
-  {
-    "objectID": "flightplan.html#hardware",
-    "href": "flightplan.html#hardware",
-    "title": "Planning UAV survey flights",
-    "section": "Hardware",
-    "text": "Hardware"
+    "objectID": "mc-index.html",
+    "href": "mc-index.html",
+    "title": "Fine Offset: Weather and environmental sensors",
+    "section": "",
+    "text": "Introduction\nThe sensors from Fine Offset are re-branded and partly modified by the resellers. We currently use sensors from froggit DP-series and ecowitt GW-1000/1500 series.\nThe currently used sensors are from Fine Offset Electronics which are identical in construction with the froggit as the so-called DP series and from ecowitt with the original series identification GW-1000."
   },
   {
     "objectID": "about.html",
@@ -21,6 +14,20 @@
     "text": "About this site\nhis page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.\nAlthough the web space is topic-centered any keyword can be searched using the full text search.\nThe creation of new pages, the editing of existing pages can be triggered directly via the right column online.\nOffline there are several visual editors and full integration with Rstudio etc."
   },
   {
+    "objectID": "planning.html#software",
+    "href": "planning.html#software",
+    "title": "Planning UAV survey flights",
+    "section": "Software",
+    "text": "Software"
+  },
+  {
+    "objectID": "planning.html#hardware",
+    "href": "planning.html#hardware",
+    "title": "Planning UAV survey flights",
+    "section": "Hardware",
+    "text": "Hardware"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "gisma-base",
@@ -28,11 +35,32 @@
     "text": "Welcome to the gisma knowledgebase web space\nThis site concisely summarizes workflow knowledge and resources on a wide variety of GI, sensor-based data collection and modeling topics. It is explicitly designed as a practice-focused knowledge workshop"
   },
   {
+    "objectID": "products.html#software",
+    "href": "products.html#software",
+    "title": "Orthomimages and Point Clouds from UAV",
+    "section": "Software",
+    "text": "Software"
+  },
+  {
+    "objectID": "products.html#hardware",
+    "href": "products.html#hardware",
+    "title": "Orthomimages and Point Clouds from UAV",
+    "section": "Hardware",
+    "text": "Hardware"
+  },
+  {
     "objectID": "faq.html",
     "href": "faq.html",
     "title": "Frequently asked Questions",
     "section": "",
     "text": "Answers"
+  },
+  {
+    "objectID": "sensors.html",
+    "href": "sensors.html",
+    "title": "Fine Offset: Weather and environmental sensors",
+    "section": "",
+    "text": "Currently 5 WiFi Hubs with 8 sensors and one base station each are connected via via LoRa radio. The base station is equipped with wind vector, precipitation irradiance and temperature/humidity sensors. The WiFi Hub in turn uses any accessible WLAN to pass on the data in this case via mobile network to a data server.\n\n\n\n\n\nFrequency: 868Mhz\nAir temperature range: -10°C to +60°C, resolution: 0.1°C, accuracy: +/- 1°C\nAir humidity range: 10% - 99%, Resolution: 1%, accuracy: +/- 5%.\nAir pressure range: 300-1100hPa, resolution: 0.1 hPa, accuracy: +/- 5hPa\nPower supply: USB 5V\n\n\n\n\n\nFrequency: 868Mhz\nAir temperature range: -10°C to +60°C, resolution: 0.1.°C, accuracy: +/- 1°C\nAir humidity range: 10% - 99%, resolution: 1%, accuracy: +/- 5%.\nTransmission interval: 48 seconds\nPower supply: 2 x 1.5V AA batteries\n\n\n\n\n\nFrequency: 868Mhz\nTemperature range: -40°C to +60°C, accuracy: +/- 1°C\nAir humidity range: 10% - 99%, accuracy: +/- 5%\nPrecipitation: range 0-9999mm, resolution +/- 0.25mm, accuracy: +/- 10%\nWind speed: 0-50m/s, accuracy: +/- 3.5 km/h or 10%\nWind speed/gust calculation every 16 s\nWind direction accuracy: +/- 1°\nUVI: range: 0 - 15 index, UV accuracy: +/- 15%\nSolar radiation: range 0 - 200k Lux, accuracy +/- 15%\nMeasuring interval outdoor unit: 16 seconds\nPower supply: Outdoor unit: 2 x 1.5V AA batteries. The primary energy source is the solar panel. The batteries provide backup power when solar energy is limited.\n\n\n\n\n\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is implemented. In a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers. In a second step the sensors are calibrated against an operational running high price reference station in the field.\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
   },
   {
     "objectID": "uav-index.html#software",
