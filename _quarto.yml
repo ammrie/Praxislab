@@ -21,6 +21,9 @@ website:
     right:
       - text: "Home"
         href: index.html
+      - text: "FAQ"
+        href: faq.qmd
+
 
     tools: 
       - icon: github
