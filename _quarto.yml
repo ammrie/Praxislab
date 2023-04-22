@@ -44,15 +44,20 @@ website:
     style: "docked"
     search: true
     collapse-level: 1
+    
     contents:
       - section: "Welcome"
+
         contents:
+
           - index.md
           - about.md
       - section: "Low Cost UAV Workflows"
         contents:
-          - uav-index.qmd
-          - planning.qmd
+          - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-introduction/
+            text: Basic Readings        
+          - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-fieldwork/
+            test: Flight Planning
           - products.qmd
       - section: "Micro-Climate"
         contents:
@@ -69,6 +74,7 @@ format:
     code-copy: true
     css: styles.css
     toc: true
+
 
 filters:
   - include-files.lua
