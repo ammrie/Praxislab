@@ -3,6 +3,7 @@ project:
   output-dir: docs
   
 website:
+  open-graph: true
   page-navigation: true  
   title: "gisma knowledge base"
   site-url: https://gisma-courses.github.io/gisma-knowledge-base
