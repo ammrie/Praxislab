@@ -12,19 +12,27 @@ website:
   repo-actions: [edit, issue]
     
   page-footer: "gisma (2021)" 
+  twitter-card:
+    creator: "@creuden"
+  #comments:
+  #  utterances:
+  #    repo: gisma-courses/mm218.dev
+  navbar:
+    right:
+      - text: "Home"
+        href: index.html
+
+    tools: 
+      - icon: github
+        href: https://github.com/gisma-courses/gisma-knowledge-base
+        text: "gisma repo" 
+
 
   sidebar:
     logo: https://gisma-courses.github.io/gc/assets/images/gisma-13.jpg
     pinned: true
     align: center
-    tools: 
-      - icon: github
-        href: https://github.com/gisma-courses/gisma-knowledge-base
-        text: "gisma repo"  
-      - icon: sun
-        text: "dark theme"
-      - icon: moon
-        text: "light theme"
+
 
 
     style: "docked"
