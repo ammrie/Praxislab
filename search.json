@@ -4,13 +4,13 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "About this site\nhis page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.\nAlthough the web space is topic-centered any keyword can be searched using the full text search.\nThe creation of new pages, the editing of existing pages can be triggered directly via the right column online.\nOffline there are several visual editors and full integration with Rstudio etc."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "gisma-base",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Welcome to the gisma knowledgebase web space\nThis site concisely summarizes workflow knowledge and resources on a wide variety of GI, sensor-based data collection and modeling topics. It is explicitly designed as a practice-focused knowledge workshop"
   }
 ]
