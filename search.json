@@ -4,7 +4,14 @@
     "href": "mc-index.html",
     "title": "Fine Offset: Weather and environmental sensors",
     "section": "",
-    "text": "Basics\nThe sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from froggit (German Shop) and ecowitt (US shop). More precise the DP-/GW SmartHubs WiFi Gateway with temperature,humidity & Pressure which is developed by fine offset.\nThe unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors. Currently, depending on the gateway,\na maximum of 8 sensors can be connected:\n\nDP150/WN51 soil temperature sensors,\nDP50/WH31 multi channel temperature and humidity sensors\nWN34 wire probe thermometer\nDP10/WN35 leaf wetness sensors\nDP100 soil moisture sensors;\n\na maximum of 4:\n\nDP200/WH41/WH43 PM2.5/PM10 sensors\nWH45 Water leak sensors\n\na maximum of 2:\n\nDP250/WH45 CO2 / PM2.5 / PM10 / temperatur / moisture sensor\nDP60/WH57 Lightning sensor\n\nFor the basic weather parameters as rain, wind vector insolation temperature and humidity one of the compatible outdoor basis units as the DP1100 or WH3000\n\n\nConcept"
+    "text": "The sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from froggit (German Shop) and ecowitt (US shop). More precise the DP-/GW SmartHubs WiFi Gateway with temperature,humidity & Pressure which is developed by fine offset.\nThe unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors. Currently, depending on the gateway,\na maximum of 8 sensors can be connected:\n\nDP150/WN51 soil temperature sensors,\nDP50/WH31 multi channel temperature and humidity sensors\nWN34 wire probe thermometer\nDP10/WN35 leaf wetness sensors\nDP100 soil moisture sensors;\n\na maximum of 4:\n\nDP200/WH41/WH43 PM2.5/PM10 sensors\nWH45 Water leak sensors\n\na maximum of 2:\n\nDP250/WH45 CO2 / PM2.5 / PM10 / temperatur / moisture sensor\nDP60/WH57 Lightning sensor\n\nFor the basic weather parameters as rain, wind vector insolation temperature and humidity one of the compatible outdoor basis units as the DP1100 or WH3000"
+  },
+  {
+    "objectID": "mc-index.html#calibration-concept",
+    "href": "mc-index.html#calibration-concept",
+    "title": "Fine Offset: Weather and environmental sensors",
+    "section": "Calibration Concept",
+    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is implemented. In a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers. In a second step the sensors are calibrated against an operational running high price reference station in the field.\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
   },
   {
     "objectID": "about.html",
@@ -58,9 +65,30 @@
   {
     "objectID": "sensors.html",
     "href": "sensors.html",
-    "title": "Fine Offset: Weather and environmental sensors",
+    "title": "Microclimate stations",
     "section": "",
-    "text": "Currently 5 WiFi Hubs with 8 sensors and one base station each are connected via via LoRa radio. The base station is equipped with wind vector, precipitation irradiance and temperature/humidity sensors. The WiFi Hub in turn uses any accessible WLAN to pass on the data in this case via mobile network to a data server.\n\n\n\n\n\nFrequency: 868Mhz\nAir temperature range: -10°C to +60°C, resolution: 0.1°C, accuracy: +/- 1°C\nAir humidity range: 10% - 99%, Resolution: 1%, accuracy: +/- 5%.\nAir pressure range: 300-1100hPa, resolution: 0.1 hPa, accuracy: +/- 5hPa\nPower supply: USB 5V\n\n\n\n\n\nFrequency: 868Mhz\nAir temperature range: -10°C to +60°C, resolution: 0.1.°C, accuracy: +/- 1°C\nAir humidity range: 10% - 99%, resolution: 1%, accuracy: +/- 5%.\nTransmission interval: 48 seconds\nPower supply: 2 x 1.5V AA batteries\n\n\n\n\n\nFrequency: 868Mhz\nTemperature range: -40°C to +60°C, accuracy: +/- 1°C\nAir humidity range: 10% - 99%, accuracy: +/- 5%\nPrecipitation: range 0-9999mm, resolution +/- 0.25mm, accuracy: +/- 10%\nWind speed: 0-50m/s, accuracy: +/- 3.5 km/h or 10%\nWind speed/gust calculation every 16 s\nWind direction accuracy: +/- 1°\nUVI: range: 0 - 15 index, UV accuracy: +/- 15%\nSolar radiation: range 0 - 200k Lux, accuracy +/- 15%\nMeasuring interval outdoor unit: 16 seconds\nPower supply: Outdoor unit: 2 x 1.5V AA batteries. The primary energy source is the solar panel. The batteries provide backup power when solar energy is limited.\n\n\n\n\n\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is implemented. In a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers. In a second step the sensors are calibrated against an operational running high price reference station in the field.\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
+    "text": "Currently several WiFi Hubs with varying sensors and one base station each are connected via LoRa radio. The base station is equipped with wind vector, precipitation irradiance and temperature/humidity sensors. The WiFi Hub in turn uses any accessible WLAN to pass on the data via mobile network to a data server."
+  },
+  {
+    "objectID": "sensors.html#hardware",
+    "href": "sensors.html#hardware",
+    "title": "Microclimate stations",
+    "section": "Hardware",
+    "text": "Hardware"
+  },
+  {
+    "objectID": "sensors.html#setup",
+    "href": "sensors.html#setup",
+    "title": "Microclimate stations",
+    "section": "Setup",
+    "text": "Setup"
+  },
+  {
+    "objectID": "sensors.html#faq",
+    "href": "sensors.html#faq",
+    "title": "Microclimate stations",
+    "section": "FAQ",
+    "text": "FAQ"
   },
   {
     "objectID": "uav-index.html#software",

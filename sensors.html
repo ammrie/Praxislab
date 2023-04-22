@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>gisma knowledge base - Fine Offset: Weather and environmental sensors</title>
+<title>gisma knowledge base - Microclimate stations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,11 +62,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="gisma knowledge base - Fine Offset: Weather and environmental sensors">
-<meta property="og:description" content="Currently 5 WiFi Hubs with 8 sensors and one base station each are connected via via LoRa radio.">
+<meta property="og:title" content="gisma knowledge base - Microclimate stations">
+<meta property="og:description" content="Currently several WiFi Hubs with varying sensors and one base station each are connected via LoRa radio.">
 <meta property="og:site-name" content="gisma knowledge base">
-<meta name="twitter:title" content="gisma knowledge base - Fine Offset: Weather and environmental sensors">
-<meta name="twitter:description" content="Currently 5 WiFi Hubs with 8 sensors and one base station each are connected via via LoRa radio.">
+<meta name="twitter:title" content="gisma knowledge base - Microclimate stations">
+<meta name="twitter:description" content="Currently several WiFi Hubs with varying sensors and one base station each are connected via LoRa radio.">
 <meta name="twitter:creator" content="@creuden">
 <meta name="twitter:card" content="summary">
 </head>
@@ -117,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Fine Offset: Weather and environmental sensors</h1>
+      <h1 class="quarto-secondary-nav-title">Microclimate stations</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -200,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sensors.html" class="sidebar-item-text sidebar-link active">Fine Offset: Weather and environmental sensors</a>
+  <a href="./sensors.html" class="sidebar-item-text sidebar-link active">Microclimate stations</a>
   </div>
 </li>
       </ul>
@@ -214,15 +214,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <li><a href="#basics" id="toc-basics" class="nav-link active" data-scroll-target="#basics">Basics</a></li>
+  <li><a href="#mobile-soil-moisturetemperature-unit" id="toc-mobile-soil-moisturetemperature-unit" class="nav-link" data-scroll-target="#mobile-soil-moisturetemperature-unit">Mobile soil moisture/temperature unit</a>
   <ul class="collapse">
-  <li><a href="#sensor-specification" id="toc-sensor-specification" class="nav-link" data-scroll-target="#sensor-specification">Sensor Specification</a>
-  <ul class="collapse">
-  <li><a href="#gw1000dp1500-wifi-hub" id="toc-gw1000dp1500-wifi-hub" class="nav-link" data-scroll-target="#gw1000dp1500-wifi-hub">GW1000/DP1500 WiFi hub:</a></li>
-  <li><a href="#dp50-temperaturehumidity-sensor" id="toc-dp50-temperaturehumidity-sensor" class="nav-link" data-scroll-target="#dp50-temperaturehumidity-sensor">DP50 temperature/humidity sensor:</a></li>
-  <li><a href="#base-unit" id="toc-base-unit" class="nav-link" data-scroll-target="#base-unit">Base Unit:</a></li>
-  </ul></li>
-  <li><a href="#calibration-concept" id="toc-calibration-concept" class="nav-link" data-scroll-target="#calibration-concept">Calibration Concept</a></li>
+  <li><a href="#hardware" id="toc-hardware" class="nav-link" data-scroll-target="#hardware">Hardware</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/gisma-courses/gisma-knowledge-base/edit/main/sensors.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/gisma-courses/gisma-knowledge-base/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -232,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Fine Offset: Weather and environmental sensors</h1>
+<h1 class="title d-none d-lg-block">Microclimate stations</h1>
 </div>
 
 
@@ -247,52 +244,20 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>Currently 5 WiFi Hubs with 8 sensors and one base station each are connected via via LoRa radio. The base station is equipped with wind vector, precipitation irradiance and temperature/humidity sensors. The WiFi Hub in turn uses any accessible WLAN to pass on the data in this case via mobile network to a data server.</p>
-<section id="sensor-specification" class="level2">
-<h2 class="anchored" data-anchor-id="sensor-specification">Sensor Specification</h2>
-<section id="gw1000dp1500-wifi-hub" class="level3">
-<h3 class="anchored" data-anchor-id="gw1000dp1500-wifi-hub">GW1000/DP1500 WiFi hub:</h3>
-<ul>
-<li>Frequency: 868Mhz</li>
-<li>Air temperature range: -10°C to +60°C, resolution: 0.1°C, accuracy: +/- 1°C</li>
-<li>Air humidity range: 10% - 99%, Resolution: 1%, accuracy: +/- 5%.</li>
-<li>Air pressure range: 300-1100hPa, resolution: 0.1 hPa, accuracy: +/- 5hPa</li>
-<li>Power supply: USB 5V</li>
-</ul>
+<section id="basics" class="level1">
+<h1>Basics</h1>
+<p>Currently several WiFi Hubs with varying sensors and one base station each are connected via LoRa radio. The base station is equipped with wind vector, precipitation irradiance and temperature/humidity sensors. The WiFi Hub in turn uses any accessible WLAN to pass on the data via mobile network to a data server.</p>
 </section>
-<section id="dp50-temperaturehumidity-sensor" class="level3">
-<h3 class="anchored" data-anchor-id="dp50-temperaturehumidity-sensor">DP50 temperature/humidity sensor:</h3>
-<ul>
-<li>Frequency: 868Mhz</li>
-<li>Air temperature range: -10°C to +60°C, resolution: 0.1.°C, accuracy: +/- 1°C</li>
-<li>Air humidity range: 10% - 99%, resolution: 1%, accuracy: +/- 5%.</li>
-<li>Transmission interval: 48 seconds</li>
-<li>Power supply: 2 x 1.5V AA batteries</li>
-</ul>
+<section id="mobile-soil-moisturetemperature-unit" class="level1">
+<h1>Mobile soil moisture/temperature unit</h1>
+<section id="hardware" class="level2">
+<h2 class="anchored" data-anchor-id="hardware">Hardware</h2>
 </section>
-<section id="base-unit" class="level3">
-<h3 class="anchored" data-anchor-id="base-unit">Base Unit:</h3>
-<ul>
-<li>Frequency: 868Mhz</li>
-<li>Temperature range: -40°C to +60°C, accuracy: +/- 1°C</li>
-<li>Air humidity range: 10% - 99%, accuracy: +/- 5%</li>
-<li>Precipitation: range 0-9999mm, resolution +/- 0.25mm, accuracy: +/- 10%</li>
-<li>Wind speed: 0-50m/s, accuracy: +/- 3.5 km/h or 10%</li>
-<li>Wind speed/gust calculation every 16 s</li>
-<li>Wind direction accuracy: +/- 1°</li>
-<li>UVI: range: 0 - 15 index, UV accuracy: +/- 15%</li>
-<li>Solar radiation: range 0 - 200k Lux, accuracy +/- 15%</li>
-<li>Measuring interval outdoor unit: 16 seconds</li>
-<li>Power supply: Outdoor unit: 2 x 1.5V AA batteries. The primary energy source is the solar panel. The batteries provide backup power when solar energy is limited.</li>
-</ul>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
 </section>
-</section>
-<section id="calibration-concept" class="level2">
-<h2 class="anchored" data-anchor-id="calibration-concept">Calibration Concept</h2>
-<p>The low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is implemented. In a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers. In a second step the sensors are calibrated against an operational running high price reference station in the field.</p>
-<p>For the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool.</p>
+<section id="faq" class="level2">
+<h2 class="anchored" data-anchor-id="faq">FAQ</h2>
 
 
 </section>
