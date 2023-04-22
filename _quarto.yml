@@ -24,7 +24,6 @@ website:
       - text: "FAQ"
         href: faq.qmd
 
-
     tools: 
       - icon: github
         href: https://github.com/gisma-courses/gisma-knowledge-base
