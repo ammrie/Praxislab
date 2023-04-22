@@ -1,10 +1,9 @@
 ---
-title: "About"
+title: ""
 ---
 
 # About this site
-
-his page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.
+This page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.
 
 Although the web space is topic-centered any keyword can be searched using the full text search. 
 
