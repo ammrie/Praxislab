@@ -4,7 +4,7 @@
     "href": "mc-index.html",
     "title": "Fine Offset: Weather and environmental sensors",
     "section": "",
-    "text": "The sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from froggit (German Shop) and ecowitt (US shop). More precise the DP-/GW SmartHubs WiFi Gateway with temperature,humidity & Pressure which is developed by fine offset.\nThe unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors. Currently, depending on the gateway,\na maximum of 8 sensors can be connected:\n\nDP150/WN51 soil temperature sensors,\nDP50/WH31 multi channel temperature and humidity sensors\nWN34 wire probe thermometer\nDP10/WN35 leaf wetness sensors\nDP100 soil moisture sensors;\n\na maximum of 4:\n\nDP200/WH41/WH43 PM2.5/PM10 sensors\nWH45 Water leak sensors\n\na maximum of 2:\n\nDP250/WH45 CO2 / PM2.5 / PM10 / temperatur / moisture sensor\nDP60/WH57 Lightning sensor\n\nFor the basic weather parameters as rain, wind vector insolation temperature and humidity one of the compatible outdoor basis units as the DP1100 or WH3000"
+    "text": "The sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from froggit (German Shop) and ecowitt (US shop). More precise the DP-/GW SmartHubs WiFi Gateway with temperature,humidity & Pressure which is developed by fine offset.\nThe unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors. Currently, depending on the gateway,\na maximum of 8 sensors can be connected:\na maximum of 4:\na maximum of 2:\nFor the basic weather parameters as rain, wind vector insolation temperature and humidity one of the compatible outdoor basis units as the DP1100 or WH3000"
   },
   {
     "objectID": "mc-index.html#calibration-concept",
@@ -37,9 +37,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to the gisma knowledgebase web space",
+    "title": "gisma knowledge base",
     "section": "",
-    "text": "This site concisely summarizes workflow knowledge and resources on a wide variety of GI, sensor-based data collection and modeling topics. It is explicitly designed as a practice-focused knowledge workshop"
+    "text": "Welcome to the gisma knowledgebase web space\nThis site concisely summarizes workflow knowledge and resources on a wide variety of GI, sensor-based data collection and modeling topics. It is explicitly designed as a practice-focused knowledge workshop"
   },
   {
     "objectID": "products.html#software",
