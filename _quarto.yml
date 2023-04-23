@@ -5,6 +5,7 @@ project:
 website:
   open-graph: true
   page-navigation: true  
+  
   search: 
     location: navbar
     type: textbox
@@ -38,7 +39,7 @@ website:
 
 
   sidebar:
-    logo: https://gisma-courses.github.io/gc/assets/images/gisma-13.jpg
+    logo: /images/logo.jpg
     pinned: true
     align: center
     style: "docked"

@@ -9,9 +9,18 @@ twitter-card:
 
 comments: false
 ---
-![](/images/climatroof-sp.jpg)
+<style>
+  body {
+  background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+</style>
 
 
+
+![](//images/climatroof-sp.jpg)
 
 
 This site concisely summarizes workflow knowledge and resources on a wide variety of GI, sensor-based data collection and modeling topics. It is explicitly designed as a practice-focused knowledge workshop
