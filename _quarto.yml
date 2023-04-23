@@ -8,7 +8,7 @@ website:
   back-to-top-navigation: true
   search: 
     location: navbar
-    type: overlay
+    type: textbox
   title: "gisma knowledge base"
   site-url: https://gisma-courses.github.io/gisma-knowledge-base
   
