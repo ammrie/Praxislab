@@ -1,6 +1,11 @@
 ---
 title: "Fine Offset: Weather and environmental sensors "
-editor: visual
+comments: false
+image: /images/froggit_1.jpg
+about:
+  template: trestles
+
+  image-shape: round
 ---
 # Basics
 The sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from [froggit](https://www.froggit.de/?cat=c40_Raumklima-und-Luftqualitaet---IP-Wettersysteme-dp-serie.html) (German Shop) and [ecowitt](https://shop.ecowitt.com/collections/wifi-sensor) (US shop). More precise the  [DP-/GW SmartHubs](https://www.foshk.com/Wifi_Weather_Station/GW1100.html) WiFi Gateway with temperature,humidity & Pressure which is developed by fine offset.

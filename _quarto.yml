@@ -4,7 +4,9 @@ project:
   
 website:
   open-graph: true
-  page-navigation: false  
+  page-navigation: true  
+  back-to-top-navigation: true
+  search: true
   title: "gisma knowledge base"
   site-url: https://gisma-courses.github.io/gisma-knowledge-base
   
@@ -14,9 +16,9 @@ website:
   page-footer: "gisma (2021)" 
   twitter-card:
     creator: "@creuden"
-  #comments:
-  #  utterances:
-  #    repo: gisma-courses/mm218.dev
+  comments:
+    utterances:
+      repo: gisma-courses/gisma-knowledge-base
   navbar:
     right:
       - icon: house
@@ -38,11 +40,8 @@ website:
     logo: https://gisma-courses.github.io/gc/assets/images/gisma-13.jpg
     pinned: true
     align: center
-
-
-
     style: "docked"
-    search: true
+
     collapse-level: 1
     
     contents:
@@ -52,6 +51,7 @@ website:
 
           - index.md
           - about.md
+      - text: "---"
       - section: "Low Cost UAV"
         contents:
           - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-introduction/
@@ -59,6 +59,7 @@ website:
           - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-fieldwork/
             test: Flight Planning
           - products.qmd
+      - text: "---"
       - section: "Micro-Climate"
         contents:
           - mc-index.qmd
@@ -68,8 +69,8 @@ website:
 format:
   html:
     theme:
-      light: cosmo
-      dark: [cosmo, theme-dark.scss]
+      light: lumen
+      dark: [lumen, theme-dark.scss]
     code-background: true
     code-copy: true
     css: styles.css

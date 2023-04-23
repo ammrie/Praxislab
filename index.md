@@ -1,13 +1,13 @@
 ---
 title: "Welcome to the gisma knowledgebase web space"
 open-graph:
-  description: "Most of the time, data matters more than the model."
+  description: "Most of the time, data matters more than the model. But what is reality without model?"
   image: /images/climatroof-sp.jpg
 twitter-card:
-  description: "Most of the time, data matters more than the model."
+  description: "Most of the time, data matters more than the model. But what is reality without model?"
   image: /images/climatroof-sp.jpg
-editor_options: 
-  chunk_output_type: console
+
+comments: false
 ---
 ![](/images/climatroof-sp.jpg)
 
