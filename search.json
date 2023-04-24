@@ -18,7 +18,7 @@
     "href": "base/faq.html",
     "title": "Frequently asked Questions",
     "section": "",
-    "text": "Answers"
+    "text": "Answers\n\n\n\n\n\n\nTip\n\n\n\nThis is a meaningful answer to a senseless question"
   },
   {
     "objectID": "index.html",
@@ -32,14 +32,14 @@
     "href": "mclim/mc-index.html",
     "title": "Fine Offset: Weather and environmental sensors",
     "section": "",
-    "text": "The sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from froggit (German Shop) and ecowitt (US shop). More precise the DP-/GW SmartHubs WiFi Gateway with temperature,humidity & Pressure which is developed by fine offset.\nThe unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors. Currently, depending on the gateway,\na maximum of 8 sensors can be connected:\na maximum of 4:\na maximum of 2:\nFor the basic weather parameters as rain, wind vector insolation temperature and humidity one of the compatible outdoor basis units as the DP1100 or WH3000"
+    "text": "froggit shop [DE]\n  \n  \n    \n     ecowitt shop [US]\n  \n  \n    \n     Fine Offset\n  \n\n      \nThe sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from the german re-seller froggit and the US re-seller ecowitt. More precise the DP-/GW SmartHubs WiFi Gateway with temperature, humidity & Pressure which is developed by fine offset. The unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors."
   },
   {
     "objectID": "mclim/mc-index.html#calibration-concept",
     "href": "mclim/mc-index.html#calibration-concept",
     "title": "Fine Offset: Weather and environmental sensors",
     "section": "Calibration Concept",
-    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is implemented. In a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers. In a second step the sensors are calibrated against an operational running high price reference station in the field.\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
+    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is suggested.\n\nIn a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers.\nIn a second step the sensors are calibrated against an operational running high price reference station in the field.\n\n\n\n\n\n\n\nFuture Calibration Plans\n\n\n\n\n\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
   },
   {
     "objectID": "mclim/sensors.html",
