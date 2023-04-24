@@ -39,7 +39,7 @@
     "href": "mclim/mc-index.html#calibration-concept",
     "title": "Fine Offset: Weather and environmental sensors",
     "section": "Calibration Concept",
-    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is suggested.\n\nIn a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers.\nIn a second step the sensors are calibrated against an operational running high price reference station in the field.\n\n\n\n\n\n\n\nFuture Calibration Plans\n\n\n\n\n\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
+    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is suggested.\n\nThe measurements of all sensors (preferably in a climate chamber) will be statistically analysed to identify sensor which produce systematic and significant outliers.\nThe sensors are calibrated against an operational running high price reference station in the field.\n\n\n\n\n\n\n\nFuture Calibration Plans\n\n\n\n\n\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
   },
   {
     "objectID": "mclim/sensors.html",
