@@ -164,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://gisma-courses.github.io/LV-uav-workflow/modules/module-introduction/" class="sidebar-item-text sidebar-link">Basic Readings</a>
+  <a href="./uav/listing1.html" class="sidebar-item-text sidebar-link">Software &amp; Materials</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -495,6 +495,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/^(?:http:|https:)\/\/www\.quarto\.org\/custom/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 <script src="https://utteranc.es/client.js" repo="gisma-courses/gisma-knowledge-base" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">

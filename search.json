@@ -84,6 +84,27 @@
     "text": "Hardware"
   },
   {
+    "objectID": "uav/listing1.html",
+    "href": "uav/listing1.html",
+    "title": "Software & Materials",
+    "section": "",
+    "text": "Micro-Remote-Sensing course materials\nBasic Flight Planning¶ with uavRmp. Tutorials how to plan survey flights with the uavRmp package.\nUsing QgroundControl¶ with uavRmp. Tutorials how to plan survey flights with the uavRmp package.\nGetting Started Youtube guide for using QGroundControl"
+  },
+  {
+    "objectID": "uav/listing1.html#software",
+    "href": "uav/listing1.html#software",
+    "title": "Software & Materials",
+    "section": "Software",
+    "text": "Software"
+  },
+  {
+    "objectID": "uav/listing1.html#hardware",
+    "href": "uav/listing1.html#hardware",
+    "title": "Software & Materials",
+    "section": "Hardware",
+    "text": "Hardware"
+  },
+  {
     "objectID": "uav/products.html#software",
     "href": "uav/products.html#software",
     "title": "Orthomimages and Point Clouds from UAV",

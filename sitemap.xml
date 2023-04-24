@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/about.html</loc>
-    <lastmod>2023-04-24T06:23:17.303Z</lastmod>
+    <lastmod>2023-04-24T07:26:03.532Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/base/about.html</loc>
-    <lastmod>2023-04-24T06:23:18.383Z</lastmod>
+    <lastmod>2023-04-24T07:26:05.620Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/base/faq.html</loc>
-    <lastmod>2023-04-24T06:23:18.743Z</lastmod>
+    <lastmod>2023-04-24T07:26:05.977Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/index.html</loc>
-    <lastmod>2023-04-24T06:23:19.083Z</lastmod>
+    <lastmod>2023-04-24T07:26:06.345Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/mclim/mc-index.html</loc>
-    <lastmod>2023-04-24T06:23:19.479Z</lastmod>
+    <lastmod>2023-04-24T07:26:06.745Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/mclim/sensors.html</loc>
-    <lastmod>2023-04-24T06:23:19.823Z</lastmod>
+    <lastmod>2023-04-24T07:26:07.093Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/uav/planning.html</loc>
-    <lastmod>2023-04-24T06:23:20.175Z</lastmod>
+    <lastmod>2023-04-24T07:26:07.449Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gisma-courses.github.io/gisma-knowledge-base/uav/listing1.html</loc>
+    <lastmod>2023-04-24T07:26:07.805Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/uav/products.html</loc>
-    <lastmod>2023-04-24T06:23:20.507Z</lastmod>
+    <lastmod>2023-04-24T07:26:08.157Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/uav-index.html</loc>
-    <lastmod>2023-04-24T06:23:20.855Z</lastmod>
+    <lastmod>2023-04-24T07:26:08.509Z</lastmod>
   </url>
 </urlset>
