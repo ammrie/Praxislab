@@ -1,19 +1,21 @@
 ---
 title: "Frequently asked Questions"
 editor: visual
-callout-appearance: simple
+
 ---
 
 ## Make sense topic
 
-::: {.callout-warning }
+::: {.callout-warning appearance="minimal"}
 This is a senseless question to meet a meaningfull answer
 :::
-::: {.callout-tip }
+
+::: {.callout-tip appearance="simple"}
 This is a meaningful answer to a senseless question
 :::
 
-::: {.callout-warning collapse=true}
+::: {.callout-warning collapse="true"}
 ## Learn More...
+
 This is a even **more** meaningful answer to a senseless question
 :::
