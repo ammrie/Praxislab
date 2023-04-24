@@ -12,3 +12,8 @@ This is a senseless question to meet a meaningfull answer
 ::: {.callout-tip }
 This is a meaningful answer to a senseless question
 :::
+
+::: {.callout-warning collapse=true}
+## Learn More...
+This is a even **more** meaningful answer to a senseless question
+:::
