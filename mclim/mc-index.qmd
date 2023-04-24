@@ -1,6 +1,6 @@
 ---
 title: "Fine Offset: Weather and environmental sensors "
-comments: false
+#comments: false
 
 image: /images/froggit_1.jpg
 about:

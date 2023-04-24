@@ -28,7 +28,7 @@ website:
         href: index.html
       - icon: question
         text: FAQ
-        href: faq.qmd
+        href: /base/faq.qmd
       - icon: calendar
         text: Ilias
         href: https://ilias.uni-marburg.de/login.php?target=&client_id=UNIMR&cmd=force_login
@@ -48,20 +48,20 @@ website:
       - section: "Welcome"
         contents:
           - index.md
-          - about.md
+          - base/about.md
       - text: "---"
       - section: "Low Cost UAV"
         contents:
           - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-introduction/
             text: Basic Readings        
           - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-fieldwork/
-            test: Flight Planning
-          - products.qmd
+            test: uav/Flight Planning
+          - uav/products.qmd
       - text: "---"
       - section: "Micro-Climate"
         contents:
-          - mc-index.qmd
-          - sensors.qmd
+          - mclim/mc-index.qmd
+          - mclim/sensors.qmd
 
 
 format:
