@@ -7,7 +7,7 @@ about:
   id: image-heading
   template: trestles
   image-shape: round
-  image-width: 5em
+  image-width: 8em
 
 ---
 
