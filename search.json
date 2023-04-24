@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "mc-index.html",
-    "href": "mc-index.html",
-    "title": "Fine Offset: Weather and environmental sensors",
-    "section": "",
-    "text": "The sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from froggit (German Shop) and ecowitt (US shop). More precise the DP-/GW SmartHubs WiFi Gateway with temperature,humidity & Pressure which is developed by fine offset.\nThe unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors. Currently, depending on the gateway,\na maximum of 8 sensors can be connected:\na maximum of 4:\na maximum of 2:\nFor the basic weather parameters as rain, wind vector insolation temperature and humidity one of the compatible outdoor basis units as the DP1100 or WH3000"
-  },
-  {
-    "objectID": "mc-index.html#calibration-concept",
-    "href": "mc-index.html#calibration-concept",
-    "title": "Fine Offset: Weather and environmental sensors",
-    "section": "Calibration Concept",
-    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is implemented. In a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers. In a second step the sensors are calibrated against an operational running high price reference station in the field.\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "gisma knowledge base",
@@ -21,18 +7,18 @@
     "text": "About this site\nThis page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.\nAlthough the web space is topic-centered any keyword can be searched using the full text search.\nThe creation of new pages, the editing of existing pages can be triggered directly via the right column online.\nOffline there are several visual editors and full integration with Rstudio etc."
   },
   {
-    "objectID": "planning.html#software",
-    "href": "planning.html#software",
-    "title": "Planning UAV survey flights",
-    "section": "Software",
-    "text": "Software"
+    "objectID": "base/about.html",
+    "href": "base/about.html",
+    "title": "gisma knowledge base",
+    "section": "",
+    "text": "About this site\nThis page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.\nAlthough the web space is topic-centered any keyword can be searched using the full text search.\nThe creation of new pages, the editing of existing pages can be triggered directly via the right column online.\nOffline there are several visual editors and full integration with Rstudio etc."
   },
   {
-    "objectID": "planning.html#hardware",
-    "href": "planning.html#hardware",
-    "title": "Planning UAV survey flights",
-    "section": "Hardware",
-    "text": "Hardware"
+    "objectID": "base/faq.html",
+    "href": "base/faq.html",
+    "title": "Frequently asked Questions",
+    "section": "",
+    "text": "Answers"
   },
   {
     "objectID": "index.html",
@@ -42,53 +28,74 @@
     "text": "Welcome to the gisma knowledgebase web space\nThis site concisely summarizes workflow knowledge and resources on a wide variety of GI, sensor-based data collection and modeling topics. It is explicitly designed as a practice-focused knowledge workshop"
   },
   {
-    "objectID": "products.html#software",
-    "href": "products.html#software",
-    "title": "Orthomimages and Point Clouds from UAV",
-    "section": "Software",
-    "text": "Software"
-  },
-  {
-    "objectID": "products.html#hardware",
-    "href": "products.html#hardware",
-    "title": "Orthomimages and Point Clouds from UAV",
-    "section": "Hardware",
-    "text": "Hardware"
-  },
-  {
-    "objectID": "faq.html",
-    "href": "faq.html",
-    "title": "Frequently asked Questions",
+    "objectID": "mclim/mc-index.html",
+    "href": "mclim/mc-index.html",
+    "title": "Fine Offset: Weather and environmental sensors",
     "section": "",
-    "text": "Answers"
+    "text": "The sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from froggit (German Shop) and ecowitt (US shop). More precise the DP-/GW SmartHubs WiFi Gateway with temperature,humidity & Pressure which is developed by fine offset.\nThe unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors. Currently, depending on the gateway,\na maximum of 8 sensors can be connected:\na maximum of 4:\na maximum of 2:\nFor the basic weather parameters as rain, wind vector insolation temperature and humidity one of the compatible outdoor basis units as the DP1100 or WH3000"
   },
   {
-    "objectID": "sensors.html",
-    "href": "sensors.html",
+    "objectID": "mclim/mc-index.html#calibration-concept",
+    "href": "mclim/mc-index.html#calibration-concept",
+    "title": "Fine Offset: Weather and environmental sensors",
+    "section": "Calibration Concept",
+    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is implemented. In a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers. In a second step the sensors are calibrated against an operational running high price reference station in the field.\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
+  },
+  {
+    "objectID": "mclim/sensors.html",
+    "href": "mclim/sensors.html",
     "title": "Microclimate stations",
     "section": "",
     "text": "Currently several WiFi Hubs with varying sensors and one base station each are connected via LoRa radio. The base station is equipped with wind vector, precipitation irradiance and temperature/humidity sensors. The WiFi Hub in turn uses any accessible WLAN to pass on the data via mobile network to a data server."
   },
   {
-    "objectID": "sensors.html#hardware",
-    "href": "sensors.html#hardware",
+    "objectID": "mclim/sensors.html#hardware",
+    "href": "mclim/sensors.html#hardware",
     "title": "Microclimate stations",
     "section": "Hardware",
     "text": "Hardware"
   },
   {
-    "objectID": "sensors.html#setup",
-    "href": "sensors.html#setup",
+    "objectID": "mclim/sensors.html#setup",
+    "href": "mclim/sensors.html#setup",
     "title": "Microclimate stations",
     "section": "Setup",
     "text": "Setup"
   },
   {
-    "objectID": "sensors.html#faq",
-    "href": "sensors.html#faq",
+    "objectID": "mclim/sensors.html#faq",
+    "href": "mclim/sensors.html#faq",
     "title": "Microclimate stations",
     "section": "FAQ",
     "text": "FAQ"
+  },
+  {
+    "objectID": "uav/planning.html#software",
+    "href": "uav/planning.html#software",
+    "title": "Planning UAV survey flights",
+    "section": "Software",
+    "text": "Software"
+  },
+  {
+    "objectID": "uav/planning.html#hardware",
+    "href": "uav/planning.html#hardware",
+    "title": "Planning UAV survey flights",
+    "section": "Hardware",
+    "text": "Hardware"
+  },
+  {
+    "objectID": "uav/products.html#software",
+    "href": "uav/products.html#software",
+    "title": "Orthomimages and Point Clouds from UAV",
+    "section": "Software",
+    "text": "Software"
+  },
+  {
+    "objectID": "uav/products.html#hardware",
+    "href": "uav/products.html#hardware",
+    "title": "Orthomimages and Point Clouds from UAV",
+    "section": "Hardware",
+    "text": "Hardware"
   },
   {
     "objectID": "uav-index.html#software",
