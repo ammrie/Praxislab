@@ -8,18 +8,27 @@ about:
   template: solana
   image-shape: round
   image-width: 10em
-
+  links:
+    - icon: shop-window
+      text: froggit shop [DE]
+      href: https://www.froggit.de/?cat=c40_Raumklima-und-Luftqualitaet---IP-Wettersysteme-dp-serie.html
+    - icon: shop-window
+      text: ecowitt shop [US]
+      href: https://shop.ecowitt.com/collections/wifi-sensor
+    - icon: building-gear
+      text: Fine Offset 
+      href: https://www.foshk.com/      
+      
 ---
 
 :::{#image-heading}
 
-The sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from [froggit](https://www.froggit.de/?cat=c40_Raumklima-und-Luftqualitaet---IP-Wettersysteme-dp-serie.html) (German Shop) and [ecowitt](https://shop.ecowitt.com/collections/wifi-sensor) (US shop). More precise the  [DP-/GW SmartHubs](https://www.foshk.com/Wifi_Weather_Station/GW1100.html) WiFi Gateway with temperature,humidity & Pressure which is developed by fine offset.
+The sensors from `Fine Offset` are re-branded and partly modified by the resellers. This article deals with sensors from  the german re-seller `froggit` and the US re-seller `ecowitt`. More precise the  [DP-/GW SmartHubs](https://www.foshk.com/Wifi_Weather_Station/GW1100.html) WiFi Gateway with temperature, humidity & Pressure which is developed by fine offset. The unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors.
 
 :::
 
-The unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors. Currently, depending on the gateway, 
-
-a maximum of 8 sensors can be connected: 
+# Features
+Currently, depending on the gateway, a maximum of 8 sensors of the following types can be connected at the same time: 
 
 * [DP150/WN51](https://www.froggit.de/media/products/DP150_BDA_EN.pdf)  soil temperature sensors, 
 * [DP50/WH31](https://www.froggit.de/media/products/DP50_BDA(DE).pdf) multi channel temperature and humidity sensors
@@ -73,6 +82,14 @@ For the basic weather parameters as rain, wind vector insolation temperature and
 
 ## Calibration Concept
 
-The low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is implemented. In a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers. In a second step the sensors are calibrated against an operational running high price reference station in the field.
+The low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is suggested. 
+
+1. In a first step the measurements of all sensors will be statistically analysed to identify sensor which produce outliers. 
+1. In a second step the sensors are calibrated against an operational running high price reference station in the field.
+
+::: {.callout-caution collapse="true"}
+## Future Calibration Plans
 
 For the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool.
+
+:::

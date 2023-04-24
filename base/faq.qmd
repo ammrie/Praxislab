@@ -3,5 +3,8 @@ title: "Frequently asked Questions"
 editor: visual
 ---
 
-
 # Answers
+
+::: {.callout-tip}
+This is a meaningful answer to a senseless question
+:::
