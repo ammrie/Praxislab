@@ -1,10 +1,14 @@
 ---
 title: "Frequently asked Questions"
 editor: visual
+callout-appearance: simple
 ---
 
-# Answers
+## Make sense topic
 
-::: {.callout-tip}
+::: {.callout-warning }
+This is a senseless question to meet a meaningfull answer
+:::
+::: {.callout-tip }
 This is a meaningful answer to a senseless question
 :::
