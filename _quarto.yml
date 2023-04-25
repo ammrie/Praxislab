@@ -19,7 +19,7 @@ website:
     utterances:
       repo: gisma-courses/gisma-knowledge-base
   navbar:
-    right:
+    left:
       - icon: house-fill
         text: Home
         href: index.html
