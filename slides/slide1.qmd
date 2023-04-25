@@ -29,15 +29,20 @@ The current slides are using the following yaml header:
 ---
 title: "Slides and extensions"
 subtitle: "basically shows the 3 extensions samples"
+title-slide-attributes:
+  data-background-image: slide1/mof.png
+  data-background-size: contain
+  data-background-opacity: "0.5"
 format: 
   revealjs:
     slide-number: true
     footer: <gisma 2023>
-    header: gisma example presentation
-    header-logo: ../../images/logo.jpg
-  spotlight:
-    useAsPointer: true
-    initialPresentationMode: false
+    header: This is the header extension
+    header-logo: slide1/logooil.jpg
+    spotlight:
+      useAsPointer: true
+      size: 5
+
 filters:
   - roughnotation
   - reveal-header
