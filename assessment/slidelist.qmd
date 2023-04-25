@@ -1,4 +1,4 @@
 ---
 title: "Assessments"
-listing: table
+listing: grid
 ---

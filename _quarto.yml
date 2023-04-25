@@ -21,9 +21,6 @@ website:
   navbar:
     logo: /images/logooil.jpg
     left:
-      - icon: house-fill
-        text: Home
-        href: index.html
       - icon: question-square-fill
         text: FAQ
         href: base/faq.qmd
