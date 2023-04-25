@@ -19,6 +19,7 @@ website:
     utterances:
       repo: gisma-courses/gisma-knowledge-base
   navbar:
+    logo: /images/logooil.jpg
     left:
       - icon: house-fill
         text: Home
@@ -38,7 +39,7 @@ website:
         href: https://github.com/gisma-courses/gisma-knowledge-base
         text: "gisma repo" 
   sidebar:
-    logo: /images/logo.jpg
+    # logo: /images/logo.jpg
     pinned: true
     align: center
     style: "docked"
