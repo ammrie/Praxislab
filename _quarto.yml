@@ -24,15 +24,18 @@ website:
       - icon: question-square-fill
         text: FAQ
         href: base/faq.qmd
-      - icon: chat-left-text-fill
-        text: Ilias
-        href: https://ilias.uni-marburg.de/login.php?target=&client_id=UNIMR&cmd=force_login
       - icon: file-slides-fill
         text: Slides
         href: slides/slidelist.qmd
       - icon: check2-square
         text: TestIt
         href: assessment/slidelist.qmd        
+    right:
+      - icon: chat-left-text-fill
+        text: Ilias
+        href: https://ilias.uni-marburg.de/login.php?target=&client_id=UNIMR&cmd=force_login
+
+    
          
     tools: 
       - icon: github
