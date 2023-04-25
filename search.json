@@ -53,35 +53,35 @@
     "href": "slides/slide1.html#options",
     "title": "Slides and extensions",
     "section": "Options",
-    "text": "Options\nThere are many types of options we can use (Press R to show)\n\ntype\nanimate\nanimationDuration\ncolor\nstrokeWidth\nmultiline multiline multiline multiline multiline multiline multiline multiline multiline multiline\niterations\nrtl"
+    "text": "Options\nThere are many types of options we can use (Press r to show)\n\ntype\nanimate\nanimationDuration\ncolor\nstrokeWidth\nmultiline multiline multiline multiline multiline multiline multiline multiline multiline multiline\niterations\nrtl"
   },
   {
     "objectID": "slides/slide1.html#options-1",
     "href": "slides/slide1.html#options-1",
     "title": "Slides and extensions",
     "section": "Options",
-    "text": "Options\n(Press R to show)\nThe options are applied by adding arguments like so {.rn rn-color=orange rn-type=circle}\nSo to add a orange circle or turn off animations by adding rn-animate=false\nNote that the arguments are all prefixed with rn-, are not comma-separated, logical values are written as true or false and that strings do not have to be in quotes"
+    "text": "Options\n(Press r to show)\nThe options are applied by adding arguments like so {.rn rn-color=orange rn-type=circle}\nSo to add a orange circle or turn off animations by adding rn-animate=false\nNote that the arguments are all prefixed with rn-, are not comma-separated, logical values are written as true or false and that strings do not have to be in quotes"
   },
   {
     "objectID": "slides/slide1.html#options---types",
     "href": "slides/slide1.html#options---types",
     "title": "Slides and extensions",
     "section": "Options - types",
-    "text": "Options - types\n(Press R to show)\n\n\nUnderline\nBox\nCircle\nHighlight\nStrike-Through\nCrossed-off\n\nMany types to choose from!\nHyphenated options can be used like so rn-type=strike-through"
+    "text": "Options - types\n(Press r to show)\n\n\nUnderline\nBox\nCircle\nHighlight\nStrike-Through\nCrossed-off\n\nMany types to choose from!\nHyphenated options can be used like so rn-type=strike-through"
   },
   {
     "objectID": "slides/slide1.html#options---multiline",
     "href": "slides/slide1.html#options---multiline",
     "title": "Slides and extensions",
     "section": "Options - Multiline",
-    "text": "Options - Multiline\n(Press R to show)\nThe options rn-multiline=true can be added to make a highligher work across multiple lines.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan nisi hendrerit augue molestie tempus. Phasellus purus quam, aliquet nec commodo quis, pharetra ut orci. Donec laoreet ligula nisl, placerat molestie mauris luctus id. Fusce dapibus non libero nec lobortis."
+    "text": "Options - Multiline\n(Press r to show)\nThe options rn-multiline=true can be added to make a highligher work across multiple lines.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan nisi hendrerit augue molestie tempus. Phasellus purus quam, aliquet nec commodo quis, pharetra ut orci. Donec laoreet ligula nisl, placerat molestie mauris luctus id. Fusce dapibus non libero nec lobortis."
   },
   {
     "objectID": "slides/slide1.html#all-about-time",
     "href": "slides/slide1.html#all-about-time",
     "title": "Slides and extensions",
     "section": "All about Time",
-    "text": "All about Time\n(Press R to show)\nUnless otherwise specified, all annotations will occur at the same time. Set the rn-index to specify order\nNo rn-index\nrn-index set to 1\nrn-index set to 2\nrn-index set to 3\nrn-index set to 4"
+    "text": "All about Time\n(Press r to show)\nUnless otherwise specified, all annotations will occur at the same time. Set the rn-index to specify order\nNo rn-index\nrn-index set to 1\nrn-index set to 2\nrn-index set to 3\nrn-index set to 4"
   },
   {
     "objectID": "slides/slide1.html#fenced-divs",
