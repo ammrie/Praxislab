@@ -20,7 +20,7 @@ website:
       repo: gisma-courses/gisma-knowledge-base
   navbar:
     right:
-      - icon: houses-fill
+      - icon: house-fill
         text: Home
         href: index.html
       - icon: question-square-fill
