@@ -217,6 +217,6 @@ doesn't show correctly in RStudio IDE
 
 Depending on Browser and setting use the CTRL +/- zoom to place the highlights at the correct places
 
-### Basic Reference
+## Basic Reference
 
 Find more informations at [Quarto RevealJS Documentation](https://quarto.org/docs/presentations/revealjs/)
