@@ -14,25 +14,39 @@
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSlides and extensions\n\n\ngisma team\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "slides/slide1.html#header",
-    "href": "slides/slide1.html#header",
+    "objectID": "slides/slide1.html#header-12",
+    "href": "slides/slide1.html#header-12",
     "title": "Slides and extensions",
-    "section": "Header",
-    "text": "Header\nYou see a basic head and foot line in addition with some kind of logo.\nIt is defined in the header:\nformat: \n  revealjs:\n    slide-number: true\n    footer: <gisma 2023>\n    header: This is the header extension\n    header-logo: slide1/logooil.jpg"
+    "section": "Header (1|2)",
+    "text": "Header (1|2)\nThe support of header and footer logic is provided by the plugin reveal-header. it is activated by:\nfilters:\n  - reveal-header"
   },
   {
-    "objectID": "slides/slide1.html#spotlight",
-    "href": "slides/slide1.html#spotlight",
+    "objectID": "slides/slide1.html#header-22",
+    "href": "slides/slide1.html#header-22",
     "title": "Slides and extensions",
-    "section": "Spotlight",
-    "text": "Spotlight\nCurrently the spotlight is set to a red dot pointer. Just press the left mouse button and use it. It is defined in the header:\nformat: \n  revealjs:\n    spotlight:\n      useAsPointer: true\n      size: 5"
+    "section": "Header (2|2)",
+    "text": "Header (2|2)\nIn this example you will find a basic header and footer text, pagination and a logo in the upper left corner .\n---\ntitle: \"Slides and extensions\"\nsubtitle: \"basically shows the 3 extensions samples\"\ntitle-slide-attributes:\n  data-background-image: slide1/mof.png\n  data-background-size: contain\n  data-background-opacity: \"0.5\"\nformat: \n  revealjs:\n    slide-number: true\n    footer: <gisma 2023>\n    header: This is the header extension\n    header-logo: slide1/logooil.jpg\n[...]\n---"
+  },
+  {
+    "objectID": "slides/slide1.html#spotlight-12",
+    "href": "slides/slide1.html#spotlight-12",
+    "title": "Slides and extensions",
+    "section": "Spotlight (1|2)",
+    "text": "Spotlight (1|2)\nThe support of a pointer or similar pointing features is provided by the plugin spotlight. it is activated by:\nrevealjs-plugins:\n  - spotlight"
+  },
+  {
+    "objectID": "slides/slide1.html#spotlight-22",
+    "href": "slides/slide1.html#spotlight-22",
+    "title": "Slides and extensions",
+    "section": "Spotlight (2|2)",
+    "text": "Spotlight (2|2)\nCurrently the spotlight is set to a red dot pointer. Just press the left mouse button and use it. It is defined in the header:\n---\n[...]\nformat: \n  revealjs:\n    slide-number: true\n    footer: <gisma 2023>\n    header: This is the header extension\n    header-logo: slide1/logooil.jpg\n    spotlight:\n      useAsPointer: true\n      size: 5\n\nfilters:\n  - roughnotation\n  - reveal-header\nrevealjs-plugins:\n  - spotlight\n---"
   },
   {
     "objectID": "slides/slide1.html#highlighting-concept",
     "href": "slides/slide1.html#highlighting-concept",
     "title": "Slides and extensions",
     "section": "Highlighting concept",
-    "text": "Highlighting concept\nTo activate highlighting Press R to activate notation animations\nI will be highlighted, and so will these words right here"
+    "text": "Highlighting concept\nThe support of complex highlighting etc. is provided by the plugin roughnotation. it is activated by:\nfilters:\n  - roughnotation\nTo activate the highlighting interactively press the r key. It will start any notation animations:\nI will be highlighted, and so will these words right here"
   },
   {
     "objectID": "slides/slide1.html#options",
@@ -81,7 +95,7 @@
     "href": "slides/slide1.html#known-issues",
     "title": "Slides and extensions",
     "section": "Known issues",
-    "text": "Known issues\ndoesn’t showcase correctly in RStudio IDE\nSometimes you need to adjust the zoom in your browser to get right results\n\n\n<gisma 2023>\n\n\n\n\n\n\n \n\n\nThis is the header extension"
+    "text": "Known issues\ndoesn’t show correctly in RStudio IDE\nDepending on Browser and setting use the CTRL +/- zoom to place the highlights at the correct places\nBasic Reference\nFind more informations at Quarto RevealJS Documentation\n\n\n<gisma 2023>\n\n\n\n\n\n\n \n\n\nThis is the header extension"
   },
   {
     "objectID": "base/about.html",
