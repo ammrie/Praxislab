@@ -2,7 +2,7 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "gisma knowledge base",
+    "title": "About this site",
     "section": "",
     "text": "About this site\nThis page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.\nAlthough the web space is topic-centered any keyword can be searched using the full text search.\nThe creation of new pages, the editing of existing pages can be triggered directly via the right column online.\nOffline there are several visual editors and full integration with Rstudio etc."
   },
@@ -25,7 +25,7 @@
     "href": "slides/slide1.html#header-22",
     "title": "Slides and extensions",
     "section": "Header (2|2)",
-    "text": "Header (2|2)\nIn this example you will find a basic header and footer text, pagination and a logo in the upper left corner .\n---\ntitle: \"Slides and extensions\"\nsubtitle: \"basically shows the 3 extensions samples\"\ntitle-slide-attributes:\n  data-background-image: slide1/mof.png\n  data-background-size: contain\n  data-background-opacity: \"0.5\"\nformat: \n  revealjs:\n    slide-number: true\n    footer: <gisma 2023>\n    header: This is the header extension\n    header-logo: slide1/logooil.jpg\n[...]\n---"
+    "text": "Header (2|2)\nIn this example you will find a basic header and footer text, pagination and a logo in the upper left corner .\n---\ntitle: \"Slides and extensions\"\nsubtitle: \"basically shows the 3 extensions samples\"\ntitle-slide-attributes:\n  data-background-image: slide1/mof.png\n  data-background-size: contain\n  data-background-opacity: \"0.5\"\nformat: \n  revealjs:\n    slide-number: true\n    footer: &lt;gisma 2023&gt;\n    header: This is the header extension\n    header-logo: slide1/logooil.jpg\n[...]\n---"
   },
   {
     "objectID": "slides/slide1.html#spotlight-12",
@@ -39,7 +39,7 @@
     "href": "slides/slide1.html#spotlight-22",
     "title": "Slides and extensions",
     "section": "Spotlight (2|2)",
-    "text": "Spotlight (2|2)\nCurrently the spotlight is set to a red dot pointer. Just press the left mouse button and use it. It is defined in the header:\n---\n[...]\nformat: \n  revealjs:\n    slide-number: true\n    footer: <gisma 2023>\n    header: This is the header extension\n    header-logo: slide1/logooil.jpg\n    spotlight:\n      useAsPointer: true\n      size: 5\n\nfilters:\n  - roughnotation\n  - reveal-header\nrevealjs-plugins:\n  - spotlight\n---"
+    "text": "Spotlight (2|2)\nCurrently the spotlight is set to a red dot pointer. Just press the left mouse button and use it. It is defined in the header:\n---\n[...]\nformat: \n  revealjs:\n    slide-number: true\n    footer: &lt;gisma 2023&gt;\n    header: This is the header extension\n    header-logo: slide1/logooil.jpg\n    spotlight:\n      useAsPointer: true\n      size: 5\n\nfilters:\n  - roughnotation\n  - reveal-header\nrevealjs-plugins:\n  - spotlight\n---"
   },
   {
     "objectID": "slides/slide1.html#highlighting-concept",
@@ -102,12 +102,12 @@
     "href": "slides/slide1.html#basic-reference",
     "title": "Slides and extensions",
     "section": "Basic Reference",
-    "text": "Basic Reference\nFind more informations at Quarto RevealJS Documentation\n\n\n<gisma 2023>\n\n\n\n\n\n\n \n\n\nThis is the header extension"
+    "text": "Basic Reference\nFind more informations at Quarto RevealJS Documentation\n\n\n&lt;gisma 2023&gt;\n\n\n\n\n\n\n \n\n\nThis is the header extension"
   },
   {
     "objectID": "base/about.html",
     "href": "base/about.html",
-    "title": "gisma knowledge base",
+    "title": "About this site",
     "section": "",
     "text": "About this site\nThis page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.\nAlthough the web space is topic-centered any keyword can be searched using the full text search.\nThe creation of new pages, the editing of existing pages can be triggered directly via the right column online.\nOffline there are several visual editors and full integration with Rstudio etc."
   },
@@ -119,9 +119,16 @@
     "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
   },
   {
+    "objectID": "base/faq.html#make-sense-topic",
+    "href": "base/faq.html#make-sense-topic",
+    "title": "Frequently asked Questions",
+    "section": "",
+    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "gisma knowledge base",
+    "title": "Welcome to the gisma knowledgebase web space",
     "section": "",
     "text": "Welcome to the gisma knowledgebase web space\nThis site concisely summarizes workflow knowledge and resources on a wide variety of GI, sensor-based data collection and modeling topics. It is explicitly designed as a practice-focused knowledge workshop"
   },
@@ -172,7 +179,7 @@
     "href": "assessment/slidelist.html",
     "title": "Assessments",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nBasic Exercise\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Basic Exercise\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "uav/planning.html#software",
@@ -191,6 +198,13 @@
   {
     "objectID": "uav/listing1.html",
     "href": "uav/listing1.html",
+    "title": "Software & Materials",
+    "section": "",
+    "text": "Micro-Remote-Sensing course materials\nBasic Flight Planning¶ with uavRmp. Tutorials how to plan survey flights with the uavRmp package.\nUsing QgroundControl¶ with uavRmp. Tutorials how to plan survey flights with the uavRmp package.\nGetting Started Youtube guide for using QGroundControl"
+  },
+  {
+    "objectID": "uav/listing1.html#things-you-need",
+    "href": "uav/listing1.html#things-you-need",
     "title": "Software & Materials",
     "section": "",
     "text": "Micro-Remote-Sensing course materials\nBasic Flight Planning¶ with uavRmp. Tutorials how to plan survey flights with the uavRmp package.\nUsing QgroundControl¶ with uavRmp. Tutorials how to plan survey flights with the uavRmp package.\nGetting Started Youtube guide for using QGroundControl"

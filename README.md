@@ -1,1 +1,0 @@
-# gisma-knowledge-base
