@@ -5,16 +5,13 @@ project:
 website:
   open-graph: true
   page-navigation: true  
-  
+  title: "gisma knowledge base"
+  site-url: https://gisma-courses.github.io/gisma-knowledge-base
+  repo-url: https://github.com/gisma-courses/gisma-knowledge-base
+  repo-actions: [edit, issue]
   search: 
     location: navbar
     type: textbox
-  title: "gisma knowledge base"
-  site-url: https://gisma-courses.github.io/gisma-knowledge-base
-  
-  repo-url: https://github.com/gisma-courses/gisma-knowledge-base
-  repo-actions: [edit, issue]
-    
   page-footer: "gisma (2021)" 
   twitter-card:
     creator: "@creuden"
@@ -23,21 +20,19 @@ website:
       repo: gisma-courses/gisma-knowledge-base
   navbar:
     right:
-      - icon: house
+      - icon: houses-fill
         text: Home
         href: index.html
-      - icon: question
+      - icon: question-square-fill
         text: FAQ
-        href: /base/faq.qmd
-      - icon: calendar
+        href: base/faq.qmd
+      - icon: chat-left-text-fill
         text: Ilias
         href: https://ilias.uni-marburg.de/login.php?target=&client_id=UNIMR&cmd=force_login
     tools: 
       - icon: github
         href: https://github.com/gisma-courses/gisma-knowledge-base
         text: "gisma repo" 
-
-
   sidebar:
     logo: /images/logo.jpg
     pinned: true
@@ -52,20 +47,20 @@ website:
       - text: "---"
       - section: "Low Cost UAV"
         contents:
+          - uav/uav-index.qmd
           - uav/listing1.qmd
+          - uav/products.qmd
           # - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-introduction/
           #   text: Basic Readings        
           # - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-fieldwork/
           #   text: uav/Flight Planning
-          - uav/products.qmd
-          
       - text: "---"
       - section: "Micro-Climate"
         contents:
           - mclim/mc-index.qmd
           - mclim/sensors.qmd
 
-
+#format: dokuwiki
 format:
   html:
     theme:
@@ -78,6 +73,6 @@ format:
     link-external-icon: true
     link-external-newwindow: true
     link-external-filter: '^(?:http:|https:)\/\/www\.quarto\.org\/custom'
-filters:
-  - include-files.lua
-  - quarto
+# filters:
+#   - include-files.lua
+#   - quarto
