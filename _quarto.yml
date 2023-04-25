@@ -33,6 +33,9 @@ website:
       - icon: file-slides-fill
         text: Slides
         href: slides/slidelist.qmd
+      - icon: check2-square
+        text: TestIt
+        href: assessment/slidelist.qmd        
          
     tools: 
       - icon: github
