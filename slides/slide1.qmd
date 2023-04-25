@@ -86,7 +86,7 @@ revealjs-plugins:
 
 Currently the spotlight is set to a red dot pointer. Just press the left mouse button and use it. It is defined in the header:
 
-``` {.yaml code-line-numbers="14-16"}
+``` {.yaml code-line-numbers="9-11"}
 ---
 [...]
 format: 
