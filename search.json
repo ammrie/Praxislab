@@ -14,11 +14,25 @@
     "text": "Slides and extensions\n\n\nbasically shows the 3 extensions samples\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "slides/slide1.html#basic-usage",
-    "href": "slides/slide1.html#basic-usage",
+    "objectID": "slides/slide1.html#header",
+    "href": "slides/slide1.html#header",
     "title": "Slides and extensions",
-    "section": "Basic usage",
-    "text": "Basic usage\nTo activate highlighting Press R to activate notation animations\nI will be highlighted, and so will these words right here"
+    "section": "Header",
+    "text": "Header\nYou see a basic head and foot line in addition with some kind of logo.\nIt is defined in the header:\nformat: \n  revealjs:\n    slide-number: true\n    footer: <gisma 2023>\n    header: This is the header extension\n    header-logo: slide1/logooil.jpg"
+  },
+  {
+    "objectID": "slides/slide1.html#spotlight",
+    "href": "slides/slide1.html#spotlight",
+    "title": "Slides and extensions",
+    "section": "Spotlight",
+    "text": "Spotlight\nCurrently the spotlight is set to a red dot pointer. Just press the left mouse button and use it. It is defined in the header:\nformat: \n  revealjs:\n    spotlight:\n      useAsPointer: true\n      size: 5"
+  },
+  {
+    "objectID": "slides/slide1.html#highlighting-concept",
+    "href": "slides/slide1.html#highlighting-concept",
+    "title": "Slides and extensions",
+    "section": "Highlighting concept",
+    "text": "Highlighting concept\nTo activate highlighting Press R to activate notation animations\nI will be highlighted, and so will these words right here"
   },
   {
     "objectID": "slides/slide1.html#options",

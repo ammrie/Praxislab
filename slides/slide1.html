@@ -433,8 +433,28 @@
 <span id="cb1-22"><a href="#cb1-22"></a><span class="at">  </span><span class="kw">-</span><span class="at"> spotlight</span></span>
 <span id="cb1-23"><a href="#cb1-23"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="basic-usage" class="slide level2">
-<h2>Basic usage</h2>
+<section id="header" class="slide level2">
+<h2>Header</h2>
+<p>You see a basic head and foot line in addition with some kind of logo.</p>
+<p>It is defined in the header:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="at">    </span><span class="fu">slide-number</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="at">    </span><span class="fu">footer</span><span class="kw">:</span><span class="at"> &lt;gisma 2023&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="at">    </span><span class="fu">header</span><span class="kw">:</span><span class="at"> This is the header extension</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="at">    </span><span class="fu">header-logo</span><span class="kw">:</span><span class="at"> slide1/logooil.jpg</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="spotlight" class="slide level2">
+<h2>Spotlight</h2>
+<p>Currently the spotlight is set to a red dot pointer. Just press the left mouse button and use it. It is defined in the header:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="at">    </span><span class="fu">spotlight</span><span class="kw">:</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="at">      </span><span class="fu">useAsPointer</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="at">      </span><span class="fu">size</span><span class="kw">:</span><span class="at"> </span><span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="highlighting-concept" class="slide level2">
+<h2>Highlighting concept</h2>
 <p>To activate highlighting Press <code>R</code> to activate notation animations</p>
 <p>I will be <span class="rn">highlighted</span>, and so will <span class="rn">these words right here</span></p>
 </section>
@@ -495,11 +515,11 @@
 <section id="fenced-divs" class="slide level2">
 <h2>Fenced divs</h2>
 <p>You can also use fenced divs if you want to apply the changes to larger sections of of the slide</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a>::: {.rn rn-type=box rn-color=red}</span>
-<span id="cb2-2"><a href="#cb2-2"></a>Here is some text</span>
-<span id="cb2-3"><a href="#cb2-3"></a></span>
-<span id="cb2-4"><a href="#cb2-4"></a>And there is more here</span>
-<span id="cb2-5"><a href="#cb2-5"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a>::: {.rn rn-type=box rn-color=red}</span>
+<span id="cb4-2"><a href="#cb4-2"></a>Here is some text</span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a>And there is more here</span>
+<span id="cb4-5"><a href="#cb4-5"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="rn" data-rn-type="box" data-rn-color="red">
 <p>Here is some text</p>
 <p>And there is more here</p>
