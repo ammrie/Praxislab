@@ -1,4 +1,4 @@
 ---
-title: "Listing Example"
-listing: default
+title: "Presentations"
+listing: table
 ---

@@ -1,8 +1,9 @@
 ---
 title: "Slides and extensions"
 subtitle: "basically shows the 3 extensions samples"
+author: "gisma team"
 title-slide-attributes:
-  data-background-image: slide1/mof.png
+  data-background-image: slide1/preview-image-mof.png
   data-background-size: contain
   data-background-opacity: "0.5"
 format: 
@@ -23,7 +24,7 @@ revealjs-plugins:
 ---
 
 The current slides are using the following yaml header:
-  
+![](slide1/preview-image-mof.png)
 
 ```yaml
 ---
