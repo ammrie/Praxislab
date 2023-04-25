@@ -29,6 +29,10 @@ website:
       - icon: chat-left-text-fill
         text: Ilias
         href: https://ilias.uni-marburg.de/login.php?target=&client_id=UNIMR&cmd=force_login
+      - icon: file-slides-fill
+        text: Slides
+        href: slides/slidelist.qmd
+         
     tools: 
       - icon: github
         href: https://github.com/gisma-courses/gisma-knowledge-base
