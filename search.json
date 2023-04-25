@@ -7,6 +7,69 @@
     "text": "About this site\nThis page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.\nAlthough the web space is topic-centered any keyword can be searched using the full text search.\nThe creation of new pages, the editing of existing pages can be triggered directly via the right column online.\nOffline there are several visual editors and full integration with Rstudio etc."
   },
   {
+    "objectID": "slides/slidelist.html",
+    "href": "slides/slidelist.html",
+    "title": "Listing Example",
+    "section": "",
+    "text": "Slides and extensions\n\n\nbasically shows the 3 extensions samples\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/slide1.html#basic-usage",
+    "href": "slides/slide1.html#basic-usage",
+    "title": "Slides and extensions",
+    "section": "Basic usage",
+    "text": "Basic usage\nTo activate highlighting Press R to activate notation animations\nI will be highlighted, and so will these words right here"
+  },
+  {
+    "objectID": "slides/slide1.html#options",
+    "href": "slides/slide1.html#options",
+    "title": "Slides and extensions",
+    "section": "Options",
+    "text": "Options\nThere are many types of options we can use (Press R to show)\n\ntype\nanimate\nanimationDuration\ncolor\nstrokeWidth\nmultiline multiline multiline multiline multiline multiline multiline multiline multiline multiline\niterations\nrtl"
+  },
+  {
+    "objectID": "slides/slide1.html#options-1",
+    "href": "slides/slide1.html#options-1",
+    "title": "Slides and extensions",
+    "section": "Options",
+    "text": "Options\n(Press R to show)\nThe options are applied by adding arguments like so {.rn rn-color=orange rn-type=circle}\nSo to add a orange circle or turn off animations by adding rn-animate=false\nNote that the arguments are all prefixed with rn-, are not comma-separated, logical values are written as true or false and that strings do not have to be in quotes"
+  },
+  {
+    "objectID": "slides/slide1.html#options---types",
+    "href": "slides/slide1.html#options---types",
+    "title": "Slides and extensions",
+    "section": "Options - types",
+    "text": "Options - types\n(Press R to show)\n\n\nUnderline\nBox\nCircle\nHighlight\nStrike-Through\nCrossed-off\n\nMany types to choose from!\nHyphenated options can be used like so rn-type=strike-through"
+  },
+  {
+    "objectID": "slides/slide1.html#options---multiline",
+    "href": "slides/slide1.html#options---multiline",
+    "title": "Slides and extensions",
+    "section": "Options - Multiline",
+    "text": "Options - Multiline\n(Press R to show)\nThe options rn-multiline=true can be added to make a highligher work across multiple lines.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan nisi hendrerit augue molestie tempus. Phasellus purus quam, aliquet nec commodo quis, pharetra ut orci. Donec laoreet ligula nisl, placerat molestie mauris luctus id. Fusce dapibus non libero nec lobortis."
+  },
+  {
+    "objectID": "slides/slide1.html#all-about-time",
+    "href": "slides/slide1.html#all-about-time",
+    "title": "Slides and extensions",
+    "section": "All about Time",
+    "text": "All about Time\n(Press R to show)\nUnless otherwise specified, all annotations will occur at the same time. Set the rn-index to specify order\nNo rn-index\nrn-index set to 1\nrn-index set to 2\nrn-index set to 3\nrn-index set to 4"
+  },
+  {
+    "objectID": "slides/slide1.html#fenced-divs",
+    "href": "slides/slide1.html#fenced-divs",
+    "title": "Slides and extensions",
+    "section": "Fenced divs",
+    "text": "Fenced divs\nYou can also use fenced divs if you want to apply the changes to larger sections of of the slide\n::: {.rn rn-type=box rn-color=red}\nHere is some text\n\nAnd there is more here\n:::\n\nHere is some text\nAnd there is more here"
+  },
+  {
+    "objectID": "slides/slide1.html#known-issues",
+    "href": "slides/slide1.html#known-issues",
+    "title": "Slides and extensions",
+    "section": "Known issues",
+    "text": "Known issues\ndoesn’t showcase correctly in RStudio IDE\nSometimes you need to adjust the zoom in your browser to get right results\n\n\n<gisma 2023>\n\n\n\n\n\n\n \n\n\nThis is the header extension"
+  },
+  {
     "objectID": "base/about.html",
     "href": "base/about.html",
     "title": "gisma knowledge base",
