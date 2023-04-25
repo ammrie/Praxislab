@@ -50,8 +50,33 @@ revealjs-plugins:
   - spotlight
 ---
 ```
+## Header
 
-## Basic usage
+You see a basic head and foot line in addition with some kind of logo.
+
+It is defined in the header:
+```yaml
+format: 
+  revealjs:
+    slide-number: true
+    footer: <gisma 2023>
+    header: This is the header extension
+    header-logo: slide1/logooil.jpg
+```
+
+
+## Spotlight
+
+Currently the spotlight is set to a red dot pointer. Just press the left mouse button and use it. It is defined in the header:
+
+```yaml
+format: 
+  revealjs:
+    spotlight:
+      useAsPointer: true
+      size: 5
+```
+## Highlighting concept
 
 To activate highlighting Press `R` to activate notation animations
 
