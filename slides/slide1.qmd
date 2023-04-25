@@ -24,7 +24,7 @@ revealjs-plugins:
 ---
 
 The current slides are using the following yaml header:
-![](slide1/preview-image-mof.png)
+
 
 ```yaml
 ---
