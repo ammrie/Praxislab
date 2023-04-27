@@ -73,10 +73,10 @@ format:
   html:
     theme:
       light: lumen
-      dark: [lumen, theme-dark.scss]
+      dark: [lumen, css/theme-dark.scss]
     code-background: true
     code-copy: true
-    css: styles.css
+    css: css/styles.css
     toc: true
     link-external-icon: true
     link-external-newwindow: true
