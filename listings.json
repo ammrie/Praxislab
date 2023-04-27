@@ -1,14 +1,14 @@
 [
   {
-    "listing": "/slides/slidelist.html",
-    "items": [
-      "/slides/slide1.html"
-    ]
-  },
-  {
     "listing": "/assessment/slidelist.html",
     "items": [
       "/assessment/learnr_app-2.html"
+    ]
+  },
+  {
+    "listing": "/slides/slidelist.html",
+    "items": [
+      "/slides/slide1.html"
     ]
   }
 ]
