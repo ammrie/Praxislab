@@ -11,11 +11,11 @@ title: "Git, GitHub & Rstudio [DE]"
 
 In diesem Modul geht es um das Versionskontrollsystem Git, den Cloud-Dienst GitHub und deren Verwendung mit RStudio als IDE.
 
-Git ist ein Versionskontrollsystem, das die Erstellung von Snapshots einer Datei oder sogar eines ganzen Projekts zu bestimmten Zeitpunkten ermöglicht. Auch das Kombinieren dieser Snapshots mit denen von Kolleginnen und Kollegen ist komfortabel möglich.
+`Git` ist ein Versionskontrollsystem, das die Erstellung von Snapshots einer Datei oder sogar eines ganzen Projekts zu bestimmten Zeitpunkten ermöglicht. Auch das Kombinieren dieser Snapshots mit denen von Kolleginnen und Kollegen ist komfortabel möglich.
 
-GitHub ist die bekannteste Cloud-basierte Arbeitsumgebung auf Basis von Git und bietet darüber hinaus eine Vielzahl webbasierter Werkzeuge und Dienste.
+`GitHub` ist die bekannteste Cloud-basierte Arbeitsumgebung auf Basis von Git und bietet darüber hinaus eine Vielzahl webbasierter Werkzeuge und Dienste.
 
-RStudio ist als so genannte integrierte Entwicklungsumgebung (IDE) eine typische Desktop-Anwendung, die nicht nur R/Python/JS und Markup Language unterstützt, sondern auch das Lesen/Schreiben, Manipulieren und Visualisieren von Daten und Texten ermöglicht und eine nahezu vollständige Unterstützung bei der Erstellung von Dokumenten in Form von Texten in allen denkbaren Formaten, interaktiven Dokumenten und Websites bietet.
+`RStudio` ist als so genannte integrierte Entwicklungsumgebung (IDE) eine typische Desktop-Anwendung, die nicht nur R/Python/JS und Markup Language unterstützt, sondern auch das Lesen/Schreiben, Manipulieren und Visualisieren von Daten und Texten ermöglicht und eine nahezu vollständige Unterstützung bei der Erstellung von Dokumenten in Form von Texten in allen denkbaren Formaten, interaktiven Dokumenten und Websites bietet.
 
 Neben zahlreichen kollaborativen Diensten und grundlegenden Versionskontrollfunktionen ist das Wichtigste, dass man eigentlich nichts kaputt machen kann. 
 
