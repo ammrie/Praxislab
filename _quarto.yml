@@ -1,7 +1,8 @@
 project: 
   type: website
   output-dir: docs
-  
+execute:
+  freeze: auto  
 website:
   open-graph: true
   page-navigation: true  
