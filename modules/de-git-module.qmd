@@ -9,38 +9,39 @@ title: "Git, GitHub & Rstudio [DE]"
 ## Modulüberblick 
 
 
-In diesem Modul geht es um die Versionskontrolle Git, die Cloud-Dienste GitHub/GitLab und deren Verwendung mit RStudio als IDE.
+In diesem Modul geht es um das Versionskontrollsystem Git, den Cloud-Dienst GitHub und deren Verwendung mit RStudio als IDE.
 
-Git ist ein Versionskontrollsystem, das es uns ermöglicht, Snapshots einer Datei oder sogar eines ganzen Projekts zu bestimmten Zeitpunkten zu erstellen. Außerdem bietet es eine komfortable Möglichkeit, diese Snapshots mit denen von Kollegen zu kombinieren.
+Git ist ein Versionskontrollsystem, das die Erstellung von Snapshots einer Datei oder sogar eines ganzen Projekts zu bestimmten Zeitpunkten ermöglicht. Auch das Kombinieren dieser Snapshots mit denen von Kolleginnen und Kollegen ist komfortabel möglich.
 
-GitHub/GitLab bauen auf Git auf und sind die beiden beliebtesten Cloud-basierten Arbeitsumgebungen, die auf Git basieren und darüber hinaus eine breite Palette webbasierter Tools und Dienste anbieten.
+GitHub ist die bekannteste Cloud-basierte Arbeitsumgebung auf Basis von Git und bietet darüber hinaus eine Vielzahl webbasierter Werkzeuge und Dienste.
 
-RStudio ist eine typische Desktop-Anwendung, eine sogenannte integrierte Entwicklungsumgebung (IDE), die nicht nur auf R/Python/JS und Markup Language basiert, sondern auch das Lesen/Schreiben, Manipulieren und Visualisieren von Daten und Texten ermöglicht und nahezu vollständige Unterstützung bei der Erstellung von Dokumenten in Form von Texten aller denkbaren Ausgabeformate, interaktiven Dokumenten und Websites bietet.
+RStudio ist als so genannte integrierte Entwicklungsumgebung (IDE) eine typische Desktop-Anwendung, die nicht nur R/Python/JS und Markup Language unterstützt, sondern auch das Lesen/Schreiben, Manipulieren und Visualisieren von Daten und Texten ermöglicht und eine nahezu vollständige Unterstützung bei der Erstellung von Dokumenten in Form von Texten in allen denkbaren Formaten, interaktiven Dokumenten und Websites bietet.
 
-Neben vielen kollaborativen Diensten und grundlegenden Versionskontrollfunktionen ist das Wichtigste, dass man eigentlich nichts kaputt machen kann. 
+Neben zahlreichen kollaborativen Diensten und grundlegenden Versionskontrollfunktionen ist das Wichtigste, dass man eigentlich nichts kaputt machen kann. 
 
 ### Lernziele
 
-Die Lektionen dieses Moduls sind
+Am Ende des Moduls werdet ihr in der Lage sein, Git, GitHub und Rstudio nahtlos zu verwenden. Ein besonderer Schwerpunkt liegt dabei auf der pragmatischen Anwendung: 
 
-- Was ist Versionskontrolle und GitHub?
+- Was ist Versionskontrolle 
+- Was unterscheidet git und GitHub?
 - Git: Pull, Status, Add, Commit, Push
-- Verzweigungen in GitHub
 - Umgang mit Konflikten
+- Rstudio und GitHub
 
 
 ## Git und GitHub leicht gemacht
 
 ### Lernziele
 
-In dieser Lektion lernst du
+In dem Teilmodul *Git und GitHub leicht gemacht* lernst du:
 
-- Versionskontrolle verstehen
-- GitHub und Git verstehen
+- das Konzept der Versionskontrolle zu verstehen
+- Die Einsatzgebiete von GitHub und Git zu verstehen
 
 ### Vorkenntnisse
 
-- Mit deinem spezifischen Dateimanager navigieren und arbeiten. 
+- Mit deinem Dateimanager navigieren und arbeiten
 - Ordnerstrukturen verstehen 
 
 ### Überblick
@@ -74,12 +75,15 @@ Du solltest in der Lage sein, die Ausgabe dieses Befehls zu interpretieren:
 
 ![](../images/64_git-status.PNG){width=75% height=75%}
 
+### Gut zu wissen
+
+::::{.successbox .ginfo}
 
 Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Ressourcen:
 
 - [Pro Git: Kapitel **Git Grundlagen**](https://git-scm.com/book/en/v2)
 - [Happy Git mit R](https://happygitwithr.com/)
-
+:::
 
 ## Git/GitHub: pull, status, add, commit, push
 
