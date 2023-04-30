@@ -385,7 +385,9 @@ Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folg
 
 ## Danksagung
 
+
 Das Tutorial basiert auf dem [DoSStoolkit](https://dosstoolkit.com/). Sowohl die Inhalte als auch die Self Assessments basieren dem Modul [Git outta here](https://dosstoolkit.com/#git-outta-here) von [Mariam Walaa & Matthew Wankiewicz](https://dosstoolkit.com/#contributors). Die Übersetzungen und Veränderungen vom Autor dieser Seite. 
+
 
 Das Originalmodul kann mit dem folgenden R-Befehl aufgerufen werden.
 

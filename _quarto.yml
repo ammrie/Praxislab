@@ -5,6 +5,10 @@ execute:
   freeze: auto  
 website:
   open-graph: true
+  twitter-card:
+    creator: "@creuden"
+  page-footer: "gisma (2021) [Impressum](base/impressum.Rmd)" 
+  
   page-navigation: true  
   title: "gisma knowledge base"
   site-url: https://gisma-courses.github.io/gisma-knowledge-base
@@ -13,12 +17,12 @@ website:
   search: 
     location: navbar
     type: textbox
-  page-footer: "gisma (2021)" 
-  twitter-card:
-    creator: "@creuden"
+
+
   comments:
     utterances:
       repo: gisma-courses/gisma-knowledge-base
+
   navbar:
     logo: /images/logooil.jpg
     left:
