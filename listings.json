@@ -1,15 +1,15 @@
 [
   {
-    "listing": "/assessment/slidelist.html",
-    "items": [
-      "/assessment/learnr_app-2.html"
-    ]
-  },
-  {
     "listing": "/modules/slidelist.html",
     "items": [
       "/modules/de-git-module.html",
       "/modules/en-git-module.html"
+    ]
+  },
+  {
+    "listing": "/assessment/slidelist.html",
+    "items": [
+      "/assessment/learnr_app-2.html"
     ]
   },
   {

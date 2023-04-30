@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gisma-courses.github.io/gisma-knowledge-base/assessment/learnr_app-2.html</loc>
-    <lastmod>2023-04-30T12:04:24.909Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gisma-courses.github.io/gisma-knowledge-base/assessment/slidelist.html</loc>
-    <lastmod>2023-04-30T12:04:25.205Z</lastmod>
+    <loc>https://gisma-courses.github.io/gisma-knowledge-base/modules/de-git-module.html</loc>
+    <lastmod>2023-04-30T12:06:48.636Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/modules/en-git-module.html</loc>
-    <lastmod>2023-04-30T12:04:25.445Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gisma-courses.github.io/gisma-knowledge-base/modules/de-git-module.html</loc>
-    <lastmod>2023-04-30T12:04:26.281Z</lastmod>
+    <lastmod>2023-04-30T12:06:49.924Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/modules/slidelist.html</loc>
-    <lastmod>2023-04-30T12:04:26.565Z</lastmod>
+    <lastmod>2023-04-30T12:06:50.488Z</lastmod>
   </url>
   <url>
-    <loc>https://gisma-courses.github.io/gisma-knowledge-base/base/faq.html</loc>
-    <lastmod>2023-04-30T12:04:26.821Z</lastmod>
+    <loc>https://gisma-courses.github.io/gisma-knowledge-base/assessment/learnr_app-2.html</loc>
+    <lastmod>2023-04-30T12:06:50.928Z</lastmod>
   </url>
   <url>
-    <loc>https://gisma-courses.github.io/gisma-knowledge-base/base/about.html</loc>
-    <lastmod>2023-04-30T12:04:27.065Z</lastmod>
+    <loc>https://gisma-courses.github.io/gisma-knowledge-base/assessment/slidelist.html</loc>
+    <lastmod>2023-04-30T12:06:51.436Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/slides/slide1.html</loc>
-    <lastmod>2023-04-30T12:04:27.525Z</lastmod>
+    <lastmod>2023-04-30T12:06:53.332Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/slides/slidelist.html</loc>
-    <lastmod>2023-04-30T12:04:27.777Z</lastmod>
+    <lastmod>2023-04-30T12:06:54.696Z</lastmod>
   </url>
   <url>
-    <loc>https://gisma-courses.github.io/gisma-knowledge-base/mclim/sensors.html</loc>
-    <lastmod>2023-04-30T12:04:28.013Z</lastmod>
+    <loc>https://gisma-courses.github.io/gisma-knowledge-base/base/about.html</loc>
+    <lastmod>2023-04-30T12:06:55.152Z</lastmod>
   </url>
   <url>
-    <loc>https://gisma-courses.github.io/gisma-knowledge-base/mclim/mc-index.html</loc>
-    <lastmod>2023-04-30T12:04:28.389Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gisma-courses.github.io/gisma-knowledge-base/index.html</loc>
-    <lastmod>2023-04-30T12:04:28.633Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gisma-courses.github.io/gisma-knowledge-base/uav/planning.html</loc>
-    <lastmod>2023-04-30T12:04:28.877Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gisma-courses.github.io/gisma-knowledge-base/uav/products.html</loc>
-    <lastmod>2023-04-30T12:04:29.113Z</lastmod>
+    <loc>https://gisma-courses.github.io/gisma-knowledge-base/base/faq.html</loc>
+    <lastmod>2023-04-30T12:06:55.636Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/uav/listing1.html</loc>
-    <lastmod>2023-04-30T12:04:29.373Z</lastmod>
+    <lastmod>2023-04-30T12:06:56.136Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gisma-courses.github.io/gisma-knowledge-base/uav/planning.html</loc>
+    <lastmod>2023-04-30T12:06:56.576Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/gisma-knowledge-base/uav/uav-index.html</loc>
-    <lastmod>2023-04-30T12:04:29.617Z</lastmod>
+    <lastmod>2023-04-30T12:06:57.048Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gisma-courses.github.io/gisma-knowledge-base/uav/products.html</loc>
+    <lastmod>2023-04-30T12:06:57.524Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gisma-courses.github.io/gisma-knowledge-base/index.html</loc>
+    <lastmod>2023-04-30T12:06:57.972Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gisma-courses.github.io/gisma-knowledge-base/mclim/mc-index.html</loc>
+    <lastmod>2023-04-30T12:06:58.648Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gisma-courses.github.io/gisma-knowledge-base/mclim/sensors.html</loc>
+    <lastmod>2023-04-30T12:06:59.160Z</lastmod>
   </url>
 </urlset>
