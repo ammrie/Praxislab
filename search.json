@@ -46,7 +46,7 @@
     "href": "modules/de-git-module.html#danksagung",
     "title": "Git, GitHub & Rstudio [DE]",
     "section": "Danksagung",
-    "text": "Danksagung\nDas Tutorial basiert auf dem DoSStoolkit. Sowohl die Inhalte als auch die Self Assessments basieren dem Modul Git outta here von Mariam Walaa & Matthew Wankiewicz. Die Übersetzungen und Veränderungen vom Author dieser Seite.\nDas Originalmodul kann mit dem folgenden R-Befehl aufgerufen werden.\n\nlearnr::run_tutorial(\"git_outta_here\", package = \"DoSStoolkit\")"
+    "text": "Danksagung\nDas Tutorial basiert auf dem DoSStoolkit. Sowohl die Inhalte als auch die Self Assessments basieren dem Modul Git outta here von Mariam Walaa & Matthew Wankiewicz. Die Übersetzungen und Veränderungen vom Autor dieser Seite.\nDas Originalmodul kann mit dem folgenden R-Befehl aufgerufen werden.\n\nlearnr::run_tutorial(\"git_outta_here\", package = \"DoSStoolkit\")"
   },
   {
     "objectID": "modules/en-git-module.html#module-overview",
