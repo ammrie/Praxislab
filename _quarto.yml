@@ -24,12 +24,16 @@ website:
       - icon: question-square-fill
         text: FAQ
         href: base/faq.qmd
+      - icon: journals
+        text: Self-study
+        href: modules/slidelist.qmd             
       - icon: file-slides-fill
         text: Slides
         href: slides/slidelist.qmd
       - icon: check2-square
-        text: TestIt
-        href: assessment/slidelist.qmd        
+        text: Test It
+        href: assessment/slidelist.qmd   
+      
     right:
       - icon: chat-left-text-fill
         text: Ilias

@@ -1,0 +1,98 @@
+---
+title: "Git, GitHub & Rstudio [DE]"
+
+---
+
+
+![](../images/github-Rstudio.jpg){width="75%"}
+
+## Modulüberblick 
+
+
+In diesem Modul geht es um die Versionskontrolle Git, die Cloud-Dienste GitHub/GitLab und deren Verwendung mit RStudio als IDE.
+
+Git ist ein Versionskontrollsystem, das es uns ermöglicht, Snapshots einer Datei oder sogar eines ganzen Projekts zu bestimmten Zeitpunkten zu erstellen. Außerdem bietet es eine komfortable Möglichkeit, diese Snapshots mit denen von Kollegen zu kombinieren.
+
+GitHub/GitLab bauen auf Git auf und sind die beiden beliebtesten Cloud-basierten Arbeitsumgebungen, die auf Git basieren und darüber hinaus eine breite Palette webbasierter Tools und Dienste anbieten.
+
+RStudio ist eine typische Desktop-Anwendung, eine sogenannte integrierte Entwicklungsumgebung (IDE), die nicht nur auf R/Python/JS und Markup Language basiert, sondern auch das Lesen/Schreiben, Manipulieren und Visualisieren von Daten und Texten ermöglicht und nahezu vollständige Unterstützung bei der Erstellung von Dokumenten in Form von Texten aller denkbaren Ausgabeformate, interaktiven Dokumenten und Websites bietet.
+
+Neben vielen kollaborativen Diensten und grundlegenden Versionskontrollfunktionen ist das Wichtigste, dass man eigentlich nichts kaputt machen kann. 
+
+### Lernziele
+
+Die Lektionen dieses Moduls sind
+
+- Was ist Versionskontrolle und GitHub?
+- Git: Pull, Status, Add, Commit, Push
+- Verzweigungen in GitHub
+- Umgang mit Konflikten
+
+
+## Git und GitHub leicht gemacht
+
+### Lernziele
+
+In dieser Lektion lernst du
+
+- Versionskontrolle verstehen
+- GitHub und Git verstehen
+
+### Vorkenntnisse
+
+- Mit deinem spezifischen Dateimanager navigieren und arbeiten. 
+- Ordnerstrukturen verstehen 
+
+### Überblick
+
+In gängigen Office-Systemen können Sie z.B. AutoSave aktivieren, um kontinuierlich, zu bestimmten Zeiten oder manuell ein Backup zu erstellen. Die Versionskontrolle git funktioniert auf ähnliche Weise für von dir definierte Ordnerverzeichnisse.
+
+Du hast zum Beispiel einen Ordner, in dem du ein Projekt hast, das aus verschiedenen Dateien besteht (Text, Programmcode, Bilder, Sounddateien usw.) und du möchtest die Änderungen, die du an diesen Dateien gemacht hast, im Auge behalten.
+
+Git protokolliert alle Änderungen an diesen Dateien. 
+1. Git mitteilen, dass eine Datei oder ein Verzeichnis verfolgt werden soll. 
+2. dass der Zustand der Datei zu einem bestimmten Zeitpunkt aufgezeichnet werden soll.
+
+
+Im Gegensatz zum kontinuierlichen Backup von z.B. Google Docs (das keine Wiederherstellung erlaubt) ist dieser Prozess notwendigerweise in 2 Schritte aufgeteilt, um definierte Änderungen vornehmen zu können, bevor diese bestätigt und mit einem _commit_ als Snapshot gespeichert werden.
+
+#### Git - Erste Schritte
+
+Bei der Verwendung von Git muss zunächst ein Repository _in_ einem Verzeichnis auf dem lokalen Rechner aktiviert werden. Dies geschieht mit dem Befehl `git init`. Nun weiß Git wo, aber nicht was es verfolgen soll.
+
+```{r version-control-image-1, echo = FALSE, fig.height = 4, fig.width = 6}
+knitr::include_graphics("../images/64_git-init.PNG")
+```
+
+Während der Arbeit muss Git "informiert" werden, was mit diesen Dateien geschehen soll. Dies geschieht mit den beiden Befehlen `git add` und `git commit`.
+
+Ein wichtiger zusätzlicher Befehl, `git push`, wird verwendet, um den aktuellen Verzeichnis-Snapshot in ein entferntes Repository (z.B. Github, GitLab) zu übertragen.
+
+```{r version-control-image-2, echo = FALSE, fig.height = 4, fig.width = 6}
+knitr::include_graphics("../images/64_add-commit-push.PNG")
+```
+
+Der letzte Befehl ist `git status`. Du solltest diesen Befehl benutzen, wenn du an deinem Projekt arbeitest, damit du weißt, was du noch nicht getrackt hast. Die Ausgabe dieses Befehls besteht aus mehreren Teilen
+Du solltest in der Lage sein, die Ausgabe dieses Befehls zu interpretieren:
+
+```{r version-control-image-3, echo = FALSE, fig.height = 4, fig.width = 6}
+knitr::include_graphics("../images/64_git-status.PNG")
+```
+
+### Nächste Schritte
+
+Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Ressourcen:
+
+
+- [Pro Git: Kapitel **Git Grundlagen**](https://git-scm.com/book/en/v2)
+- Happy Git mit R](https://happygitwithr.com/)
+
+<iframe width="120%" height="2000px" src="http://137.248.191.201:3838/de/git-1/"   scrolling="no" frameborder="0"> </iframe>
+
+<iframe width="120%" height="2000px" src="http://137.248.191.201:3838/de/git-2/"   scrolling="no" frameborder="0"> </iframe>
+
+<iframe width="120%" height="2000px" src="http://137.248.191.201:3838/de/git-3/"   scrolling="no" frameborder="0"> </iframe>
+
+<iframe width="120%" height="2000px" src="http://137.248.191.201:3838/de/git-4/"   scrolling="no" frameborder="0"> </iframe>
+
+
