@@ -1,13 +1,7 @@
 ---
 title: "Git, GitHub & Rstudio [DE]"
-author: gisma
-date: today
 ---
 
-```{r setup, include=FALSE}
-library(rmarkdown)
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ![](../images/github-Rstudio.jpg){width="75%"}
 
