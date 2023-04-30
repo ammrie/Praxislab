@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "assessment/slidelist.html",
-    "href": "assessment/slidelist.html",
-    "title": "Assessments",
-    "section": "",
-    "text": "Basic Exercise\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "modules/en-git-module.html#module-overview",
-    "href": "modules/en-git-module.html#module-overview",
-    "title": "Git, GitHub & Rstudio [EN]",
-    "section": "Module Overview",
-    "text": "Module Overview\nThis module is about the version control system Git, the cloud services GitHub/GitLab and using them with RStudio as an IDE.\n\nContent"
-  },
-  {
     "objectID": "modules/de-git-module.html#modulüberblick",
     "href": "modules/de-git-module.html#modulüberblick",
     "title": "Git, GitHub & Rstudio [DE]",
@@ -32,28 +18,28 @@
     "href": "modules/de-git-module.html#gitgithub-pull-status-add-commit-push",
     "title": "Git, GitHub & Rstudio [DE]",
     "section": "Git/GitHub: pull, status, add, commit, push",
-    "text": "Git/GitHub: pull, status, add, commit, push\n\nLernziele\nIn dieser Lektion lernst du\n\nein lokales Projektarchiv in einem Ordner anlegst\nÄnderungen an einem entfernten Repository vornehmen\nein lokales Repository zu verwalten\n\n\n\nVoraussetzungen\n\nEinrichten eines GitHub-Accounts\nHerunterladen der Git Bash\n\n\n\nEinrichtung von git und GitHub\nEs gibt zwei typische Szenarien für die Einrichtung von Git und GitHub.\n\ndu hast das Projekt noch nicht gestartet und möchtest ein GitHub-Repository, das du als Vorlage auf deinen Rechner kopieren (klonen) und dann lokal mit Dateien und Verzeichnissen nach deinen Wünschen füllen kannst.\nDu hast das Projekt bereits lokal gestartet und möchtest es auf GitHub kopieren.\n\nBeide Szenarien werden von Jenny Bryan exzellent erläutert:\n\nSzenario 1: Happy Git With R: Kapitel 15 Neues Projekt GitHub\nSzenario 2: Happy Git With R: Kapitel 17 Bestehendes Projekt, GitHub\n\n\n\nSelbst-Check\n\n\n\n\nCaption"
+    "text": "Git/GitHub: pull, status, add, commit, push\n\nLernziele\nIn dieser Lektion lernst du\n\nein lokales Projektarchiv in einem Ordner anlegst\nÄnderungen an einem entfernten Repository vornehmen\nein lokales Repository zu verwalten\n\n\n\nVoraussetzungen\n\nEinrichten eines GitHub-Accounts\nHerunterladen der Git Bash\n\n\n\nEinrichtung von git und GitHub\nEs gibt zwei typische Szenarien für die Einrichtung von Git und GitHub.\n\ndu hast das Projekt noch nicht gestartet und möchtest ein GitHub-Repository, das du als Vorlage auf deinen Rechner kopieren (klonen) und dann lokal mit Dateien und Verzeichnissen nach deinen Wünschen füllen kannst.\nDu hast das Projekt bereits lokal gestartet und möchtest es auf GitHub kopieren.\n\nBeide Szenarien werden von Jenny Bryan exzellent erläutert:\n\nSzenario 1: Happy Git With R: Kapitel 15 Neues Projekt GitHub\nSzenario 2: Happy Git With R: Kapitel 17 Bestehendes Projekt, GitHub\n\n\n\nSelbst-Check\n\n\n\n\n\n\n\n\n\nGut zu wissen\n\n\nDu versuchst, git commit auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht. Deshalb müssen Sie zuerst git add ausführen.\nDu versuchst git push auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.\nDu versuchst git push auszuführen, um deine Aktualisierungen in das entfernte Repository zu übertragen, obwohl es bereits neue Aktualisierungen im entfernten Repository gibt (z.B. von einem anderen Teammitglied), die du noch nicht in das lokale Projekt übertragen hast. Die Fehlermeldung, die du bekommst, wird in etwa so aussehen:\n\n\nFehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: … Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.\n\nDu weist also dein lokales git an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt. Der beste Weg, dieses Problem zu vermeiden, ist immer einen git pull durchzuführen, bevor man mit dem lokalen Editieren beginnt.\nFür ein besseres Verständnis lies die folgenden Texte:\n\nPull tricky.\nGit Grundlagen\nGit und R\nRstudio - git - GitHub"
   },
   {
     "objectID": "modules/de-git-module.html#fork-und-branches-auf-github",
     "href": "modules/de-git-module.html#fork-und-branches-auf-github",
     "title": "Git, GitHub & Rstudio [DE]",
     "section": "Fork und Branches auf GitHub",
-    "text": "Fork und Branches auf GitHub\n\nLernziele\nIn dieser Lektion lernst du\n\nWas ein Fork/Branch eines GitHub-Repositorys ist.\nWie man einen Branch eines GitHub Repositories erstellt.\nWie Du ein GitHub Repository von einem Branch aus aktualisierst.\n\n\n\nVorausetzungen\n\nVertrautheit mit GitHub-Repositorys.\nGit muss auf deinem Computer installiert sein.\nEin GitHub Konto!\n\n\n\nWas ist ein Fork/Branch?\nWenn man in Gruppen an GitHub-Projekten arbeitet, wird es lästig, wenn eine Person den gesamten Code alleine in das Repository einpflegen muss. Hier kommen Forks und Branches ins Spiel. - Mit Branches kannst Du eine Kopie des aktuellen GitHub-Projekts nehmen und auf Deinem eigenen Computer Änderungen vornehmen. Sobald Du und Deine Gruppe Änderungen am Code vorgenommen habt, könnt Ihr die Änderungen wieder in Eure ursprüngliche Projektgruppe einfügen. - Branches können auch verwendet werden, wenn Du an einem Teil eines Projekts getrennt von den anderen Teilen arbeiten möchtest. - Forks sind sehr ähnlich, mit dem Unterschied, dass sie Kopien bzw Klone eines kompletten Projekts an einem anderen Ort sind.\n\nWie erstelle ich einen Branch?\nUm einen Branch von einem GitHub Repository zu erstellen, gehe zu dem Hauptrepository, an dem du arbeiten möchtest und klicke auf das Dropdown-Menü, das “main” heißen sollte. Es sollte wie das folgende Bild aussehen.\n\nSobald man auf dieses Menü klickt, erscheint auf GitHub ein Textfeld mit der Aufschrift “Find or create a branch…”, man gibt einen neuen Namen für den Zweig ein, z.B. ‘newbranch1’. Da dieser Zweig noch nicht existiert, fragt dich GitHub, ob du einen Zweig mit dem Namen “newbranch1” erstellen möchtest. Klicke auf “Create branch: newbranch1” und der neue Zweig wird für Dich erstellt, wie in der folgenden Abbildung zu sehen ist.\n\n\n\nWie stellt man einen Pull Request?\nEine Pull-Anfrage ermöglicht es dem Eigentümer des GitHub-Projekts, Deine Änderungen zu überprüfen, um sicherzustellen, dass sie in das aktuelle Repository passen und keine Konflikte in Deinem Repository verursachen.\nUm eine Pull-Anfrage von Deinem Zweig aus zu stellen, musst Du zuerst eine Änderung an Deinem Zweig-Repository vornehmen. Sobald Du eine Änderung an Deinem Zweig vorgenommen hast, erscheint ein gelber Balken auf Deinem Bildschirm, der Dich fragt, ob Du eine Pull-Anfrage stellen möchtest. Wie Du auf dem Bild unten sehen kannst, gibt es einen grünen Button, und sobald Du darauf klickst, kannst Du eine Pull-Anfrage erstellen.\n\nSobald Du auf den Button klickst, informiert Dich GitHub, ob es Probleme beim Zusammenführen des Zweigs mit dem Hauptprojekt gibt. Wenn es keine Probleme gibt, setzt GitHub ein Häkchen und zeigt “Able to merge” an. Du kannst dann einen Titel und einen Kommentar zu Deiner Pull-Anfrage hinzufügen, um den Besitzer des Repositorys darüber zu informieren, was Du getan hast. Sobald Du einen Kommentar und einen Titel eingegeben hast, kannst Du auf “Create a pull request” klicken. Wenn Du dies getan hast, wird eine Benachrichtigung an den Besitzer des Repositorys gesendet, dass Deine Änderungen zur Überprüfung bereit sind.\nNachdem Du Deine Anfrage abgeschickt hast, kann der Besitzer des GitHub-Projekts auf die Seite des Projekts gehen und auf den Reiter “Pull Requests” klicken. Auf dieser Seite wird eine Liste von Pull Requests angezeigt, aus der der Eigentümer Deine Anfrage auswählen kann. Sobald der Besitzer auf der Pull Request Seite angekommen ist, sieht er eine Schaltfläche mit der Aufschrift “Merge pull request” (ähnlich der Abbildung unten).\n\nSobald der Eigentümer auf die grüne Schaltfläche klickt, wird er erneut gefragt, ob er die Änderung vornehmen möchte. Wenn er erneut auf den Button klickt, wird die Änderung mit dem Hauptzweig zusammengeführt und er sieht etwas wie das folgende Bild…\n\n\n\n\nEin Repository in einem Branch (oder Fork) aktualisieren\nWenn jemand in deiner Gruppe eine Änderung am Master Repo vornimmt, gibt es eine Möglichkeit, deinen Zweig zu aktualisieren, damit du die Änderungen sehen kannst. Wenn eine Änderung vorgenommen wurde, wird auf der Webseite des verzweigten Repos angezeigt, dass Dein Repo “1 Commit behind the Master” ist. Das bedeutet, dass es 1 Änderung zwischen Deinem Fork und dem Main Repository gibt.\nWenn Du Deinen Fork aktualisieren möchtest, klicke auf die Schaltfläche “Änderungen”. Du wirst dann auf eine Seite geleitet, die sagt “main is up to date with all commits from branch. Versuchen Sie die Basis zu ändern”. Klicke auf “Change base”. Dann wird angezeigt, ob der Zweig zusammengeführt werden kann. Wenn ja, klicke auf “Create pull request” (Titel und Kommentar für deine Anfrage) und erstelle eine Pull-Anfrage.\nNun klicke auf Merge pull request, dann auf Confirm merge und dein Zweig wird aktualisiert!\n\n\nSelbst-Check\n\n\n\n\nCaption"
+    "text": "Fork und Branches auf GitHub\n\nLernziele\nIn dieser Lektion lernst du\n\nWas ein Fork/Branch eines GitHub-Repositorys ist.\nWie man einen Branch eines GitHub Repositories erstellt.\nWie Du ein GitHub Repository von einem Branch aus aktualisierst.\n\n\n\nVorausetzungen\n\nVertrautheit mit GitHub-Repositorys.\nGit muss auf deinem Computer installiert sein.\nEin GitHub Konto!\n\n\n\nWas ist ein Fork/Branch?\nWenn man in Gruppen an GitHub-Projekten arbeitet, wird es lästig, wenn eine Person den gesamten Code alleine in das Repository einpflegen muss. Hier kommen Forks und Branches ins Spiel. - Mit Branches kannst Du eine Kopie des aktuellen GitHub-Projekts nehmen und auf Deinem eigenen Computer Änderungen vornehmen. Sobald Du und Deine Gruppe Änderungen am Code vorgenommen habt, könnt Ihr die Änderungen wieder in Eure ursprüngliche Projektgruppe einfügen. - Branches können auch verwendet werden, wenn Du an einem Teil eines Projekts getrennt von den anderen Teilen arbeiten möchtest. - Forks sind sehr ähnlich, mit dem Unterschied, dass sie Kopien bzw Klone eines kompletten Projekts an einem anderen Ort sind.\n\nWie erstelle ich einen Branch?\nUm einen Branch von einem GitHub Repository zu erstellen, gehe zu dem Hauptrepository, an dem du arbeiten möchtest und klicke auf das Dropdown-Menü, das “main” heißen sollte. Es sollte wie das folgende Bild aussehen.\n\nSobald man auf dieses Menü klickt, erscheint auf GitHub ein Textfeld mit der Aufschrift “Find or create a branch…”, man gibt einen neuen Namen für den Zweig ein, z.B. ‘newbranch1’. Da dieser Zweig noch nicht existiert, fragt dich GitHub, ob du einen Zweig mit dem Namen “newbranch1” erstellen möchtest. Klicke auf “Create branch: newbranch1” und der neue Zweig wird für Dich erstellt, wie in der folgenden Abbildung zu sehen ist.\n\n\n\nWie stellt man einen Pull Request?\nEine Pull-Anfrage ermöglicht es dem Eigentümer des GitHub-Projekts, Deine Änderungen zu überprüfen, um sicherzustellen, dass sie in das aktuelle Repository passen und keine Konflikte in Deinem Repository verursachen.\nUm eine Pull-Anfrage von Deinem Zweig aus zu stellen, musst Du zuerst eine Änderung an Deinem Zweig-Repository vornehmen. Sobald Du eine Änderung an Deinem Zweig vorgenommen hast, erscheint ein gelber Balken auf Deinem Bildschirm, der Dich fragt, ob Du eine Pull-Anfrage stellen möchtest. Wie Du auf dem Bild unten sehen kannst, gibt es einen grünen Button, und sobald Du darauf klickst, kannst Du eine Pull-Anfrage erstellen.\n\nSobald Du auf den Button klickst, informiert Dich GitHub, ob es Probleme beim Zusammenführen des Zweigs mit dem Hauptprojekt gibt. Wenn es keine Probleme gibt, setzt GitHub ein Häkchen und zeigt “Able to merge” an. Du kannst dann einen Titel und einen Kommentar zu Deiner Pull-Anfrage hinzufügen, um den Besitzer des Repositorys darüber zu informieren, was Du getan hast. Sobald Du einen Kommentar und einen Titel eingegeben hast, kannst Du auf “Create a pull request” klicken. Wenn Du dies getan hast, wird eine Benachrichtigung an den Besitzer des Repositorys gesendet, dass Deine Änderungen zur Überprüfung bereit sind.\nNachdem Du Deine Anfrage abgeschickt hast, kann der Besitzer des GitHub-Projekts auf die Seite des Projekts gehen und auf den Reiter “Pull Requests” klicken. Auf dieser Seite wird eine Liste von Pull Requests angezeigt, aus der der Eigentümer Deine Anfrage auswählen kann. Sobald der Besitzer auf der Pull Request Seite angekommen ist, sieht er eine Schaltfläche mit der Aufschrift “Merge pull request” (ähnlich der Abbildung unten).\n\nSobald der Eigentümer auf die grüne Schaltfläche klickt, wird er erneut gefragt, ob er die Änderung vornehmen möchte. Wenn er erneut auf den Button klickt, wird die Änderung mit dem Hauptzweig zusammengeführt und er sieht etwas wie das folgende Bild…\n\n\n\n\nEin Repository in einem Branch (oder Fork) aktualisieren\nWenn jemand in deiner Gruppe eine Änderung am Master Repo vornimmt, gibt es eine Möglichkeit, deinen Zweig zu aktualisieren, damit du die Änderungen sehen kannst. Wenn eine Änderung vorgenommen wurde, wird auf der Webseite des verzweigten Repos angezeigt, dass Dein Repo “1 Commit behind the Master” ist. Das bedeutet, dass es 1 Änderung zwischen Deinem Fork und dem Main Repository gibt.\nWenn Du Deinen Fork aktualisieren möchtest, klicke auf die Schaltfläche “Änderungen”. Du wirst dann auf eine Seite geleitet, die sagt “main is up to date with all commits from branch. Versuchen Sie die Basis zu ändern”. Klicke auf “Change base”. Dann wird angezeigt, ob der Zweig zusammengeführt werden kann. Wenn ja, klicke auf “Create pull request” (Titel und Kommentar für deine Anfrage) und erstelle eine Pull-Anfrage.\nNun klicke auf Merge pull request, dann auf Confirm merge und dein Zweig wird aktualisiert!\n\n\nSelbst-Check\n\n\n\n\n\n\n\n\n\nGut zu wissen\n\n\nLerne wie man Branches mit dem Terminal erstellt: Arbeiten mit Branches\nLerne die Verwendung von Pull Requests und Issues: Issues und Pull Requests\nLerne, wie man ein GitHub-Repository forkt: Forken eines Repositories"
   },
   {
     "objectID": "modules/de-git-module.html#umgang-mit-konflikten",
     "href": "modules/de-git-module.html#umgang-mit-konflikten",
     "title": "Git, GitHub & Rstudio [DE]",
     "section": "Umgang mit Konflikten",
-    "text": "Umgang mit Konflikten\n\nLernziele\nIn dieser Lektion lernst du\n\nWie man mit Konflikten umgeht, die bei der Arbeit mit GitHub auftreten.\nWie man mit Merge-Konflikten in GitHub umgeht.\n\n\n\nVorausetzungen\n\nVertrautheit mit GitHub.\nGit installiert haben.\nEin GitHub Konto haben.\n\n\n\nVersionskonflikte was ist das?\nVersionskonflikte entstehen normalerweise, wenn verschiedene Versionen derselben Datei gleichzeitig in das Hauptrepository gepusht werden und die Priorisierung der Dateien nicht klar ist, also:\n\nwenn man sein persönliches GitHub-Repository aktualisiert (kein Pull vor Push).\nwenn mehrere Personen gleichzeitig an derselben Datei arbeiten\n\n\n\nPush & Pull Konflikte\nEin typisches Szenario ist, dass Du etwas online auf GitHub bearbeitest und diese Änderung nicht gleichzeitig oder später in Rstudio synchronisierst. Der Konflikt könnte z.B. sein, dass Du einen Tippfehler in der README korrigierst und vergisst, die aktuelle Version im Rstudio-Projekt zu aktualisieren.\n\nAlso immer pull vor push, sonst hat GitHub zwei verschiedene Änderungen gespeichert und weiß nicht, welche zu verwenden ist.\n\nEin komplizierterer Fall ist, wenn eine Änderung im Master-Repository gemacht wurde und jemand anderes in seinem Branch-/Fork-Repository ebenfalls eine Änderung an der gleichen Datei bzw. dem gleichen Inhalt gemacht hat. Wenn eine Pull-Anfrage gestellt wird, wird GitHub den Unterschied bemerken. Auch hier kann es sich um etwas so Einfaches handeln, wie zwei Personen, die die README auf unterschiedliche Weise aktualisieren, was GitHub dazu veranlasst, ein Problem zu melden.\nIn diesem Fall muss manuell entschieden werden, welche Variante Vorrang hat.\nWenn Du eine Änderung an Deinem GitHub-Repository vornimmst und es gibt einen Konflikt, zeigt Dir R an, dass Deine Version dem Haupt-Repository voraus ist, wenn Du Deine Änderung überträgst. Wenn Du dies siehst, bedeutet es, dass es einen Unterschied zwischen den Dateien gibt. Wenn Du versuchst zu pullen und es gibt ein Problem, wird GitHub Dir etwas sagen wie\n\nUpdates wurden abgelehnt, weil das entfernte Repository Arbeit enthält, die Du lokal nicht hast. Dies wird normalerweise durch ein anderes Repository verursacht, das auf die gleiche Referenz pusht.\n\nWenn diese Meldung erscheint, empfiehlt GitHub, dass Du einen Pull von Deinem Master-Repository durchführst, um den Fehler zu finden. Häufig erhältst Du die Fehlermeldung\n\nCONFLICT (content): Konflikt beim Zusammenführen in [Datei]. Automatisches Zusammenführen fehlgeschlagen; Konflikte lösen und dann das Ergebnis übertragen.\n\nDie Datei mit dem Problem wird dann in Ihrem RStudio geöffnet und zeigt den gefundenen Fehler an. Es wird angezeigt, welche Änderungen vorgenommen wurden und welche Unterschiede zum Hauptzweig bestehen (die Änderungen werden unter &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD angezeigt, der Inhalt des Hauptzweigs wird darunter angezeigt). Du musst den Fehler zwischen den beiden Versionen beheben, indem Du entweder das beibehältst, was GitHub bereits hat, oder indem Du Deine Änderung so anpasst, dass sie dem entspricht, was Du machen wolltest. Wenn Du mit Deiner Änderung zufrieden bist, rufe das Terminal auf (es befindet sich in R, einem Tab über der Konsole). Im Terminal gibst Du git add [Dateiname] ein, drückst die Eingabetaste und gehst zurück zum Git-Tab oben rechts im RStudio-Fenster. Wähle die Datei aus, in der der Fehler aufgetreten ist und überschreibe sie, um den Fehler zu beheben.\n\n\nMerge Konflikte\nWenn mehrere Personen am selben GitHub-Repository arbeiten oder Du nur einen Zweig verwendest, besteht die Möglichkeit, dass ein Merge-Konflikt auftritt. Zusammenführungskonflikte treten auf, wenn Änderungen am Haupt-Repository und an einem Zweig vorgenommen werden, die nicht übereinstimmen. Sobald eine Pull-Anfrage gestellt wird, muss der Eigentümer des Projektarchivs die Änderungen manuell überprüfen, sie können dann nicht automatisch zusammengeführt werden.\nFolglich teilt GitHub Dir mit, dass es die Versionen nicht automatisch zusammenführen kann, aber es wird Dir trotzdem erlauben, die Pull-Anfrage zu stellen. Wenn Du Dich entscheidest, die Pull-Anfrage zu senden, wird der Repo-Besitzer nicht in der Lage sein, auf den grünen Merge Button zu klicken, sondern er wird eine Meldung sehen, die besagt:\n\nDieser Zweig hat Konflikte, die gelöst werden müssen.\n\nRechts neben dieser Meldung befindet sich die Schaltfläche Konflikte auflösen.\nWenn du auf die Schaltfläche Konflikte auflösen klickst, wirst du zu einer Seite weitergeleitet, die ähnlich aussieht wie bei Push- oder Pull-Fehlernt. Du siehst die vorgeschlagenen Änderungen aus dem Zweig und Haupt-Repository. An dieser Stelle können dann Änderungen durchgeführt werden und zuletzt mit Als gelöst markieren und anschließend Merge bestätigen erfolgreich für einen Merge bereitgestellt werden. Zuletzt muss der Eigentümer auf Merge Pull Request und dann auf Commit Merge klicken, um die Änderung im Haupt-Repository zu vorzunehmen.\n\n\nSelbst-Check\n\n\n\n\nCaption"
+    "text": "Umgang mit Konflikten\n\nLernziele\nIn dieser Lektion lernst du\n\nWie man mit Konflikten umgeht, die bei der Arbeit mit GitHub auftreten.\nWie man mit Merge-Konflikten in GitHub umgeht.\n\n\n\nVorausetzungen\n\nVertrautheit mit GitHub.\nGit installiert haben.\nEin GitHub Konto haben.\n\n\n\nVersionskonflikte was ist das?\nVersionskonflikte entstehen normalerweise, wenn verschiedene Versionen derselben Datei gleichzeitig in das Hauptrepository gepusht werden und die Priorisierung der Dateien nicht klar ist, also:\n\nwenn man sein persönliches GitHub-Repository aktualisiert (kein Pull vor Push).\nwenn mehrere Personen gleichzeitig an derselben Datei arbeiten\n\n\n\nPush & Pull Konflikte\nEin typisches Szenario ist, dass Du etwas online auf GitHub bearbeitest und diese Änderung nicht gleichzeitig oder später in Rstudio synchronisierst. Der Konflikt könnte z.B. sein, dass Du einen Tippfehler in der README korrigierst und vergisst, die aktuelle Version im Rstudio-Projekt zu aktualisieren.\n\nAlso immer pull vor push, sonst hat GitHub zwei verschiedene Änderungen gespeichert und weiß nicht, welche zu verwenden ist.\n\nEin komplizierterer Fall ist, wenn eine Änderung im Master-Repository gemacht wurde und jemand anderes in seinem Branch-/Fork-Repository ebenfalls eine Änderung an der gleichen Datei bzw. dem gleichen Inhalt gemacht hat. Wenn eine Pull-Anfrage gestellt wird, wird GitHub den Unterschied bemerken. Auch hier kann es sich um etwas so Einfaches handeln, wie zwei Personen, die die README auf unterschiedliche Weise aktualisieren, was GitHub dazu veranlasst, ein Problem zu melden.\nIn diesem Fall muss manuell entschieden werden, welche Variante Vorrang hat.\nWenn Du eine Änderung an Deinem GitHub-Repository vornimmst und es gibt einen Konflikt, zeigt Dir R an, dass Deine Version dem Haupt-Repository voraus ist, wenn Du Deine Änderung überträgst. Wenn Du dies siehst, bedeutet es, dass es einen Unterschied zwischen den Dateien gibt. Wenn Du versuchst zu pullen und es gibt ein Problem, wird GitHub Dir etwas sagen wie\n\nUpdates wurden abgelehnt, weil das entfernte Repository Arbeit enthält, die Du lokal nicht hast. Dies wird normalerweise durch ein anderes Repository verursacht, das auf die gleiche Referenz pusht.\n\nWenn diese Meldung erscheint, empfiehlt GitHub, dass Du einen Pull von Deinem Master-Repository durchführst, um den Fehler zu finden. Häufig erhältst Du die Fehlermeldung\n\nCONFLICT (content): Konflikt beim Zusammenführen in [Datei]. Automatisches Zusammenführen fehlgeschlagen; Konflikte lösen und dann das Ergebnis übertragen.\n\nDie Datei mit dem Problem wird dann in Ihrem RStudio geöffnet und zeigt den gefundenen Fehler an. Es wird angezeigt, welche Änderungen vorgenommen wurden und welche Unterschiede zum Hauptzweig bestehen (die Änderungen werden unter &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD angezeigt, der Inhalt des Hauptzweigs wird darunter angezeigt). Du musst den Fehler zwischen den beiden Versionen beheben, indem Du entweder das beibehältst, was GitHub bereits hat, oder indem Du Deine Änderung so anpasst, dass sie dem entspricht, was Du machen wolltest. Wenn Du mit Deiner Änderung zufrieden bist, rufe das Terminal auf (es befindet sich in R, einem Tab über der Konsole). Im Terminal gibst Du git add [Dateiname] ein, drückst die Eingabetaste und gehst zurück zum Git-Tab oben rechts im RStudio-Fenster. Wähle die Datei aus, in der der Fehler aufgetreten ist und überschreibe sie, um den Fehler zu beheben.\n\n\nMerge Konflikte\nWenn mehrere Personen am selben GitHub-Repository arbeiten oder Du nur einen Zweig verwendest, besteht die Möglichkeit, dass ein Merge-Konflikt auftritt. Zusammenführungskonflikte treten auf, wenn Änderungen am Haupt-Repository und an einem Zweig vorgenommen werden, die nicht übereinstimmen. Sobald eine Pull-Anfrage gestellt wird, muss der Eigentümer des Projektarchivs die Änderungen manuell überprüfen, sie können dann nicht automatisch zusammengeführt werden.\nFolglich teilt GitHub Dir mit, dass es die Versionen nicht automatisch zusammenführen kann, aber es wird Dir trotzdem erlauben, die Pull-Anfrage zu stellen. Wenn Du Dich entscheidest, die Pull-Anfrage zu senden, wird der Repo-Besitzer nicht in der Lage sein, auf den grünen Merge Button zu klicken, sondern er wird eine Meldung sehen, die besagt:\n\nDieser Zweig hat Konflikte, die gelöst werden müssen.\n\nRechts neben dieser Meldung befindet sich die Schaltfläche Konflikte auflösen.\nWenn du auf die Schaltfläche Konflikte auflösen klickst, wirst du zu einer Seite weitergeleitet, die ähnlich aussieht wie bei Push- oder Pull-Fehlernt. Du siehst die vorgeschlagenen Änderungen aus dem Zweig und Haupt-Repository. An dieser Stelle können dann Änderungen durchgeführt werden und zuletzt mit Als gelöst markieren und anschließend Merge bestätigen erfolgreich für einen Merge bereitgestellt werden. Zuletzt muss der Eigentümer auf Merge Pull Request und dann auf Commit Merge klicken, um die Änderung im Haupt-Repository zu vorzunehmen.\n\n\nSelbst-Check\n\n\n\n\n\n\n\n\n\nGut zu wissen\n\nWeitere Informationen über den Umgang mit Konflikten in GitHub findest Du hier:\n\nWie gehe ich mit Merge Konflikten um?"
   },
   {
     "objectID": "modules/de-git-module.html#rstudio---all-inclusive",
     "href": "modules/de-git-module.html#rstudio---all-inclusive",
     "title": "Git, GitHub & Rstudio [DE]",
     "section": "RStudio - All Inclusive",
-    "text": "RStudio - All Inclusive\n\nLernziele\n\nEinsatz von GitHub direkt aus RStudio\n\n\n\nVorausetzungen\n\nÜbung im Umgang mit GitHub und git\n\n\n\nExistierendes GitHub Repo in R einbinden\nBevor du mit einem GitHub-Repository in RStudio arbeitest, stelle sicher, dass du ein GitHub-Repository hast, mit dem du arbeiten kannst.\nNachdem du das Repository erstellt hast, kannst du auf die grüne Schaltfläche klicken, um einen Link zu erhalten, mit dem du das Repository klonen kannst. Um es in R zu öffnen, öffne R und klicke auf den Würfel mit dem Pluszeichen, um ein neues Projekt zu erstellen, klicke auf Versionskontrolle und dann auf Git. Nun fügt man die zuvor kopierte URL ein und erstellt das Projekt. Jetzt hast du ein Projekt in R, das mit GitHub verbunden ist. Nun kannst du neue Dateien erstellen und sie auf GitHub hochladen, damit andere sie sehen können.\n\n\nErklärung der Schaltflächen/Befehle\nOben rechts (je nach Konfiguration von RStudio) befinden sich die Reiter Environment, History... Wähle die Registerkarte Git, um die Git-Befehle zu sehen. In diesem Bereich kannst Du entscheiden, welche Dateien hochgeladen/gelöscht, welche Änderungen übernommen, welche Dateien aus dem Haupt-Repository gezogen, welche Dateien in das Haupt-Repository geschoben werden sollen. Die vorgenommenen Änderungen werden hier überprüft und es können Branches erstellt oder geändert wrden. Sehen wir uns nun an, was die einzelnen Befehle/Schaltflächen bewirken.\n\nDiff Wenn du auf Diff klickst, öffnet sich ein neues Fenster in R. In diesem Fenster werden alle Dateien angezeigt, die sich geändert haben (im Vergleich zum Haupt-Repository) und auch die Änderungen, die du vorgenommen hast. Du kannst dieses Fenster auch verwenden, um die Änderungen zu übertragen und aus dem Haupt-Repository herauszuziehen.\nCommit Die Verwendung von Commit im kleineren Fenster ist ähnlich wie im Diff-Fenster, Du musst nur die Dateien auswählen, die Du ins Repository übertragen möchtest und dann die Änderungen committen.\nPull Pull ist ziemlich selbsterklärend, es zieht Dateien aus dem GitHub Repository. Es ist wichtig, Dateien vor dem Pushen zu ziehen, um mögliche Konflikte mit überlappenden Dateien zu vermeiden.\nPush Push schiebt die Dateien in das GitHub Repository. Diese Funktion wird verwendet, wenn Du die Änderungen an Deinen Dateien abgeschlossen hast und bereit bist, sie hochzuladen, damit andere die neuen Dateien ansehen können. Die Reihenfolge beim Hochladen dieser Dateien wäre: Änderungen übertragen, aus dem Repository ziehen und dann in das Repository pushen.\nHistory Das nächste Symbol ist eine kleine Uhr, die die Historie Deiner Arbeit darstellt. Sie zeigt die bisherigen Übertragungen und was bei jeder Übertragung geändert wurde.\nRevert, Ignore und Shell Diese Befehle findest Du in einem Dropdown-Menü, nachdem Du auf das Zahnrad neben der Uhr geklickt hast. Mit Revert kannst Du alle Änderungen rückgängig machen, mit Ignore kannst Du einen Gitignore einrichten (nützlich, um Dateien zu blockieren, die Du nicht hochladen willst) und mit Shell kannst Du Dein Terminal öffnen und dort Git-Befehle ausführen.\nBranches Das nächste Symbol steht für Zweige. Wenn Du auf dieses Symbol klickst, wirst Du gefragt, ob Du einen neuen Zweig erstellen möchtest. Wie Du im Modul Zweige des Toolkits gelernt hast, sind Zweige nützlich, um Änderungen zu testen, ohne dass sie sich auf den Hauptzweig auswirken, falls ein Fehler auftritt. Du kannst das Dropdown-Menü rechts neben dem Zweigsymbol verwenden, um zwischen den Zweigen zu wechseln.\nTerminal (optional) Du kannst diese GitHub-Befehle mit den RStudio-Befehlen ausführen, aber du kannst auch das Terminal in R verwenden, um das gleiche zu tun. Alle GitHub-Befehle sind in der Form “git _____” und Du kannst sie finden, indem Du “git” in Dein Terminal eingibst. Dies macht dasselbe wie das R-Panel, aber wenn Du mit dem Schreiben von Git-Befehlen in einem Terminal vertrauter bist, funktioniert es vielleicht besser für Dich.\n\n\nEin R-Projekt in ein GitHub-Repositorium verwandeln\nManchmal arbeitet man an einem Projekt in R und hat vergessen, ein GitHub-Repository dafür zu erstellen. In diesem Fall kann Ihnen das Paket usethis helfen, ein Repo aus RStudio heraus zu erstellen. Mit der Funktion usethis::use_git kann das aktuelle Projekt in ein GitHub Repo umgewandelt werden, so dass die Dateien hochgeladen werden können. - Wenn Du diese Funktion zum ersten Mal ausführst, wirst Du wahrscheinlich einen Fehler erhalten, da Du dafür ein Token von GitHub benötigst. Nach dem Aufruf von usethis::browse_github_token öffnet sich ein neues Fenster, in dem man aufgefordert wird, sich in seinen GitHub-Account einzuloggen. Nach dem Einloggen können Berechtigungen mit dem Token gesetzt und kopiert werden. Sobald du den Token kopiert hast, rufe usethis::edit_r_environment() auf und speichere deinen Token als “GITHUB_PAT=token”.\nSobald dein Token gesetzt und dein R zurückgesetzt ist, kannst du use_git benutzen und es wird Dich fragen, ob es okay ist, deine Dateien zu GitHub zu committen. Wenn du diese Frage bejahst, wirst du aufgefordert, dein RStudio-Fenster neu zu starten, um das Git-Fenster zu öffnen und deine Dateien hochzuladen. Nach dem Neustart von RStudio die geänderten Dateien (falls vorhanden) mit dem Diff-Button hochladen. Benutze nun usethis::use_github, um deine Dateien in ein GitHub-Repository zu senden. - use_github wird Dich fragen, ob Du einen ssh Schlüssel hast, was Du wahrscheinlich nicht hast, also wähle https. Dann wird man gefragt, ob Titel und Beschreibung akzeptabel sind. Wenn ja, kannst Du mit Ja antworten und die Datei auf GitHub hochladen!\n\n\n\nRStudio und GitHub\n\n\n\n\n\n\n\nSelbstcheck\n\n\n\n\nCaption"
+    "text": "RStudio - All Inclusive\n\nLernziele\n\nEinsatz von GitHub direkt aus RStudio\n\n\n\nVorausetzungen\n\nÜbung im Umgang mit GitHub und git\n\n\n\nExistierendes GitHub Repo in R einbinden\nBevor du mit einem GitHub-Repository in RStudio arbeitest, stelle sicher, dass du ein GitHub-Repository hast, mit dem du arbeiten kannst.\nNachdem du das Repository erstellt hast, kannst du auf die grüne Schaltfläche klicken, um einen Link zu erhalten, mit dem du das Repository klonen kannst. Um es in R zu öffnen, öffne R und klicke auf den Würfel mit dem Pluszeichen, um ein neues Projekt zu erstellen, klicke auf Versionskontrolle und dann auf Git. Nun fügt man die zuvor kopierte URL ein und erstellt das Projekt. Jetzt hast du ein Projekt in R, das mit GitHub verbunden ist. Nun kannst du neue Dateien erstellen und sie auf GitHub hochladen, damit andere sie sehen können.\n\n\nErklärung der Schaltflächen/Befehle\nOben rechts (je nach Konfiguration von RStudio) befinden sich die Reiter Environment, History... Wähle die Registerkarte Git, um die Git-Befehle zu sehen. In diesem Bereich kannst Du entscheiden, welche Dateien hochgeladen/gelöscht, welche Änderungen übernommen, welche Dateien aus dem Haupt-Repository gezogen, welche Dateien in das Haupt-Repository geschoben werden sollen. Die vorgenommenen Änderungen werden hier überprüft und es können Branches erstellt oder geändert wrden. Sehen wir uns nun an, was die einzelnen Befehle/Schaltflächen bewirken.\n\nDiff Wenn du auf Diff klickst, öffnet sich ein neues Fenster in R. In diesem Fenster werden alle Dateien angezeigt, die sich geändert haben (im Vergleich zum Haupt-Repository) und auch die Änderungen, die du vorgenommen hast. Du kannst dieses Fenster auch verwenden, um die Änderungen zu übertragen und aus dem Haupt-Repository herauszuziehen.\nCommit Die Verwendung von Commit im kleineren Fenster ist ähnlich wie im Diff-Fenster, Du musst nur die Dateien auswählen, die Du ins Repository übertragen möchtest und dann die Änderungen committen.\nPull Pull ist ziemlich selbsterklärend, es zieht Dateien aus dem GitHub Repository. Es ist wichtig, Dateien vor dem Pushen zu ziehen, um mögliche Konflikte mit überlappenden Dateien zu vermeiden.\nPush Push schiebt die Dateien in das GitHub Repository. Diese Funktion wird verwendet, wenn Du die Änderungen an Deinen Dateien abgeschlossen hast und bereit bist, sie hochzuladen, damit andere die neuen Dateien ansehen können. Die Reihenfolge beim Hochladen dieser Dateien wäre: Änderungen übertragen, aus dem Repository ziehen und dann in das Repository pushen.\nHistory Das nächste Symbol ist eine kleine Uhr, die die Historie Deiner Arbeit darstellt. Sie zeigt die bisherigen Übertragungen und was bei jeder Übertragung geändert wurde.\nRevert, Ignore und Shell Diese Befehle findest Du in einem Dropdown-Menü, nachdem Du auf das Zahnrad neben der Uhr geklickt hast. Mit Revert kannst Du alle Änderungen rückgängig machen, mit Ignore kannst Du einen Gitignore einrichten (nützlich, um Dateien zu blockieren, die Du nicht hochladen willst) und mit Shell kannst Du Dein Terminal öffnen und dort Git-Befehle ausführen.\nBranches Das nächste Symbol steht für Zweige. Wenn Du auf dieses Symbol klickst, wirst Du gefragt, ob Du einen neuen Zweig erstellen möchtest. Wie Du im Modul Zweige des Toolkits gelernt hast, sind Zweige nützlich, um Änderungen zu testen, ohne dass sie sich auf den Hauptzweig auswirken, falls ein Fehler auftritt. Du kannst das Dropdown-Menü rechts neben dem Zweigsymbol verwenden, um zwischen den Zweigen zu wechseln.\nTerminal (optional) Du kannst diese GitHub-Befehle mit den RStudio-Befehlen ausführen, aber du kannst auch das Terminal in R verwenden, um das gleiche zu tun. Alle GitHub-Befehle sind in der Form “git _____” und Du kannst sie finden, indem Du “git” in Dein Terminal eingibst. Dies macht dasselbe wie das R-Panel, aber wenn Du mit dem Schreiben von Git-Befehlen in einem Terminal vertrauter bist, funktioniert es vielleicht besser für Dich.\n\n\nEin R-Projekt in ein GitHub-Repositorium verwandeln\nManchmal arbeitet man an einem Projekt in R und hat vergessen, ein GitHub-Repository dafür zu erstellen. In diesem Fall kann Ihnen das Paket usethis helfen, ein Repo aus RStudio heraus zu erstellen. Mit der Funktion usethis::use_git kann das aktuelle Projekt in ein GitHub Repo umgewandelt werden, so dass die Dateien hochgeladen werden können. - Wenn Du diese Funktion zum ersten Mal ausführst, wirst Du wahrscheinlich einen Fehler erhalten, da Du dafür ein Token von GitHub benötigst. Nach dem Aufruf von usethis::browse_github_token öffnet sich ein neues Fenster, in dem man aufgefordert wird, sich in seinen GitHub-Account einzuloggen. Nach dem Einloggen können Berechtigungen mit dem Token gesetzt und kopiert werden. Sobald du den Token kopiert hast, rufe usethis::edit_r_environment() auf und speichere deinen Token als “GITHUB_PAT=token”.\nSobald dein Token gesetzt und dein R zurückgesetzt ist, kannst du use_git benutzen und es wird Dich fragen, ob es okay ist, deine Dateien zu GitHub zu committen. Wenn du diese Frage bejahst, wirst du aufgefordert, dein RStudio-Fenster neu zu starten, um das Git-Fenster zu öffnen und deine Dateien hochzuladen. Nach dem Neustart von RStudio die geänderten Dateien (falls vorhanden) mit dem Diff-Button hochladen. Benutze nun usethis::use_github, um deine Dateien in ein GitHub-Repository zu senden. - use_github wird Dich fragen, ob Du einen ssh Schlüssel hast, was Du wahrscheinlich nicht hast, also wähle https. Dann wird man gefragt, ob Titel und Beschreibung akzeptabel sind. Wenn ja, kannst Du mit Ja antworten und die Datei auf GitHub hochladen!\n\n\n\nRStudio und GitHub\n\n\n\n\n\n\n\nSelbst-Check\n\n\n\n\n\n\n\n\n\nGut zu wissen\n\nWeitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folgendem Link:\n\nDer Blog-Eintrag GitHub & Rstudio zeigt, wie man Git in RStudio benutzt und geht dabei besonders auf die Terminal-Befehle ein."
   },
   {
     "objectID": "modules/de-git-module.html#danksagung",
@@ -63,6 +49,13 @@
     "text": "Danksagung\nDas Tutorial basiert auf dem DoSStoolkit. Sowohl die Inhalte als auch die Self Assessments basieren dem Modul Git outta here von Mariam Walaa & Matthew Wankiewicz. Die Übersetzungen und Veränderungen vom Author dieser Seite.\nDas Originalmodul kann mit dem folgenden R-Befehl aufgerufen werden.\n\nlearnr::run_tutorial(\"git_outta_here\", package = \"DoSStoolkit\")"
   },
   {
+    "objectID": "modules/en-git-module.html#module-overview",
+    "href": "modules/en-git-module.html#module-overview",
+    "title": "Git, GitHub & Rstudio [EN]",
+    "section": "Module Overview",
+    "text": "Module Overview\nThis module is about the version control system Git, the cloud services GitHub/GitLab and using them with RStudio as an IDE.\n\nContent"
+  },
+  {
     "objectID": "modules/slidelist.html",
     "href": "modules/slidelist.html",
     "title": "Self-study modules",
@@ -70,25 +63,11 @@
     "text": "Git, GitHub & Rstudio [DE]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit, GitHub & Rstudio [EN]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "base/faq.html",
-    "href": "base/faq.html",
-    "title": "Frequently asked Questions",
+    "objectID": "assessment/slidelist.html",
+    "href": "assessment/slidelist.html",
+    "title": "Assessments",
     "section": "",
-    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
-  },
-  {
-    "objectID": "base/faq.html#make-sense-topic",
-    "href": "base/faq.html#make-sense-topic",
-    "title": "Frequently asked Questions",
-    "section": "",
-    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
-  },
-  {
-    "objectID": "base/about.html",
-    "href": "base/about.html",
-    "title": "About this site",
-    "section": "",
-    "text": "About this site\nThis page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.\nAlthough the web space is topic-centered any keyword can be searched using the full text search.\nThe creation of new pages, the editing of existing pages can be triggered directly via the right column online.\nOffline there are several visual editors and full integration with Rstudio etc."
+    "text": "Basic Exercise\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/slide1.html#header-12",
@@ -189,81 +168,25 @@
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nSlides and extensions\n\n\ngisma team\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "mclim/sensors.html",
-    "href": "mclim/sensors.html",
-    "title": "Microclimate stations",
+    "objectID": "base/about.html",
+    "href": "base/about.html",
+    "title": "About this site",
     "section": "",
-    "text": "Currently several WiFi Hubs with varying sensors and one base station each are connected via LoRa radio. The base station is equipped with wind vector, precipitation irradiance and temperature/humidity sensors. The WiFi Hub in turn uses any accessible WLAN to pass on the data via mobile network to a data server."
+    "text": "About this site\nThis page summarizes the essential workflows , basic literature and web resources from the distributed course systems , documents and field protocols into a knowledge base.\nAlthough the web space is topic-centered any keyword can be searched using the full text search.\nThe creation of new pages, the editing of existing pages can be triggered directly via the right column online.\nOffline there are several visual editors and full integration with Rstudio etc."
   },
   {
-    "objectID": "mclim/sensors.html#hardware",
-    "href": "mclim/sensors.html#hardware",
-    "title": "Microclimate stations",
-    "section": "Hardware",
-    "text": "Hardware"
-  },
-  {
-    "objectID": "mclim/sensors.html#setup",
-    "href": "mclim/sensors.html#setup",
-    "title": "Microclimate stations",
-    "section": "Setup",
-    "text": "Setup"
-  },
-  {
-    "objectID": "mclim/sensors.html#faq",
-    "href": "mclim/sensors.html#faq",
-    "title": "Microclimate stations",
-    "section": "FAQ",
-    "text": "FAQ"
-  },
-  {
-    "objectID": "mclim/mc-index.html",
-    "href": "mclim/mc-index.html",
-    "title": "Fine Offset: Weather and environmental sensors",
+    "objectID": "base/faq.html",
+    "href": "base/faq.html",
+    "title": "Frequently asked Questions",
     "section": "",
-    "text": "froggit shop [DE]\n  \n  \n    \n     ecowitt shop [US]\n  \n  \n    \n     Fine Offset\n  \n\n      \nThe sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from the german re-seller froggit and the US re-seller ecowitt. More precise the DP-/GW SmartHubs WiFi Gateway with temperature, humidity & Pressure which is developed by fine offset. The unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors."
+    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
   },
   {
-    "objectID": "mclim/mc-index.html#calibration-concept",
-    "href": "mclim/mc-index.html#calibration-concept",
-    "title": "Fine Offset: Weather and environmental sensors",
-    "section": "Calibration Concept",
-    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is suggested.\n\nThe measurements of all sensors (preferably in a climate chamber) will be statistically analysed to identify sensor which produce systematic and significant outliers.\nThe sensors are calibrated against an operational running high price reference station in the field.\n\n\n\n\n\n\n\nFuture Calibration Plans\n\n\n\n\n\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to the gisma knowledgebase web space",
+    "objectID": "base/faq.html#make-sense-topic",
+    "href": "base/faq.html#make-sense-topic",
+    "title": "Frequently asked Questions",
     "section": "",
-    "text": "Welcome to the gisma knowledgebase web space\nThis site concisely summarizes workflow knowledge and resources on a wide variety of GI, sensor-based data collection and modeling topics. It is explicitly designed as a practice-focused knowledge workshop"
-  },
-  {
-    "objectID": "uav/planning.html#software",
-    "href": "uav/planning.html#software",
-    "title": "Planning UAV survey flights",
-    "section": "Software",
-    "text": "Software"
-  },
-  {
-    "objectID": "uav/planning.html#hardware",
-    "href": "uav/planning.html#hardware",
-    "title": "Planning UAV survey flights",
-    "section": "Hardware",
-    "text": "Hardware"
-  },
-  {
-    "objectID": "uav/products.html#software",
-    "href": "uav/products.html#software",
-    "title": "Orthomimages and Point Clouds from UAV",
-    "section": "Software",
-    "text": "Software"
-  },
-  {
-    "objectID": "uav/products.html#hardware",
-    "href": "uav/products.html#hardware",
-    "title": "Orthomimages and Point Clouds from UAV",
-    "section": "Hardware",
-    "text": "Hardware"
+    "text": "This is a senseless question to meet a meaningfull answer\n\n\n\n\n\n\n\n\n\nThis is a meaningful answer to a senseless question\n\n\n\n\n\n\n\n\n\nLearn More…\n\n\n\n\n\nThis is a even more meaningful answer to a senseless question"
   },
   {
     "objectID": "uav/listing1.html",
@@ -294,6 +217,20 @@
     "text": "Hardware"
   },
   {
+    "objectID": "uav/planning.html#software",
+    "href": "uav/planning.html#software",
+    "title": "Planning UAV survey flights",
+    "section": "Software",
+    "text": "Software"
+  },
+  {
+    "objectID": "uav/planning.html#hardware",
+    "href": "uav/planning.html#hardware",
+    "title": "Planning UAV survey flights",
+    "section": "Hardware",
+    "text": "Hardware"
+  },
+  {
     "objectID": "uav/uav-index.html#software",
     "href": "uav/uav-index.html#software",
     "title": "Budget UAVs",
@@ -306,5 +243,68 @@
     "title": "Budget UAVs",
     "section": "Hardware",
     "text": "Hardware"
+  },
+  {
+    "objectID": "uav/products.html#software",
+    "href": "uav/products.html#software",
+    "title": "Orthomimages and Point Clouds from UAV",
+    "section": "Software",
+    "text": "Software"
+  },
+  {
+    "objectID": "uav/products.html#hardware",
+    "href": "uav/products.html#hardware",
+    "title": "Orthomimages and Point Clouds from UAV",
+    "section": "Hardware",
+    "text": "Hardware"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the gisma knowledgebase web space",
+    "section": "",
+    "text": "Welcome to the gisma knowledgebase web space\nThis site concisely summarizes workflow knowledge and resources on a wide variety of GI, sensor-based data collection and modeling topics. It is explicitly designed as a practice-focused knowledge workshop"
+  },
+  {
+    "objectID": "mclim/mc-index.html",
+    "href": "mclim/mc-index.html",
+    "title": "Fine Offset: Weather and environmental sensors",
+    "section": "",
+    "text": "froggit shop [DE]\n  \n  \n    \n     ecowitt shop [US]\n  \n  \n    \n     Fine Offset\n  \n\n      \nThe sensors from Fine Offset are re-branded and partly modified by the resellers. This article deals with sensors from the german re-seller froggit and the US re-seller ecowitt. More precise the DP-/GW SmartHubs WiFi Gateway with temperature, humidity & Pressure which is developed by fine offset. The unique selling point of the LoRa-Wifi gateway is the extraordinarily extensive possibility of connecting radio-bound sensors."
+  },
+  {
+    "objectID": "mclim/mc-index.html#calibration-concept",
+    "href": "mclim/mc-index.html#calibration-concept",
+    "title": "Fine Offset: Weather and environmental sensors",
+    "section": "Calibration Concept",
+    "text": "Calibration Concept\nThe low budget sensors are usually lacking of a stable measurement quality. To obtain reliable micro climate data a two step calibration process is suggested.\n\nThe measurements of all sensors (preferably in a climate chamber) will be statistically analysed to identify sensor which produce systematic and significant outliers.\nThe sensors are calibrated against an operational running high price reference station in the field.\n\n\n\n\n\n\n\nFuture Calibration Plans\n\n\n\n\n\nFor the future a machine learning approach including the radiation, azimuth, temperature and humidity as predictors for the calibrated temperature as the response variable will be used as an rolling calibration tool."
+  },
+  {
+    "objectID": "mclim/sensors.html",
+    "href": "mclim/sensors.html",
+    "title": "Microclimate stations",
+    "section": "",
+    "text": "Currently several WiFi Hubs with varying sensors and one base station each are connected via LoRa radio. The base station is equipped with wind vector, precipitation irradiance and temperature/humidity sensors. The WiFi Hub in turn uses any accessible WLAN to pass on the data via mobile network to a data server."
+  },
+  {
+    "objectID": "mclim/sensors.html#hardware",
+    "href": "mclim/sensors.html#hardware",
+    "title": "Microclimate stations",
+    "section": "Hardware",
+    "text": "Hardware"
+  },
+  {
+    "objectID": "mclim/sensors.html#setup",
+    "href": "mclim/sensors.html#setup",
+    "title": "Microclimate stations",
+    "section": "Setup",
+    "text": "Setup"
+  },
+  {
+    "objectID": "mclim/sensors.html#faq",
+    "href": "mclim/sensors.html#faq",
+    "title": "Microclimate stations",
+    "section": "FAQ",
+    "text": "FAQ"
   }
 ]
