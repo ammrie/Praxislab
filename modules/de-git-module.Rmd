@@ -111,7 +111,9 @@ Beide Szenarien werden von Jenny Bryan exzellent erläutert:
    
 ### Selbst-Check
 
-<iframe width="100%" height="3600px" src="https://shorturl.at/egpPS"   scrolling="no" frameborder="0"> </iframe>
+::: {.infobox }
+[![Caption](../images/git-0-self.png)](https://shorturl.at/egpPS)
+:::
 
 ## Fork und Branches auf GitHub
 
@@ -179,7 +181,9 @@ Nun klicke auf `Merge pull request`, dann auf `Confirm merge` und dein Zweig wir
 
 ### Selbst-Check
 
-<iframe width="100%" height="2250px" src="https//137.248.191.201:3838/de/git-2/"   scrolling="no" frameborder="0"> </iframe>
+::: {.infobox }
+[![Caption](../images/git-1-self.png)](http://137.248.191.201:3838/de/git-2/)
+:::
 
 
 ## Umgang mit Konflikten
@@ -249,7 +253,10 @@ Wenn du auf die Schaltfläche `Konflikte auflösen` klickst, wirst du zu einer S
 
 ### Selbst-Check
 
-<iframe width="100%" height="2100px" src="http://137.248.191.201:3838/de/git-3/"   scrolling="no" frameborder="0"> </iframe>
+
+::: {.infobox }
+[![Caption](../images/git-1-self.png)](http://137.248.191.201:3838/de/git-3/)
+:::
 
 ## RStudio - All Inclusive
 
@@ -303,8 +310,10 @@ Sobald dein Token gesetzt und dein R zurückgesetzt ist, kannst du `use_git` ben
 
 ### Selbstcheck
 
-<iframe width="100%" height="2100px" src="http://137.248.191.201:3838/de/git-4/"   scrolling="no" frameborder="0"> </iframe>
 
+::: {.infobox }
+[![Caption](../images/git-3-self.png)](http://137.248.191.201:3838/de/git-4/)
+:::
 ## Danksagung
 
 Das Tutorial basiert auf dem [DoSStoolkit](https://dosstoolkit.com/). Sowohl die Inhalte als auch die Self Assessments basieren dem Modul [Git outta here](https://dosstoolkit.com/#git-outta-here) von [Mariam Walaa & Matthew Wankiewicz](https://dosstoolkit.com/#contributors). Die Übersetzungen und Veränderungen vom Author dieser Seite. 
