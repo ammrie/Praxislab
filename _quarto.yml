@@ -6,7 +6,7 @@ website:
   open-graph: true
   page-navigation: true  
   title: "gisma knowledge base"
-  site-url: https://gisma-courses.github.io/gisma-knowledge-base
+  site-url: https://gisma-courses.github.io/gisma-knowledge-base/docs
   repo-url: https://github.com/gisma-courses/gisma-knowledge-base
   repo-actions: [edit, issue]
   search: 
