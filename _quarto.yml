@@ -7,7 +7,7 @@ website:
   open-graph: true
   twitter-card:
     creator: "@creuden"
-  page-footer: "gisma (2021) [Impressum](base/impressum.Rmd)" 
+  page-footer: "gisma (2022) [Impressum](base/impressum.Rmd)" 
   
   page-navigation: true  
   title: "gisma knowledge base"
