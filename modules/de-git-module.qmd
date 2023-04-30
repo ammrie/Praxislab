@@ -59,24 +59,20 @@ Im Gegensatz zum kontinuierlichen Backup von z.B. Google Docs (das keine Wiederh
 
 Bei der Verwendung von Git muss zunächst ein Repository _in_ einem Verzeichnis auf dem lokalen Rechner aktiviert werden. Dies geschieht mit dem Befehl `git init`. Nun weiß Git wo, aber nicht was es verfolgen soll.
 
-```{r version-control-image-1, echo = FALSE, fig.height = 4, fig.width = 6}
-knitr::include_graphics("../images/64_git-init.PNG")
-```
+![](../images/64_git-init.PNG){width=50% height=50%}
+
 
 Während der Arbeit muss Git "informiert" werden, was mit diesen Dateien geschehen soll. Dies geschieht mit den beiden Befehlen `git add` und `git commit`.
 
 Ein wichtiger zusätzlicher Befehl, `git push`, wird verwendet, um den aktuellen Verzeichnis-Snapshot in ein entferntes Repository (z.B. Github, GitLab) zu übertragen.
 
-```{r version-control-image-2, echo = FALSE, fig.height = 4, fig.width = 6}
-knitr::include_graphics("../images/64_add-commit-push.PNG")
-```
+![](../images/64_add-commit-push.PNG){width=50% height=50%}
 
 Der letzte Befehl ist `git status`. Du solltest diesen Befehl benutzen, wenn du an deinem Projekt arbeitest, damit du weißt, was du noch nicht getrackt hast. Die Ausgabe dieses Befehls besteht aus mehreren Teilen
 Du solltest in der Lage sein, die Ausgabe dieses Befehls zu interpretieren:
 
-```{r version-control-image-3, echo = FALSE, fig.height = 4, fig.width = 6}
-knitr::include_graphics("../images/64_git-status.PNG")
-```
+![](../images/64_git-status.PNG){width=50% height=50%}
+
 
 Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Ressourcen:
 
