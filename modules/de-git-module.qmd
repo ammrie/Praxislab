@@ -368,11 +368,6 @@ Manchmal arbeitet man an einem Projekt in R und hat vergessen, ein GitHub-Reposi
 Sobald dein Token gesetzt und dein R zurückgesetzt ist, kannst du `use_git` benutzen und es wird Dich fragen, ob es okay ist, deine Dateien zu GitHub zu committen. Wenn du diese Frage bejahst, wirst du aufgefordert, dein RStudio-Fenster neu zu starten, um das Git-Fenster zu öffnen und deine Dateien hochzuladen. Nach dem Neustart von RStudio die geänderten Dateien (falls vorhanden) mit dem Diff-Button hochladen. Benutze nun `usethis::use_github`, um deine Dateien in ein GitHub-Repository zu senden. 
   - `use_github` wird Dich fragen, ob Du einen ssh Schlüssel hast, was Du wahrscheinlich nicht hast, also wähle `https`. Dann wird man gefragt, ob Titel und Beschreibung akzeptabel sind. Wenn ja, kannst Du mit Ja antworten und die Datei auf GitHub hochladen!
 
-### RStudio und GitHub
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kL6L2MNqPHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>>
-
 ### Gut zu wissen
 
 ::: {.successbox .ginfo}
@@ -380,6 +375,8 @@ Sobald dein Token gesetzt und dein R zurückgesetzt ist, kannst du `use_git` ben
 Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folgendem Link:
 
   - Der Blog-Eintrag [GitHub & Rstudio](https://resources.github.com/whitepapers/github-and-rstudio/) zeigt, wie man Git in RStudio benutzt und geht dabei besonders auf die Terminal-Befehle ein.
+  
+  
 
 :::
 
@@ -388,6 +385,9 @@ Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folg
 
 ::: {.infobox .test}
 [![](../images/git-3-self.png)](http://137.248.191.201:3838/de/git/#section-github---workflow-in-rstudio)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kL6L2MNqPHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>>
+
 :::
 
 
