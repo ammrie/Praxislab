@@ -28,7 +28,7 @@ The responsibility for the content rests with the instructors. Statements, opini
 
 <h2 id="m3">Responsible</h2>
 
-<p>Dr Christoph Reudenbach<br />Deutschhaustr 12<br />35037 Marburg</p>
+<p>Dr Christoph Reudenbach<br />Deutschhaustr 10<br />35037 Marburg</p>
 <p>Email address: reudenbach@uni-marburg.de.</p>
 <p>Imprint: <a href="https://www.uni-marburg.de/de/impressum" target="_blank">https://www.uni-marburg.de/de/impressum</a>.</p>
 
