@@ -30,7 +30,7 @@
 .successbox {
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
-  border: 2px solid darkgreen;
+  border: 2px solid #12C012;
   color: black;
   border-radius: 3px;
   background: #FFFFFF 5px center/3em no-repeat;
@@ -53,25 +53,27 @@
 
 }
 .info {
-  background-image: url("../../images/info.png");
+  background-image: url("../images/info.png");
 }
-
+.ginfo {
+  background-image: url("../images/ginfo.png");
+}
 .caution {
-  background-image: url("../../images/danger.png");
+  background-image: url("../images/danger.png");
 }
 
 .fire {
-  background-image: url("../../images/fire.png");
+  background-image: url("../images/fire.png");
 }
 
 .test {
-  background-image: url("../../images/test.png");
+  background-image: url("../images/test.png");
 }
 
 .ok {
-  background-image: url("../../images/ok.png");
+  background-image: url("../images/ok.png");
 }
 
 .wt {
-  background-image: url("../../images/whereto.png");
+  background-image: url("../images/whereto.png");
 }

@@ -111,9 +111,40 @@ Beide Szenarien werden von Jenny Bryan exzellent erläutert:
    
 ### Selbst-Check
 
-::: {.infobox }
-[![Caption](../images/git-0-self.png)](https://shorturl.at/egpPS)
+::: {.infobox .test}
+[![](../images/git-0-self.png)](http://137.248.191.201:3838/de/git/#section-git-in-a-nutshell)
 :::
+
+### Gut zu wissen
+
+::::{.successbox .ginfo}
+
+- Du versuchst, `git commit` auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht. Deshalb müssen Sie zuerst `git add` ausführen.
+
+- Du versuchst `git push` auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.
+
+- Du versuchst `git push` auszuführen, um deine Aktualisierungen in das entfernte Repository zu übertragen, obwohl es bereits neue Aktualisierungen im entfernten Repository gibt (z.B. von einem anderen Teammitglied), die du noch nicht in das lokale Projekt übertragen hast. Die Fehlermeldung, die du bekommst, wird in etwa so aussehen:
+
+
+::: {.warning }
+
+ Fehler:    Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: ...
+  Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.
+
+:::
+
+  Du weist also dein lokales `git` an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt.  Der beste Weg, dieses Problem zu vermeiden, ist immer einen `git pull` durchzuführen, bevor man mit dem lokalen Editieren beginnt.
+
+
+Für ein besseres Verständnis lies die folgenden Texte: 
+
+- [Pull tricky](https://happygitwithr.com/pull-tricky.html).
+- [Git Grundlagen](https://git-scm.com/book/en/v2)
+- [Git und R](https://happygitwithr.com/)
+- [Rstudio - git - GitHub](https://happygitwithr.com/rstudio-git-github.html) 
+
+::::
+
 
 ## Fork und Branches auf GitHub
 
@@ -181,10 +212,23 @@ Nun klicke auf `Merge pull request`, dann auf `Confirm merge` und dein Zweig wir
 
 ### Selbst-Check
 
-::: {.infobox }
-[![Caption](../images/git-1-self.png)](http://137.248.191.201:3838/de/git-2/)
+::: {.infobox .test}
+[![](../images/git-1-self.png)](http://137.248.191.201:3838/de/git/#section-github---fork-und-branch)
 :::
 
+
+### Gut zu wissen
+
+::: {.successbox .ginfo}
+
+- Lerne wie man Branches mit dem Terminal erstellt:
+[Arbeiten mit Branches](https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/)
+- Lerne die Verwendung von Pull Requests und Issues: 
+[Issues und Pull Requests](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-branches)
+- Lerne, wie man ein GitHub-Repository forkt: 
+[Forken eines Repositories](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
+
+:::
 
 ## Umgang mit Konflikten
 
@@ -212,7 +256,7 @@ Versionskonflikte entstehen normalerweise, wenn verschiedene Versionen derselben
 
 Ein typisches Szenario ist, dass Du etwas online auf GitHub bearbeitest und diese Änderung nicht gleichzeitig oder später in Rstudio synchronisierst.  Der Konflikt könnte z.B. sein, dass Du einen Tippfehler in der README korrigierst und vergisst, die aktuelle Version im Rstudio-Projekt zu aktualisieren.
 
-::: {.successbox }
+::: {.successbox .ok}
 Also **immer** `pull` vor `push`, sonst hat GitHub zwei verschiedene Änderungen gespeichert und weiß nicht, welche zu verwenden ist.
 :::
 
@@ -254,8 +298,20 @@ Wenn du auf die Schaltfläche `Konflikte auflösen` klickst, wirst du zu einer S
 ### Selbst-Check
 
 
-::: {.infobox }
-[![Caption](../images/git-1-self.png)](http://137.248.191.201:3838/de/git-3/)
+::: {.infobox .test }
+[![](../images/git-1-self.png)](http://137.248.191.201:3838/de/git/#section-github---konflikte-l%C3%B6sen)
+:::
+
+
+
+### Gut zu wissen
+
+::: {.successbox .ginfo}
+
+Weitere Informationen über den Umgang mit Konflikten in GitHub findest Du hier:
+
+- [Wie gehe ich mit Merge Konflikten um?](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts)
+
 :::
 
 ## RStudio - All Inclusive
@@ -308,12 +364,25 @@ Sobald dein Token gesetzt und dein R zurückgesetzt ist, kannst du `use_git` ben
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kL6L2MNqPHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>>
 
-### Selbstcheck
+### Selbst-Check
 
-
-::: {.infobox }
-[![Caption](../images/git-3-self.png)](http://137.248.191.201:3838/de/git-4/)
+::: {.infobox .test}
+[![](../images/git-3-self.png)](http://137.248.191.201:3838/de/git/#section-github---workflow-in-rstudio)
 :::
+
+
+
+
+### Gut zu wissen
+
+::: {.successbox .ginfo}
+
+Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folgendem Link:
+
+  - Der Blog-Eintrag [GitHub & Rstudio](https://resources.github.com/whitepapers/github-and-rstudio/) zeigt, wie man Git in RStudio benutzt und geht dabei besonders auf die Terminal-Befehle ein.
+
+:::
+
 ## Danksagung
 
 Das Tutorial basiert auf dem [DoSStoolkit](https://dosstoolkit.com/). Sowohl die Inhalte als auch die Self Assessments basieren dem Modul [Git outta here](https://dosstoolkit.com/#git-outta-here) von [Mariam Walaa & Matthew Wankiewicz](https://dosstoolkit.com/#contributors). Die Übersetzungen und Veränderungen vom Author dieser Seite. 
