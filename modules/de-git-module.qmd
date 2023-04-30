@@ -375,7 +375,9 @@ Sobald dein Token gesetzt und dein R zurückgesetzt ist, kannst du `use_git` ben
 Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folgendem Link:
 
   - Der Blog-Eintrag [GitHub & Rstudio](https://resources.github.com/whitepapers/github-and-rstudio/) zeigt, wie man Git in RStudio benutzt und geht dabei besonders auf die Terminal-Befehle ein.
-  
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kL6L2MNqPHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>>  
   
 
 :::
@@ -386,7 +388,6 @@ Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folg
 ::: {.infobox .test}
 [![](../images/git-3-self.png)](http://137.248.191.201:3838/de/git/#section-github---workflow-in-rstudio)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kL6L2MNqPHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>>
 
 :::
 
