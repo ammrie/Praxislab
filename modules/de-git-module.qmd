@@ -112,12 +112,6 @@ Beide Szenarien werden von Jenny Bryan exzellent erläutert:
 
 - Szenario 1: Happy Git With R: Kapitel 15 [Neues Projekt GitHub](https://happygitwithr.com/new-github-first.html#new-github-first)
 - Szenario 2: Happy Git With R: Kapitel 17 [Bestehendes Projekt, GitHub](https://happygitwithr.com/existing-github-last.html#existing-github-last)
-   
-### Selbst-Check
-
-::: {.infobox .test}
-[![](../images/git-0-self.png)](http://137.248.191.201:3838/de/git/#section-git-in-a-nutshell)
-:::
 
 ### Gut zu wissen
 
@@ -136,6 +130,13 @@ Beide Szenarien werden von Jenny Bryan exzellent erläutert:
   Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.
 
 :::
+   
+### Selbst-Check
+
+::: {.infobox .test}
+[![](../images/git-0-self.png)](http://137.248.191.201:3838/de/git/#section-git-in-a-nutshell)
+:::
+
 
   Du weist also dein lokales `git` an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt.  Der beste Weg, dieses Problem zu vermeiden, ist immer einen `git pull` durchzuführen, bevor man mit dem lokalen Editieren beginnt.
 
@@ -213,14 +214,6 @@ Wenn Du Deinen Fork aktualisieren möchtest, klicke auf die Schaltfläche "Ände
 
 Nun klicke auf `Merge pull request`, dann auf `Confirm merge` und dein Zweig wird aktualisiert!
 
-
-### Selbst-Check
-
-::: {.infobox .test}
-[![](../images/git-1-self.png)](http://137.248.191.201:3838/de/git/#section-github---fork-und-branch)
-:::
-
-
 ### Gut zu wissen
 
 ::: {.successbox .ginfo}
@@ -233,6 +226,15 @@ Nun klicke auf `Merge pull request`, dann auf `Confirm merge` und dein Zweig wir
 [Forken eines Repositories](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
 
 :::
+
+### Selbst-Check
+
+::: {.infobox .test}
+[![](../images/git-1-self.png)](http://137.248.191.201:3838/de/git/#section-github---fork-und-branch)
+:::
+
+
+
 
 ## Umgang mit Konflikten
 
@@ -299,15 +301,6 @@ Rechts neben dieser Meldung befindet sich die Schaltfläche `Konflikte auflösen
 
 Wenn du auf die Schaltfläche `Konflikte auflösen` klickst, wirst du zu einer Seite weitergeleitet, die ähnlich aussieht wie bei Push- oder Pull-Fehlernt. Du siehst die vorgeschlagenen Änderungen aus dem Zweig und Haupt-Repository. An dieser Stelle können dann Änderungen durchgeführt werden und zuletzt mit `Als gelöst markieren` und anschließend `Merge bestätigen` erfolgreich für einen Merge bereitgestellt werden. Zuletzt muss der Eigentümer auf `Merge Pull Request` und dann auf `Commit Merge` klicken, um die Änderung im Haupt-Repository zu vorzunehmen.
 
-### Selbst-Check
-
-
-::: {.infobox .test }
-[![](../images/git-1-self.png)](http://137.248.191.201:3838/de/git/#section-github---konflikte-l%C3%B6sen)
-:::
-
-
-
 ### Gut zu wissen
 
 ::: {.successbox .ginfo}
@@ -317,6 +310,17 @@ Weitere Informationen über den Umgang mit Konflikten in GitHub findest Du hier:
 - [Wie gehe ich mit Merge Konflikten um?](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts)
 
 :::
+
+### Selbst-Check
+
+
+::: {.infobox .test }
+[![](../images/git-1-self.png)](http://137.248.191.201:3838/de/git/#section-github---konflikte-l%C3%B6sen)
+:::
+
+
+
+
 
 ## RStudio - All Inclusive
 
@@ -368,15 +372,6 @@ Sobald dein Token gesetzt und dein R zurückgesetzt ist, kannst du `use_git` ben
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kL6L2MNqPHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>>
 
-### Selbst-Check
-
-::: {.infobox .test}
-[![](../images/git-3-self.png)](http://137.248.191.201:3838/de/git/#section-github---workflow-in-rstudio)
-:::
-
-
-
-
 ### Gut zu wissen
 
 ::: {.successbox .ginfo}
@@ -386,6 +381,17 @@ Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folg
   - Der Blog-Eintrag [GitHub & Rstudio](https://resources.github.com/whitepapers/github-and-rstudio/) zeigt, wie man Git in RStudio benutzt und geht dabei besonders auf die Terminal-Befehle ein.
 
 :::
+
+
+### Selbst-Check
+
+::: {.infobox .test}
+[![](../images/git-3-self.png)](http://137.248.191.201:3838/de/git/#section-github---workflow-in-rstudio)
+:::
+
+
+
+
 
 ## Danksagung
 
