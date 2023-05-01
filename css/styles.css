@@ -16,7 +16,13 @@
   margin-bottom: 0.3rem;
 }
 
-
+.box {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  color: black;
+  border-radius: 3px;
+  background: #FFFFFF 5px center/3em no-repeat;
+}
 
 .infobox {
   padding: 1em 1em 1em 4em;
@@ -30,7 +36,7 @@
 .successbox {
   padding: 1em 1em 1em 4em;
   margin-bottom: 10px;
-  border: 2px solid #12C012;
+  border: 2px dashed #DBF9D3;
   color: black;
   border-radius: 3px;
   background: #FFFFFF 5px center/3em no-repeat;

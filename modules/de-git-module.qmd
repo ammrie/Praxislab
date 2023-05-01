@@ -80,8 +80,7 @@ Dies geschieht mit dem Befehl `git init`.
 Nun weiß Git wo, aber nicht was es verfolgen soll.
 
 ```{mermaid}
-%%| fig-cap: Fig 1. Initialisierung eines Repositories
-
+%%| fig-cap: Initialisierung eines Repositories
 
 graph LR
     A[Erzeuge einen <br> neuen Ordner ] -- mkdir MeinOrdner --> B[Lokaler Ordner <br> 'MeinOrdner']
@@ -104,7 +103,7 @@ graph LR
 Die Veränderungen an Dateien des Projekts werden jdoch **nur** übwerwach falls `git` ausdrücklich darüber  *"informiert"* wird, was mit diesen Dateien geschehen soll. Dies geschieht mit den beiden Befehlen `git add` und `git commit`. Der Befehl, `git push` wird dann verwendet wenn die bestätigten Verzeichnis-Snapshot in ein entferntes Repository (z.B. Github, GitLab) übertragenm werden sollen.
 
 ```{mermaid}
-
+%%| fig-cap: Ablauf Stage-Commit-Push  eine Datei
 
 graph LR
     Z(Eine neue Datei wird erstellt)
@@ -117,8 +116,6 @@ graph LR
     BB -.-> CC>git sichert lokal <br> aktuellen Zustand der Datei]
     CC -.-> DD>git sichert  remote <br> aktuellen Zustand der Datei]
     
-    
-
 
     classDef green fill:#9f6,stroke:#333,stroke-width:2px
     classDef blue fill:#6BC9F5,stroke:#333,stroke-width:4px
@@ -132,15 +129,13 @@ graph LR
 
 
 
-Der letzte Befehl ist `git status`.
-Du solltest diesen Befehl benutzen, wenn du an deinem Projekt arbeitest, damit du weißt, was du noch nicht getrackt hast.
-Die Ausgabe dieses Befehls besteht aus mehreren Teilen Du solltest in der Lage sein, die Ausgabe dieses Befehls zu interpretieren:
+Mit dem Befehl ist `git status` erhälst du einen Überblick über den Status aller Dateien innerhalb eines initialisierten Repository Ordners. Du solltest in der Lage sein, die Ausgabe dieses Befehls zu interpretieren:
 
-![](../images/64_git-status.PNG){width="65%" height="65%"}
+![git status - konzeptionelle Inhalte](../images/64_git-status.PNG){width="65%" height="65%"}
 
 ### Gut zu wissen
 
-::: {.successbox .ginfo}
+::: {.box .ok}
 Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Ressourcen:
 
 -   [Pro Git: Kapitel **Git Grundlagen**](https://git-scm.com/book/en/v2)
@@ -176,7 +171,7 @@ Beide Szenarien werden von Jenny Bryan exzellent erläutert:
 
 ### Gut zu wissen
 
-::: {.successbox .ginfo}
+::: {.box .ok}
 -   Du versuchst, `git commit` auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht.
     Deshalb müssen Sie zuerst `git add` ausführen.
 
@@ -192,7 +187,7 @@ Fehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammen
 
 ### Selbst-Check
 
-::: {.infobox .test}
+::: {.infobox  }
 [![](../images/git-0-self.png)](http://137.248.191.201:3838/de/git/#section-git-in-a-nutshell)
 :::
 
@@ -238,14 +233,14 @@ Sobald Du und Deine Gruppe Änderungen am Code vorgenommen habt, könnt Ihr die 
 Um einen Branch von einem GitHub Repository zu erstellen, gehe zu dem Hauptrepository, an dem du arbeiten möchtest und klicke auf das Dropdown-Menü, das "main" heißen sollte.
 Es sollte wie das folgende Bild aussehen.
 
-![](https://docs.github.com/assets/cb-78797/mw-1440/images/help/branches/branch-selection-dropdown.webp){width="50%" height="50%"}
+![Branch Menu in GitHub](https://docs.github.com/assets/cb-78797/mw-1440/images/help/branches/branch-selection-dropdown.webp){width="75%" height="75%"}
 
 Sobald man auf dieses Menü klickt, erscheint auf GitHub ein Textfeld mit der Aufschrift "Find or create a branch...", man gibt einen neuen Namen für den Zweig ein, z.B.
 'newbranch1'.
 Da dieser Zweig noch nicht existiert, fragt dich GitHub, ob du einen Zweig mit dem Namen "newbranch1" erstellen möchtest.
 Klicke auf "Create branch: newbranch1" und der neue Zweig wird für Dich erstellt, wie in der folgenden Abbildung zu sehen ist.
 
-![](https://docs.github.com/assets/cb-54840/mw-1440/images/help/branches/create-branch-text.webp){width="50%" height="50%"}
+![Erzeugung eines neuen Branches](https://docs.github.com/assets/cb-54840/mw-1440/images/help/branches/create-branch-text.webp){width="40%" height="40%"}
 
 #### Wie stellt man einen Pull Request?
 
@@ -255,7 +250,7 @@ Um eine Pull-Anfrage von Deinem Zweig aus zu stellen, musst Du zuerst eine Ände
 Sobald Du eine Änderung an Deinem Zweig vorgenommen hast, erscheint ein gelber Balken auf Deinem Bildschirm, der Dich fragt, ob Du eine Pull-Anfrage stellen möchtest.
 Wie Du auf dem Bild unten sehen kannst, gibt es einen grünen Button, und sobald Du darauf klickst, kannst Du eine Pull-Anfrage erstellen.
 
-![](https://uoftcoders.github.io/rcourse/image/git_lesson/yellow_prompt.png){width="50%" height="50%"}
+![Initialisierung eines Pull Requests](https://uoftcoders.github.io/rcourse/image/git_lesson/yellow_prompt.png){width="100%" height="100%"}
 
 Sobald Du auf den Button klickst, informiert Dich GitHub, ob es Probleme beim Zusammenführen des Zweigs mit dem Hauptprojekt gibt.
 Wenn es keine Probleme gibt, setzt GitHub ein Häkchen und zeigt "Able to merge" an.
@@ -267,12 +262,12 @@ Nachdem Du Deine Anfrage abgeschickt hast, kann der Besitzer des GitHub-Projekts
 Auf dieser Seite wird eine Liste von Pull Requests angezeigt, aus der der Eigentümer Deine Anfrage auswählen kann.
 Sobald der Besitzer auf der Pull Request Seite angekommen ist, sieht er eine Schaltfläche mit der Aufschrift "Merge pull request" (ähnlich der Abbildung unten).
 
-![](https://docs.github.com/assets/images/help/pull_requests/merge_box/pr-reviews-in-merge-box.png){width="50%" height="50%"}
+![Bearbeitung eines Pull Requests](https://docs.github.com/assets/images/help/pull_requests/merge_box/pr-reviews-in-merge-box.png){width="77%" height="77%"}
 
 Sobald der Eigentümer auf die grüne Schaltfläche klickt, wird er erneut gefragt, ob er die Änderung vornehmen möchte.
 Wenn er erneut auf den Button klickt, wird die Änderung mit dem Hauptzweig zusammengeführt und er sieht etwas wie das folgende Bild...
 
-![](https://uoftcoders.github.io/rcourse/image/git_lesson/delete_branch.png){width="50%" height="50%"}
+![Mergen eines verifizierten Pull Request](https://uoftcoders.github.io/rcourse/image/git_lesson/delete_branch.png){width="100%" height="100%"}
 
 ### Ein Repository in einem Branch (oder Fork) aktualisieren
 
@@ -290,7 +285,7 @@ Nun klicke auf `Merge pull request`, dann auf `Confirm merge` und dein Zweig wir
 
 ### Gut zu wissen
 
-::: {.successbox .ginfo}
+::: {.box .ok}
 -   Lerne wie man Branches mit dem Terminal erstellt: [Arbeiten mit Branches](https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/)
 -   Lerne die Verwendung von Pull Requests und Issues: [Issues und Pull Requests](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-branches)
 -   Lerne, wie man ein GitHub-Repository forkt: [Forken eines Repositories](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
@@ -298,7 +293,7 @@ Nun klicke auf `Merge pull request`, dann auf `Confirm merge` und dein Zweig wir
 
 ### Selbst-Check
 
-::: {.infobox .test}
+::: {.infobox  }
 [![](../images/git-1-self.png)](http://137.248.191.201:3838/de/git/#section-github---fork-und-branch)
 :::
 
@@ -330,9 +325,6 @@ Ein typisches Szenario ist, dass Du etwas online auf GitHub bearbeitest und dies
 Der Konflikt könnte z.B.
 sein, dass Du einen Tippfehler in der README korrigierst und vergisst, die aktuelle Version im Rstudio-Projekt zu aktualisieren.
 
-::: {.successbox .ok}
-Also **immer** `pull` vor `push`, sonst hat GitHub zwei verschiedene Änderungen gespeichert und weiß nicht, welche zu verwenden ist.
-:::
 
 Ein komplizierterer Fall ist, wenn eine Änderung im Master-Repository gemacht wurde und jemand anderes in seinem Branch-/Fork-Repository ebenfalls eine Änderung an der gleichen Datei bzw.
 dem gleichen Inhalt gemacht hat.
@@ -387,15 +379,17 @@ Zuletzt muss der Eigentümer auf `Merge Pull Request` und dann auf `Commit Merge
 
 ### Gut zu wissen
 
-::: {.successbox .ginfo}
-Weitere Informationen über den Umgang mit Konflikten in GitHub findest Du hier:
+::: {.box .ok }
 
--   [Wie gehe ich mit Merge Konflikten um?](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts)
+- **Immer** `pull` vor `push`, sonst hat GitHub zwei verschiedene Änderungen gespeichert und weiß nicht, welche zu verwenden ist.
+
+- Weitere Informationen über den [Umgang mit Konflikten](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts) in GitHub findest Du in den GitHub Docs.
+
 :::
 
 ### Selbst-Check
 
-::: {.infobox .test}
+::: {.infobox  }
 [![](../images/git-1-self.png)](http://137.248.191.201:3838/de/git/#section-github---konflikte-l%C3%B6sen)
 :::
 
@@ -474,7 +468,7 @@ Wenn ja, kannst Du mit Ja antworten und die Datei auf GitHub hochladen!
 
 ### Gut zu wissen
 
-::: {.successbox .ginfo}
+::: {.successbox }
 Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folgendem Link:
 
 -   Der Blog-Eintrag [GitHub & Rstudio](https://resources.github.com/whitepapers/github-and-rstudio/) zeigt, wie man Git in RStudio benutzt und geht dabei besonders auf die Terminal-Befehle ein.
@@ -486,7 +480,7 @@ Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folg
 
 ### Selbst-Check
 
-::: {.infobox .test}
+::: {.infobox  }
 [![](../images/git-3-self.png)](http://137.248.191.201:3838/de/git/#section-github---workflow-in-rstudio)
 :::
 
