@@ -155,9 +155,8 @@ Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Re
 
 Basierend auf den Informationen aus dem vorausgegangenen Kapitel lernst Du in dieser Lektion: 
 
--   ein lokales Projektarchiv in einem Ordner anlegst
--   Änderungen an einem entfernten Repository vornehmen
 -   ein lokales Repository zu verwalten
+-   mit einem entfernten Repository zu arbeiten
 
 
 ### Praktische Anwendung von git und GitHub
