@@ -60,7 +60,7 @@ website:
       - section: "Welcome"
         contents:
           - index.md
-          - base/about.md
+          - base/about.qmd
       - text: "---"
       - section: "Low Cost UAV"
         contents:
