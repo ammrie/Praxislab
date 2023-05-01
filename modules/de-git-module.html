@@ -280,7 +280,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#überblick" id="toc-überblick" class="nav-link" data-scroll-target="#überblick">Überblick</a></li>
   <li><a href="#git---erste-schritte" id="toc-git---erste-schritte" class="nav-link" data-scroll-target="#git---erste-schritte">Git - Erste Schritte</a></li>
   <li><a href="#gitgithub-pull-status-add-commit-push" id="toc-gitgithub-pull-status-add-commit-push" class="nav-link" data-scroll-target="#gitgithub-pull-status-add-commit-push">Git/GitHub: pull, status, add, commit, push</a></li>
-  <li><a href="#typische-probleme" id="toc-typische-probleme" class="nav-link" data-scroll-target="#typische-probleme">Typische Probleme</a></li>
   <li><a href="#gut-zu-wissen" id="toc-gut-zu-wissen" class="nav-link" data-scroll-target="#gut-zu-wissen">Gut zu wissen</a></li>
   <li><a href="#selbst-check" id="toc-selbst-check" class="nav-link" data-scroll-target="#selbst-check">Selbst-Check</a></li>
   </ul></li>
@@ -300,6 +299,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#versionskonflikt---was-ist-das" id="toc-versionskonflikt---was-ist-das" class="nav-link" data-scroll-target="#versionskonflikt---was-ist-das">Versionskonflikt - was ist das?</a></li>
   <li><a href="#push-pull-konflikte" id="toc-push-pull-konflikte" class="nav-link" data-scroll-target="#push-pull-konflikte">Push &amp; Pull Konflikte</a></li>
   <li><a href="#merge-konflikte" id="toc-merge-konflikte" class="nav-link" data-scroll-target="#merge-konflikte">Merge Konflikte</a></li>
+  <li><a href="#typische-probleme" id="toc-typische-probleme" class="nav-link" data-scroll-target="#typische-probleme">Typische Probleme</a></li>
   <li><a href="#gut-zu-wissen-2" id="toc-gut-zu-wissen-2" class="nav-link" data-scroll-target="#gut-zu-wissen-2">Gut zu wissen</a></li>
   <li><a href="#selbst-check-2" id="toc-selbst-check-2" class="nav-link" data-scroll-target="#selbst-check-2">Selbst-Check</a></li>
   </ul></li>
@@ -470,18 +470,6 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 <li>Szenario 1: Happy Git With R: Kapitel 15 <a href="https://happygitwithr.com/new-github-first.html#new-github-first">Neues Projekt GitHub</a></li>
 <li>Szenario 2: Happy Git With R: Kapitel 17 <a href="https://happygitwithr.com/existing-github-last.html#existing-github-last">Bestehendes Projekt, GitHub</a></li>
 </ul>
-</section>
-<section id="typische-probleme" class="level3">
-<h3 class="anchored" data-anchor-id="typische-probleme">Typische Probleme</h3>
-<ul>
-<li><p>Du versuchst, <code>git commit</code> auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht. Deshalb müssen Sie zuerst <code>git add</code> ausführen.</p></li>
-<li><p>Du versuchst <code>git push</code> auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.</p></li>
-<li><p>Du versuchst <code>git push</code> auszuführen, um deine Aktualisierungen in das entfernte Repository zu übertragen, obwohl es bereits neue Aktualisierungen im entfernten Repository gibt (z.B. von einem anderen Teammitglied), die du noch nicht in das lokale Projekt übertragen hast. Die Fehlermeldung, die du bekommst, wird in etwa so aussehen:</p></li>
-</ul>
-<div class="warning">
-<p>Fehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: … Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.</p>
-</div>
-<p>Du weist also dein lokales <code>git</code> an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt. Der beste Weg, dieses Problem zu vermeiden, ist immer einen <code>git pull</code> durchzuführen, bevor man mit dem lokalen Editieren beginnt.</p>
 </section>
 <section id="gut-zu-wissen" class="level3">
 <h3 class="anchored" data-anchor-id="gut-zu-wissen">Gut zu wissen</h3>
@@ -664,6 +652,18 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 </div>
 <p>Rechts neben dieser Meldung befindet sich die Schaltfläche <code>Konflikte auflösen</code>.</p>
 <p>Wenn du auf die Schaltfläche <code>Konflikte auflösen</code> klickst, wirst du zu einer Seite weitergeleitet, die ähnlich aussieht wie bei Push- oder Pull-Fehlernt. Du siehst die vorgeschlagenen Änderungen aus dem Zweig und Haupt-Repository. An dieser Stelle können dann Änderungen durchgeführt werden und zuletzt mit <code>Als gelöst markieren</code> und anschließend <code>Merge bestätigen</code> erfolgreich für einen Merge bereitgestellt werden. Zuletzt muss der Eigentümer auf <code>Merge Pull Request</code> und dann auf <code>Commit Merge</code> klicken, um die Änderung im Haupt-Repository zu vorzunehmen.</p>
+</section>
+<section id="typische-probleme" class="level3">
+<h3 class="anchored" data-anchor-id="typische-probleme">Typische Probleme</h3>
+<ul>
+<li><p>Du versuchst, <code>git commit</code> auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht. Deshalb müssen Sie zuerst <code>git add</code> ausführen.</p></li>
+<li><p>Du versuchst <code>git push</code> auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.</p></li>
+<li><p>Du versuchst <code>git push</code> auszuführen, um deine Aktualisierungen in das entfernte Repository zu übertragen, obwohl es bereits neue Aktualisierungen im entfernten Repository gibt (z.B. von einem anderen Teammitglied), die du noch nicht in das lokale Projekt übertragen hast. Die Fehlermeldung, die du bekommst, wird in etwa so aussehen:</p></li>
+</ul>
+<div class="warning">
+<p>Fehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: … Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.</p>
+</div>
+<p>Du weist also dein lokales <code>git</code> an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt. Der beste Weg, dieses Problem zu vermeiden, ist immer einen <code>git pull</code> durchzuführen, bevor man mit dem lokalen Editieren beginnt.</p>
 </section>
 <section id="gut-zu-wissen-2" class="level3">
 <h3 class="anchored" data-anchor-id="gut-zu-wissen-2">Gut zu wissen</h3>
