@@ -87,18 +87,22 @@ Now Git knows where to track, but not what to track.
 
 graph LR
 
-    A[Create a <br> new folder] -- mkdir MyFolder --> B[Local folder <br> MyFolder]
-    B -- git init --> C[Local repository <br> MyFolder]
-    C -.- D(git monitors <br> MyFolder <br> knows but contents)  
+    A[Create a <br> new folder] 
+    B[Local folder <br> MyFolder] -- git init --> C[Local repository <br> MyFolder]
+    C -.- D(git monitors 'MyFolder'  but knows *no* contents)  
 
     classDef gr fill:#9f6,stroke:#333,stroke-width:2px
     classDef bl fill:#6BC9F5,stroke:#333,stroke-width:4px
     classDef or fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
-    class A bl
+    classDef or2 fill:orange,stroke:#333,stroke-width:3px,stroke-dasharray: 1
+    class A or2
     class B,C gr
     class D or
 
 %%{init: {'theme':'forest'}}%%
+%%{init: {'fontSize': '22px'}}%%
+
+
 
 
 ```
