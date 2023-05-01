@@ -141,7 +141,7 @@ Mit dem Befehl ist `git status` erhälst du einen Überblick über den Status al
 
 ### Gut zu wissen
 
-::: {.successbox .ok}
+::: {.callout-tip appearance="minimal"}
 Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Ressourcen:
 
 -   [Pro Git: Kapitel **Git Grundlagen**](https://git-scm.com/book/en/v2)
@@ -190,7 +190,7 @@ Der beste Weg, dieses Problem zu vermeiden, ist immer einen `git pull` durchzuf�
 
 ### Gut zu wissen
 
-:::: {.successbox .ok}
+::: {.callout-tip appearance="minimal"}
 Für ein besseres Verständnis lies die folgenden Texte:
 
 -   [Pull tricky](https://happygitwithr.com/pull-tricky.html).
@@ -198,7 +198,7 @@ Für ein besseres Verständnis lies die folgenden Texte:
 -   [Git und R](https://happygitwithr.com/)
 -   [Rstudio - git - GitHub](https://happygitwithr.com/rstudio-git-github.html)
 
-::::
+:::
 
 ### Selbst-Check
 
@@ -291,7 +291,7 @@ Nun klicke auf `Merge pull request`, dann auf `Confirm merge` und dein Zweig wir
 
 ### Gut zu wissen
 
-::: {.successbox .ok}
+::: {.callout-tip appearance="minimal"}
 -   Lerne wie man Branches mit dem Terminal erstellt: [Arbeiten mit Branches](https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/)
 -   Lerne die Verwendung von Pull Requests und Issues: [Issues und Pull Requests](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-branches)
 -   Lerne, wie man ein GitHub-Repository forkt: [Forken eines Repositories](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
@@ -385,7 +385,7 @@ Zuletzt muss der Eigentümer auf `Merge Pull Request` und dann auf `Commit Merge
 
 ### Gut zu wissen
 
-::: {.successbox .ok }
+::: {.callout-tip appearance="minimal"}
 
 - **Immer** `pull` vor `push`, sonst hat GitHub zwei verschiedene Änderungen gespeichert und weiß nicht, welche zu verwenden ist.
 
@@ -474,7 +474,7 @@ Wenn ja, kannst Du mit Ja antworten und die Datei auf GitHub hochladen!
 
 ### Gut zu wissen
 
-::: {.successbox }
+::: {.callout-tip appearance="minimal"}
 Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folgendem Link:
 
 -   Der Blog-Eintrag [GitHub & Rstudio](https://resources.github.com/whitepapers/github-and-rstudio/) zeigt, wie man Git in RStudio benutzt und geht dabei besonders auf die Terminal-Befehle ein.
