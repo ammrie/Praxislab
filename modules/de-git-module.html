@@ -299,7 +299,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#versionskonflikt---was-ist-das" id="toc-versionskonflikt---was-ist-das" class="nav-link" data-scroll-target="#versionskonflikt---was-ist-das">Versionskonflikt - was ist das?</a></li>
   <li><a href="#push-pull-konflikte" id="toc-push-pull-konflikte" class="nav-link" data-scroll-target="#push-pull-konflikte">Push &amp; Pull Konflikte</a></li>
   <li><a href="#merge-konflikte" id="toc-merge-konflikte" class="nav-link" data-scroll-target="#merge-konflikte">Merge Konflikte</a></li>
-  <li><a href="#typische-probleme" id="toc-typische-probleme" class="nav-link" data-scroll-target="#typische-probleme">Typische Probleme</a></li>
   <li><a href="#gut-zu-wissen-2" id="toc-gut-zu-wissen-2" class="nav-link" data-scroll-target="#gut-zu-wissen-2">Gut zu wissen</a></li>
   <li><a href="#selbst-check-2" id="toc-selbst-check-2" class="nav-link" data-scroll-target="#selbst-check-2">Selbst-Check</a></li>
   </ul></li>
@@ -309,6 +308,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#vorausetzungen-2" id="toc-vorausetzungen-2" class="nav-link" data-scroll-target="#vorausetzungen-2">Vorausetzungen</a></li>
   <li><a href="#existierendes-github-repo-in-r-einbinden" id="toc-existierendes-github-repo-in-r-einbinden" class="nav-link" data-scroll-target="#existierendes-github-repo-in-r-einbinden">Existierendes GitHub Repo in R einbinden</a></li>
   <li><a href="#erklärung-der-schaltflächenbefehle" id="toc-erklärung-der-schaltflächenbefehle" class="nav-link" data-scroll-target="#erklärung-der-schaltflächenbefehle">Erklärung der Schaltflächen/Befehle</a></li>
+  <li><a href="#typische-probleme" id="toc-typische-probleme" class="nav-link" data-scroll-target="#typische-probleme">Typische Probleme</a></li>
   <li><a href="#gut-zu-wissen-3" id="toc-gut-zu-wissen-3" class="nav-link" data-scroll-target="#gut-zu-wissen-3">Gut zu wissen</a></li>
   <li><a href="#selbst-check-3" id="toc-selbst-check-3" class="nav-link" data-scroll-target="#selbst-check-3">Selbst-Check</a></li>
   </ul></li>
@@ -653,18 +653,6 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 <p>Rechts neben dieser Meldung befindet sich die Schaltfläche <code>Konflikte auflösen</code>.</p>
 <p>Wenn du auf die Schaltfläche <code>Konflikte auflösen</code> klickst, wirst du zu einer Seite weitergeleitet, die ähnlich aussieht wie bei Push- oder Pull-Fehlernt. Du siehst die vorgeschlagenen Änderungen aus dem Zweig und Haupt-Repository. An dieser Stelle können dann Änderungen durchgeführt werden und zuletzt mit <code>Als gelöst markieren</code> und anschließend <code>Merge bestätigen</code> erfolgreich für einen Merge bereitgestellt werden. Zuletzt muss der Eigentümer auf <code>Merge Pull Request</code> und dann auf <code>Commit Merge</code> klicken, um die Änderung im Haupt-Repository zu vorzunehmen.</p>
 </section>
-<section id="typische-probleme" class="level3">
-<h3 class="anchored" data-anchor-id="typische-probleme">Typische Probleme</h3>
-<ul>
-<li><p>Du versuchst, <code>git commit</code> auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht. Deshalb müssen Sie zuerst <code>git add</code> ausführen.</p></li>
-<li><p>Du versuchst <code>git push</code> auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.</p></li>
-<li><p>Du versuchst <code>git push</code> auszuführen, um deine Aktualisierungen in das entfernte Repository zu übertragen, obwohl es bereits neue Aktualisierungen im entfernten Repository gibt (z.B. von einem anderen Teammitglied), die du noch nicht in das lokale Projekt übertragen hast. Die Fehlermeldung, die du bekommst, wird in etwa so aussehen:</p></li>
-</ul>
-<div class="warning">
-<p>Fehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: … Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.</p>
-</div>
-<p>Du weist also dein lokales <code>git</code> an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt. Der beste Weg, dieses Problem zu vermeiden, ist immer einen <code>git pull</code> durchzuführen, bevor man mit dem lokalen Editieren beginnt.</p>
-</section>
 <section id="gut-zu-wissen-2" class="level3">
 <h3 class="anchored" data-anchor-id="gut-zu-wissen-2">Gut zu wissen</h3>
 <div class="callout callout-style-simple callout-tip no-icon">
@@ -729,6 +717,18 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 <p>Manchmal arbeitet man an einem Projekt in R und hat vergessen, ein GitHub-Repository dafür zu erstellen. In diesem Fall kann Ihnen das Paket <code>usethis</code> helfen, ein Repo aus RStudio heraus zu erstellen. Mit der Funktion <code>usethis::use_git</code> kann das aktuelle Projekt in ein GitHub Repo umgewandelt werden, so dass die Dateien hochgeladen werden können. - Wenn Du diese Funktion zum ersten Mal ausführst, wirst Du wahrscheinlich einen Fehler erhalten, da Du dafür ein Token von GitHub benötigst. Nach dem Aufruf von <code>usethis::browse_github_token</code> öffnet sich ein neues Fenster, in dem man aufgefordert wird, sich in seinen GitHub-Account einzuloggen. Nach dem Einloggen können Berechtigungen mit dem Token gesetzt und kopiert werden. Sobald du den Token kopiert hast, rufe <code>usethis::edit_r_environment()</code> auf und speichere deinen Token als “GITHUB_PAT=token”.</p>
 <p>Sobald dein Token gesetzt und dein R zurückgesetzt ist, kannst du <code>use_git</code> benutzen und es wird Dich fragen, ob es okay ist, deine Dateien zu GitHub zu committen. Wenn du diese Frage bejahst, wirst du aufgefordert, dein RStudio-Fenster neu zu starten, um das Git-Fenster zu öffnen und deine Dateien hochzuladen. Nach dem Neustart von RStudio die geänderten Dateien (falls vorhanden) mit dem Diff-Button hochladen. Benutze nun <code>usethis::use_github</code>, um deine Dateien in ein GitHub-Repository zu senden. - <code>use_github</code> wird Dich fragen, ob Du einen ssh Schlüssel hast, was Du wahrscheinlich nicht hast, also wähle <code>https</code>. Dann wird man gefragt, ob Titel und Beschreibung akzeptabel sind. Wenn ja, kannst Du mit Ja antworten und die Datei auf GitHub hochladen!</p>
 </section>
+</section>
+<section id="typische-probleme" class="level3">
+<h3 class="anchored" data-anchor-id="typische-probleme">Typische Probleme</h3>
+<ul>
+<li><p>Du versuchst, <code>git commit</code> auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht. Deshalb müssen Sie zuerst <code>git add</code> ausführen.</p></li>
+<li><p>Du versuchst <code>git push</code> auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.</p></li>
+<li><p>Du versuchst <code>git push</code> auszuführen, um deine Aktualisierungen in das entfernte Repository zu übertragen, obwohl es bereits neue Aktualisierungen im entfernten Repository gibt (z.B. von einem anderen Teammitglied), die du noch nicht in das lokale Projekt übertragen hast. Die Fehlermeldung, die du bekommst, wird in etwa so aussehen:</p></li>
+</ul>
+<div class="warning">
+<p>Fehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: … Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.</p>
+</div>
+<p>Du weist also dein lokales <code>git</code> an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt. Der beste Weg, dieses Problem zu vermeiden, ist immer einen <code>git pull</code> durchzuführen, bevor man mit dem lokalen Editieren beginnt.</p>
 </section>
 <section id="gut-zu-wissen-3" class="level3">
 <h3 class="anchored" data-anchor-id="gut-zu-wissen-3">Gut zu wissen</h3>
