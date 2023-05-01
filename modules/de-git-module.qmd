@@ -110,17 +110,19 @@ Soll eine überwachte Datei gesichert werden erfolgt das mit dem Befehl `git com
 ```{mermaid}
 %%| fig-cap: Ablauf init-add-commit-push  
 graph LR
-    A[Projektordner <br> 'MeinOrdner'] --> 
-    B[Lokales Repository <br> 'MeinOrdner'] -- Erzeugen einer Datei -->
-    C[Datei im <br>Staging Area] --> 
-    D[Dateiversion im <br> Lokalen Repository ] --> 
-    E[Dateiversion im <br> Remote Repository ]
-    
     AA[Projektordner <br> 'MeinOrdner'] -.git init.-> 
     BB[Ordner ist als  <br> Repository vorbereitet] -.git add DateiNeu.->
-    CC(Die DateiNeu wird 'überwacht') -.git commit.-> 
-    DD(Die Datei DateiNeu ist <br> im aktuellen Zustand lokal gespeichert) -.git push.-> 
-    EE(Die DateiNeu  ist <br> auf dem GitHub Repo gespeichrt)
+    CC(Die DateiNeu <br> wird 'überwacht') -.git commit.-> 
+    DD(Die Datei DateiNeu ist <br> in aktueller Version <br> lokal gespeichert) -.git push.-> 
+    EE(Die DateiNeu  ist <br> auf dem GitHub<br> Repo gespeichert)
+    
+    A[Projektordner <br> 'MeinOrdner'] --> 
+    B[Lokales Repository <br> 'MeinOrdner'] -- Erzeugen einer Datei -->
+    C[Überwachte Datei <br> in 'MeinOrdner'] --> 
+    D[Dateiversion im <br> lokalen Repository ] --> 
+    E[Dateiversion im <br> entfernten Repository ]
+    
+
 
     classDef green fill:#9f6,stroke:#333,stroke-width:2px
     classDef blue fill:#6BC9F5,stroke:#333,stroke-width:2px,stroke-dasharray: 2
