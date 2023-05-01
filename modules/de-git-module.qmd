@@ -44,10 +44,13 @@ In dem Teilmodul *Git und GitHub leicht gemacht* lernst du:
 -   das Konzept der Versionskontrolle
 -   die Einsatzgebiete von GitHub und Git
 
-### Vorkenntnisse
+### Voraussetzungen
 
 -   mit deinem Dateimanager navigieren und arbeiten
 -   ein grundlegendes Verständnis von Datei- und Ordnerstrukturen
+-   einrichten eines [GitHub-Accounts](https://github.com/join)
+-   installierten von [`git`](https://git-scm.com/downloads)
+-   installiertes `R` und `RStudio`
 
 ### Überblick
 
@@ -152,10 +155,6 @@ Basierend auf den Informationen aus dem vorausgegangenen Kapitel lernst Du in di
 -   Änderungen an einem entfernten Repository vornehmen
 -   ein lokales Repository zu verwalten
 
-### Voraussetzungen
-
--   Einrichten eines [GitHub-Accounts](https://github.com/join)
--   Installiertes [git](https://git-scm.com/downloads)
 
 ### Praktische Anwendung von git und GitHub
 
