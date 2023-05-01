@@ -113,8 +113,8 @@ graph LR
     C -- git push --> D[Dateiversion im <br> Remote Repository ]
     
     AA[Leerer Ordner] -.-> BB(git überwacht die Datei)
-    BB -.-> CC>git sichert lokal <br> aktuellen Zustand der Datei]
-    CC -.-> DD>git sichert  remote <br> aktuellen Zustand der Datei]
+    BB -.-> CC(git sichert lokal <br> aktuellen Zustand der Datei)
+    CC -.-> DD(git sichert  remote <br> aktuellen Zustand der Datei)
     
 
     classDef green fill:#9f6,stroke:#333,stroke-width:2px
