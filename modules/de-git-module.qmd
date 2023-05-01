@@ -48,9 +48,9 @@ In dem Teilmodul *Git und GitHub leicht gemacht* lernst du:
 
 -   mit deinem Dateimanager navigieren und arbeiten
 -   ein grundlegendes Verständnis von Datei- und Ordnerstrukturen
--   einrichten eines [GitHub-Accounts](https://github.com/join)
--   installierten von [`git`](https://git-scm.com/downloads)
--   installiertes `R` und `RStudio`
+-   einrichten der [Arbeitsumgebung](https://happygitwithr.com/workshops.html#pre-workshop-set-up) 
+-   installiertes [`R` und `RStudio`](https://happygitwithr.com/install-r-rstudio.html#install-r-rstudio)
+- [Lösungshilfen](https://happygitwithr.com/troubleshooting.html)
 
 ### Überblick
 
@@ -181,7 +181,6 @@ Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Re
 -   [Happy Git mit R](https://happygitwithr.com/)
 -   [Pull tricky](https://happygitwithr.com/pull-tricky.html).
 -   [Git Grundlagen](https://git-scm.com/book/en/v2)
--   [Git und R](https://happygitwithr.com/)
 -   [Rstudio - git - GitHub](https://happygitwithr.com/rstudio-git-github.html)
 
 :::
