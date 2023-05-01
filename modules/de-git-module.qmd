@@ -96,8 +96,8 @@ graph LR
     classDef or fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
     classDef or2 fill:orange,stroke:#333,stroke-width:3px,stroke-dasharray: 2
     class A bl
-    class B,C gr
-    class D or
+    class D gr
+    class C,B or
 
 %%{init: {'theme':'forest'}}%%
 ```
@@ -110,16 +110,16 @@ Soll eine überwachte Datei gesichert werden erfolgt das mit dem Befehl `git com
 ```{mermaid}
 %%| fig-cap: Ablauf init-add-commit-push  
 graph LR
-    AA[Projektordner <br> 'MeinOrdner'] -.git init.-> 
-    BB[Ordner ist als  <br> Repository vorbereitet] -.git add DateiNeu.->
+    AA[Projektordner <br> 'MeinOrdner'] --git init--> 
+    BB[Ordner ist als  <br> Repository vorbereitet] --git add DateiNeu-->
     CC(Die DateiNeu <br> wird 'überwacht') -.git commit.-> 
-    DD(Die Datei DateiNeu ist <br> in aktueller Version <br> lokal gespeichert) -.git push.-> 
+    DD(Die Datei DateiNeu ist <br> in aktueller Version <br> lokal gespeichert) --git push--> 
     EE(Die DateiNeu  ist <br> auf dem GitHub<br> Repo gespeichert)
     
-    A[Projektordner <br> 'MeinOrdner'] --> 
+    A[Projektordner <br> 'MeinOrdner'] -.-> 
     B[Lokales Repository <br> 'MeinOrdner'] -- Erzeugen einer Datei -->
-    C[Überwachte Datei <br> in 'MeinOrdner'] --> 
-    D[Dateiversion im <br> lokalen Repository ] --> 
+    C[Überwachte Datei <br> in 'MeinOrdner'] -.-> 
+    D[Dateiversion im <br> lokalen Repository ] -.-> 
     E[Dateiversion im <br> entfernten Repository ]
     
 
