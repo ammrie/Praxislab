@@ -153,23 +153,6 @@ Beide Szenarien werden von Jenny Bryan exzellent erläutert. Bitte lies diese Te
 -   Szenario 1: Happy Git With R: Kapitel 15 [Neues Projekt GitHub](https://happygitwithr.com/new-github-first.html#new-github-first)
 -   Szenario 2: Happy Git With R: Kapitel 17 [Bestehendes Projekt, GitHub](https://happygitwithr.com/existing-github-last.html#existing-github-last)
 
-### Typische Probleme
-
--   Du versuchst, `git commit` auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht.
-    Deshalb müssen Sie zuerst `git add` ausführen.
-
--   Du versuchst `git push` auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.
-
--   Du versuchst `git push` auszuführen, um deine Aktualisierungen in das entfernte Repository zu übertragen, obwohl es bereits neue Aktualisierungen im entfernten Repository gibt (z.B. von einem anderen Teammitglied), die du noch nicht in das lokale Projekt übertragen hast.
-    Die Fehlermeldung, die du bekommst, wird in etwa so aussehen:
-
-::: warning
-Fehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: ... Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.
-:::
-
-Du weist also dein lokales `git` an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt.
-Der beste Weg, dieses Problem zu vermeiden, ist immer einen `git pull` durchzuführen, bevor man mit dem lokalen Editieren beginnt.
-
 
 
 ### Gut zu wissen
@@ -367,6 +350,25 @@ Wenn du auf die Schaltfläche `Konflikte auflösen` klickst, wirst du zu einer S
 Du siehst die vorgeschlagenen Änderungen aus dem Zweig und Haupt-Repository.
 An dieser Stelle können dann Änderungen durchgeführt werden und zuletzt mit `Als gelöst markieren` und anschließend `Merge bestätigen` erfolgreich für einen Merge bereitgestellt werden.
 Zuletzt muss der Eigentümer auf `Merge Pull Request` und dann auf `Commit Merge` klicken, um die Änderung im Haupt-Repository zu vorzunehmen.
+
+### Typische Probleme
+
+-   Du versuchst, `git commit` auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht.
+    Deshalb müssen Sie zuerst `git add` ausführen.
+
+-   Du versuchst `git push` auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.
+
+-   Du versuchst `git push` auszuführen, um deine Aktualisierungen in das entfernte Repository zu übertragen, obwohl es bereits neue Aktualisierungen im entfernten Repository gibt (z.B. von einem anderen Teammitglied), die du noch nicht in das lokale Projekt übertragen hast.
+    Die Fehlermeldung, die du bekommst, wird in etwa so aussehen:
+
+::: warning
+Fehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: ... Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.
+:::
+
+Du weist also dein lokales `git` an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt.
+Der beste Weg, dieses Problem zu vermeiden, ist immer einen `git pull` durchzuführen, bevor man mit dem lokalen Editieren beginnt.
+
+
 
 ### Gut zu wissen
 
