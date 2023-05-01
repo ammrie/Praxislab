@@ -411,8 +411,8 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
     classDef or fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
     classDef or2 fill:orange,stroke:#333,stroke-width:3px,stroke-dasharray: 2
     class A bl
-    class B,C gr
-    class D or
+    class D gr
+    class C,B or
 
 %%{init: {'theme':'forest'}}%%
 </pre>
@@ -427,17 +427,18 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 <div>
 <div>
 <pre class="mermaid mermaid-js">graph LR
-    A[Projektordner &lt;br&gt; 'MeinOrdner'] --&gt; 
-    B[Lokales Repository &lt;br&gt; 'MeinOrdner'] -- Erzeugen einer Datei --&gt;
-    C[Datei im &lt;br&gt;Staging Area] --&gt; 
-    D[Dateiversion im &lt;br&gt; Lokalen Repository ] --&gt; 
-    E[Dateiversion im &lt;br&gt; Remote Repository ]
+    AA[Projektordner &lt;br&gt; 'MeinOrdner'] --git init--&gt; 
+    BB[Ordner ist als  &lt;br&gt; Repository vorbereitet] --git add DateiNeu--&gt;
+    CC(Die DateiNeu &lt;br&gt; wird 'überwacht') -.git commit.-&gt; 
+    DD(Die Datei DateiNeu ist &lt;br&gt; in aktueller Version &lt;br&gt; lokal gespeichert) --git push--&gt; 
+    EE(Die DateiNeu  ist &lt;br&gt; auf dem GitHub&lt;br&gt; Repo gespeichert)
     
-    AA[Projektordner &lt;br&gt; 'MeinOrdner'] -.git init.-&gt; 
-    BB[Ordner ist als  &lt;br&gt; Repository vorbereitet] -.git add DateiNeu.-&gt;
-    CC(Die DateiNeu wird 'überwacht') -.git commit.-&gt; 
-    DD(Die Datei DateiNeu ist &lt;br&gt; im aktuellen Zustand lokal gespeichert) -.git push.-&gt; 
-    EE(Die DateiNeu  ist &lt;br&gt; auf dem GitHub Repo gespeichrt)
+    A[Projektordner &lt;br&gt; 'MeinOrdner'] -.-&gt; 
+    B[Lokales Repository &lt;br&gt; 'MeinOrdner'] -- Erzeugen einer Datei --&gt;
+    C[Überwachte Datei &lt;br&gt; in 'MeinOrdner'] -.-&gt; 
+    D[Dateiversion im &lt;br&gt; lokalen Repository ] -.-&gt; 
+    E[Dateiversion im &lt;br&gt; entfernten Repository ]
+    
 
     classDef green fill:#9f6,stroke:#333,stroke-width:2px
     classDef blue fill:#6BC9F5,stroke:#333,stroke-width:2px,stroke-dasharray: 2
