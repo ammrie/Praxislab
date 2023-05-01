@@ -100,9 +100,6 @@ graph LR
     class D or
 
 %%{init: {'theme':'forest'}}%%
-%%{init: {'fontSize': '22px'}}%%
-
-
 
 
 ```
@@ -115,7 +112,7 @@ However, the changes to files in the project will **only** be applied if `git` i
 %%| fig-cap: process stage commit push a file
 
 graph LR
-    Z(A new file is created)
+    Z(Create a <br> new file)
     
     A[Local directory ] -- git add 'filename' --> B[File in <br>staging area]
     B -- git commit --> C[file version in <br>local repository ]

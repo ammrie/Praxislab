@@ -86,14 +86,15 @@ Nun weiß Git wo, aber nicht was es verfolgen soll.
 %%| fig-cap: Initialisierung eines Repositories
 
 graph LR
-    A[Erzeuge einen <br> neuen Ordner ] -- mkdir MeinOrdner --> B[Lokaler Ordner <br> 'MeinOrdner']
+    A(Erzeuge einen <br> neuen Ordner) -.-> B[Lokaler Ordner <br> 'MeinOrdner']
     B -- git init --> C[Lokales Repository <br> 'Mein Ordner']
-    C -.- D(git überwacht <br> 'MeinOrdner' <br> 'kennt' aber Inhalte)
+    C -.- D(git überwacht <br> 'MeinOrdner' <br> 'kennt' aber keine Inhalte)
   
 
     classDef gr fill:#9f6,stroke:#333,stroke-width:2px
-    classDef bl fill:#6BC9F5,stroke:#333,stroke-width:4px
+    classDef bl fill:#6BC9F5,stroke:#333,stroke-width:2px,stroke-dasharray: 1
     classDef or fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
+    classDef or2 fill:orange,stroke:#333,stroke-width:3px,stroke-dasharray: 2
     class A bl
     class B,C gr
     class D or
@@ -109,23 +110,24 @@ Die Veränderungen an Dateien des Projekts werden jdoch **nur** übwerwach falls
 %%| fig-cap: Ablauf Stage-Commit-Push  eine Datei
 
 graph LR
-    Z(Eine neue Datei wird erstellt)
+    Z(Erzeuge eine <br> neue Datei)
     
-    A[Lokales Verzeichnis ] -- git add 'Dateiname' --> B[Datei im <br>Staging Area]
+    A[Lokales Repository] -- git add 'Dateiname' --> B[Datei im <br>Staging Area]
     B -- git commit --> C[Dateiversion im <br> Lokalen Repository ]
     C -- git push --> D[Dateiversion im <br> Remote Repository ]
     
-    AA[Leerer Ordner] -.-> BB(git überwacht die Datei)
+    AA[Initialisiers <br> Repository] -.-> BB(git überwacht die Datei)
     BB -.-> CC(git sichert lokal <br> aktuellen Zustand der Datei)
     CC -.-> DD(git sichert  remote <br> aktuellen Zustand der Datei)
     
 
+
     classDef green fill:#9f6,stroke:#333,stroke-width:2px
-    classDef blue fill:#6BC9F5,stroke:#333,stroke-width:4px
+    classDef blue fill:#6BC9F5,stroke:#333,stroke-width:2px,stroke-dasharray: 2
     classDef orange fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
-    class A blue
-    class B,C,D green
-    class Z,DD,CC,AA,BB orange
+    class Z blue
+    class A,B,C,D green
+    class DD,CC,AA,BB orange
 
 
 ```
