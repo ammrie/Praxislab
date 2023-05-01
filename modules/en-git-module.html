@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -59,6 +93,9 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../css/styles.css">
@@ -229,10 +266,54 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#module-overview" id="toc-module-overview" class="nav-link active" data-scroll-target="#module-overview">Module Overview</a>
+  <li><a href="#module-overview" id="toc-module-overview" class="nav-link active" data-scroll-target="#module-overview">Module overview</a>
   <ul class="collapse">
-  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
   </ul></li>
+  <li><a href="#git-and-github-made-easy" id="toc-git-and-github-made-easy" class="nav-link" data-scroll-target="#git-and-github-made-easy">Git and GitHub made easy</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives-1" id="toc-learning-objectives-1" class="nav-link" data-scroll-target="#learning-objectives-1">Learning objectives</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#good-to-know" id="toc-good-to-know" class="nav-link" data-scroll-target="#good-to-know">Good to know</a></li>
+  </ul></li>
+  <li><a href="#gitgithub-pull-status-add-commit-push" id="toc-gitgithub-pull-status-add-commit-push" class="nav-link" data-scroll-target="#gitgithub-pull-status-add-commit-push">Git/GitHub: pull, status, add, commit, push</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives-2" id="toc-learning-objectives-2" class="nav-link" data-scroll-target="#learning-objectives-2">Learning objectives</a></li>
+  <li><a href="#practical-use-of-git-and-github" id="toc-practical-use-of-git-and-github" class="nav-link" data-scroll-target="#practical-use-of-git-and-github">Practical use of git and GitHub</a></li>
+  <li><a href="#typical-problems" id="toc-typical-problems" class="nav-link" data-scroll-target="#typical-problems">Typical problems</a></li>
+  <li><a href="#good-to-know-1" id="toc-good-to-know-1" class="nav-link" data-scroll-target="#good-to-know-1">Good to know</a></li>
+  <li><a href="#self-check" id="toc-self-check" class="nav-link" data-scroll-target="#self-check">Self-Check</a></li>
+  </ul></li>
+  <li><a href="#fork-and-branches-on-github" id="toc-fork-and-branches-on-github" class="nav-link" data-scroll-target="#fork-and-branches-on-github">Fork and Branches on GitHub</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives-3" id="toc-learning-objectives-3" class="nav-link" data-scroll-target="#learning-objectives-3">Learning objectives</a></li>
+  <li><a href="#prerequisites-1" id="toc-prerequisites-1" class="nav-link" data-scroll-target="#prerequisites-1">Prerequisites</a></li>
+  <li><a href="#what-is-a-forkbranch" id="toc-what-is-a-forkbranch" class="nav-link" data-scroll-target="#what-is-a-forkbranch">What is a fork/branch?</a></li>
+  <li><a href="#updating-a-repository-in-a-branch-or-fork" id="toc-updating-a-repository-in-a-branch-or-fork" class="nav-link" data-scroll-target="#updating-a-repository-in-a-branch-or-fork">Updating a repository in a branch (or fork)</a></li>
+  <li><a href="#good-to-know-2" id="toc-good-to-know-2" class="nav-link" data-scroll-target="#good-to-know-2">Good to know</a></li>
+  <li><a href="#self-check-1" id="toc-self-check-1" class="nav-link" data-scroll-target="#self-check-1">Self-check</a></li>
+  </ul></li>
+  <li><a href="#dealing-with-conflicts" id="toc-dealing-with-conflicts" class="nav-link" data-scroll-target="#dealing-with-conflicts">Dealing with conflicts</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives-4" id="toc-learning-objectives-4" class="nav-link" data-scroll-target="#learning-objectives-4">Learning objectives</a></li>
+  <li><a href="#prerequisites-2" id="toc-prerequisites-2" class="nav-link" data-scroll-target="#prerequisites-2">Prerequisites</a></li>
+  <li><a href="#version-conflict---what-is-it" id="toc-version-conflict---what-is-it" class="nav-link" data-scroll-target="#version-conflict---what-is-it">Version conflict - what is it?</a></li>
+  <li><a href="#push-pull-conflicts" id="toc-push-pull-conflicts" class="nav-link" data-scroll-target="#push-pull-conflicts">Push &amp; Pull conflicts</a></li>
+  <li><a href="#merge-conflicts" id="toc-merge-conflicts" class="nav-link" data-scroll-target="#merge-conflicts">Merge conflicts</a></li>
+  <li><a href="#good-to-know-3" id="toc-good-to-know-3" class="nav-link" data-scroll-target="#good-to-know-3">Good to know</a></li>
+  <li><a href="#self-check-2" id="toc-self-check-2" class="nav-link" data-scroll-target="#self-check-2">Self-check</a></li>
+  </ul></li>
+  <li><a href="#rstudio---all-inclusive" id="toc-rstudio---all-inclusive" class="nav-link" data-scroll-target="#rstudio---all-inclusive">RStudio - All Inclusive</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives-5" id="toc-learning-objectives-5" class="nav-link" data-scroll-target="#learning-objectives-5">Learning objectives</a></li>
+  <li><a href="#prerequisites-3" id="toc-prerequisites-3" class="nav-link" data-scroll-target="#prerequisites-3">Prerequisites</a></li>
+  <li><a href="#integrating-an-existing-github-repo-into-r" id="toc-integrating-an-existing-github-repo-into-r" class="nav-link" data-scroll-target="#integrating-an-existing-github-repo-into-r">Integrating an existing GitHub repo into R</a></li>
+  <li><a href="#explanation-of-the-buttonscommands" id="toc-explanation-of-the-buttonscommands" class="nav-link" data-scroll-target="#explanation-of-the-buttonscommands">Explanation of the buttons/commands</a></li>
+  <li><a href="#good-to-know-4" id="toc-good-to-know-4" class="nav-link" data-scroll-target="#good-to-know-4">Good to know</a></li>
+  <li><a href="#self-check-3" id="toc-self-check-3" class="nav-link" data-scroll-target="#self-check-3">Self-check</a></li>
+  </ul></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/gisma-courses/gisma-knowledge-base/edit/main/modules/en-git-module.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/gisma-courses/gisma-knowledge-base/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -256,17 +337,427 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><img src="../images/github-Rstudio.jpg" class="img-fluid" style="width:75.0%"></p>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.6.1/mermaid.min.js"></script>
+<style>
+svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
+</style>
+<p><img src="../images/github-Rstudio.jpg" class="img-fluid" style="width:100.0%"></p>
 <section id="module-overview" class="level2">
-<h2 class="anchored" data-anchor-id="module-overview">Module Overview</h2>
-<p>This module is about the version control system Git, the cloud services GitHub/GitLab and using them with RStudio as an IDE.</p>
-<section id="content" class="level3">
-<h3 class="anchored" data-anchor-id="content">Content</h3>
-<iframe width="120%" height="4750px" src="http://137.248.191.201:3838/git/" scrolling="no" frameborder="0">
-</iframe>
-
-
+<h2 class="anchored" data-anchor-id="module-overview">Module overview</h2>
+<p>This module is about the version control system <code>git</code>, the cloud service <code>GitHub</code> and their use in <code>RStudio</code>.</p>
+<p><code>git</code> is a version control system that allows the creation of snapshots of files or entire directory trees. Combining and comparing such snapshots is also convenient.</p>
+<p><code>GitHub</code> is the best-known cloud-based working environment based on <code>Git</code> and also offers a variety of web-based tools and services.</p>
+<p>RStudio’ as a so-called integrated development environment (IDE) is a desktop application that not only offers generic programming support for R/Python, but also supports scientific writing and documentation, data and texts very well. Through the complete integration of ‘Pandoc’ and ‘Tex’, it also offers extensive and very convenient support for the creation of documents in the form of texts in all conceivable formats, interactive documents and websites.</p>
+<section id="learning-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h3>
+<p>At the end of the module you will be able to use <code>git</code>, <code>GitHub</code> and <code>Rstudio</code> efficiently. Special emphasis will be placed on practical application. Specifically, we will deal with:</p>
+<ul>
+<li>What is version control?</li>
+<li>What is the difference between <code>git</code> and <code>GitHub</code>?</li>
+<li>The central operations, <code>Pull</code>, <code>Status</code>, <code>Add</code>, <code>Commit</code>, <code>Push</code>.</li>
+<li>Avoiding and resolving version conflicts</li>
+<li>Use with <code>RStudio</code></li>
+</ul>
 </section>
+</section>
+<section id="git-and-github-made-easy" class="level2">
+<h2 class="anchored" data-anchor-id="git-and-github-made-easy">Git and GitHub made easy</h2>
+<section id="learning-objectives-1" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-1">Learning objectives</h3>
+<p>In the sub-module <em>Git and GitHub made easy</em> you will learn:</p>
+<ul>
+<li>the concept of version control</li>
+<li>the areas of application of GitHub and Git</li>
+</ul>
+</section>
+<section id="prerequisites" class="level3">
+<h3 class="anchored" data-anchor-id="prerequisites">Prerequisites</h3>
+<ul>
+<li>navigate and work with your file manager</li>
+<li>a basic understanding of file and folder structures</li>
+<li>set up a <a href="https://github.com/join">GitHub account</a></li>
+<li>installed <a href="https://git-scm.com/downloads"><code>git</code></a></li>
+<li>installed [R] and [RStudio</li>
+</ul>
+</section>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>What is version control and what is it good for? Version control systems are software tools that help people manage changes to text, source code, scientific analysis or documentation.</p>
+<p>In the event of an error, authors can view the changes and compare them with previous (partial) versions to make corrections while minimising disruption to their own work or the work of team members.</p>
+<p>For example, you have a folder in which you have a project that consists of various files (text, programme code, images, sound files, etc.), and you want to keep track of the changes you have made to these files.</p>
+<p>The software <code>git</code> logs all changes to these files. How does it do this?</p>
+<p>1. Tell <code>git</code> that you want to log a file or directory.</p>
+<p>2. Tell <code>git</code> that you want to log the state of the file at a certain time.</p>
+<p>So this process is divided into two steps that need to be controlled and triggered. In order to be able to make defined changes, it must be specified what is to be monitored and it must be explicitly confirmed that a defined state is to be saved. In principle, therefore, a snapshot of the file or project must be saved in a confirmed manner, as is known.</p>
+<p>The big difference, however, is that only the changes of this saving process are recorded and can later be restored in these partial steps.</p>
+<section id="git---first-steps" class="level4">
+<h4 class="anchored" data-anchor-id="git---first-steps">Git - First Steps</h4>
+<p>When using Git, the first step is to activate a repository <em>in</em> a directory on the local computer. This is done with the command <code>git init</code>. Now Git knows where to track, but not what to track.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+
+    A[Create a &lt;br&gt; new folder] -- mkdir MyFolder --&gt; B[Local folder &lt;br&gt; MyFolder]
+    B -- git init --&gt; C[Local repository &lt;br&gt; MyFolder]
+    C -.- D(git monitors &lt;br&gt; MyFolder &lt;br&gt; knows but contents)  
+
+    classDef gr fill:#9f6,stroke:#333,stroke-width:2px
+    classDef bl fill:#6BC9F5,stroke:#333,stroke-width:4px
+    classDef or fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
+    class A bl
+    class B,C gr
+    class D or
+
+%%{init: {'theme':'forest'}}%%
+
+</pre>
+</div>
+<p>initialisation of a repository</p>
+</div>
+</div>
+</div>
+<p>However, the changes to files in the project will <strong>only</strong> be applied if <code>git</code> is explicitly <em>“informed”</em> of what is to be done with these files. This is done with the two commands <code>git add</code> and <code>git commit</code>. The command, <code>git push</code> is used when the committed directory snapshot is to be committed to a remote repository (e.g.&nbsp;Github, GitLab).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    Z(A new file is created)
+    
+    A[Local directory ] -- git add 'filename' --&gt; B[File in &lt;br&gt;staging area]
+    B -- git commit --&gt; C[file version in &lt;br&gt;local repository ]
+    C -- git push --&gt; D[file version in &lt;br&gt; remote repository ]
+    
+    AA[Empty folder] -.-&gt; BB(git monitors the file)
+    BB -.-&gt; CC(git backs up local &lt;br&gt; current state of file)
+    CC -.-&gt; DD(git saves remotely &lt;br&gt; current state of the file)
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:2px
+    classDef blue fill:#6BC9F5,stroke:#333,stroke-width:4px
+    classDef orange fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
+    class A blue
+    class B,C,D green
+    class Z,DD,CC,AA,BB orange
+
+</pre>
+</div>
+<p>process stage commit push a file</p>
+</div>
+</div>
+</div>
+<p>With the command <code>git status</code> you get an overview of the status of all files within an initialised repository folder. You should be able to interpret the output of this command:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/64_git-status.PNG" style="width:85.0%;height:85.0%" class="figure-img"></p>
+<figcaption class="figure-caption">git status - conceptual content</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="good-to-know" class="level3">
+<h3 class="anchored" data-anchor-id="good-to-know">Good to know</h3>
+<div class="box ok">
+<p>If you want to learn more about Git, you can find more helpful resources here:</p>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2">Pro Git: Chapter <strong>Git Basics</strong></a></li>
+<li><a href="https://happygitwithr.com/">Happy Git with R</a></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="gitgithub-pull-status-add-commit-push" class="level2">
+<h2 class="anchored" data-anchor-id="gitgithub-pull-status-add-commit-push">Git/GitHub: pull, status, add, commit, push</h2>
+<section id="learning-objectives-2" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-2">Learning objectives</h3>
+<p>Based on the information from the previous chapter, in this lesson you will learn how to</p>
+<ul>
+<li>create a local repository in a folder</li>
+<li>make changes to a remote repository</li>
+<li>manage a local repository</li>
+</ul>
+</section>
+<section id="practical-use-of-git-and-github" class="level3">
+<h3 class="anchored" data-anchor-id="practical-use-of-git-and-github">Practical use of git and GitHub</h3>
+<p>There are two typical scenarios for using git and GitHub.</p>
+<ol type="1">
+<li>you haven’t started the project yet and want a GitHub repository that you can copy (clone) to your computer as a template and then fill locally with files and directories as you wish.</li>
+<li>you have already started the project locally and want to copy it to GitHub.</li>
+</ol>
+<p>Both scenarios are excellently explained by Jenny Bryan. Please read them and follow the instructions.</p>
+<ul>
+<li>Scenario 1: Happy Git With R: Chapter 15 <a href="https://happygitwithr.com/new-github-first.html#new-github-first">New Project GitHub</a></li>
+<li>Scenario 2: Happy Git With R: Chapter 17 <a href="https://happygitwithr.com/existing-github-last.html#existing-github-last">Existing Project, GitHub</a></li>
+</ul>
+</section>
+<section id="typical-problems" class="level3">
+<h3 class="anchored" data-anchor-id="typical-problems">Typical problems</h3>
+<ul>
+<li><p>You try to run <code>git commit</code> after making changes to a file, but you don’t track that file(s). Therefore, you need to run <code>git add</code> first.</p></li>
+<li><p>You are trying to run <code>git push</code> to push your updates to the remote repository, but it does not exist.</p></li>
+<li><p>You are trying to run <code>git push</code> to commit your updates to the remote repository, even though there are already new updates in the remote repository (e.g.&nbsp;from another team member) that you have not yet committed to the local project. The error message you get will look something like this:</p></li>
+</ul>
+<div class="warning">
+<p>Error: Your local changes to the following files would be overwritten during the merge: … Please commit or save your changes before merging.</p>
+</div>
+<p>So you’re telling your local <code>git</code> to add your own changes without taking your teammate’s changes into account - a classic loyalty conflict. The best way to avoid this problem is to always do a <code>git pull</code> before you start editing locally.</p>
+</section>
+<section id="good-to-know-1" class="level3">
+<h3 class="anchored" data-anchor-id="good-to-know-1">Good to know</h3>
+<div class="box ok">
+<p>For a better understanding read the following texts:</p>
+<ul>
+<li><a href="https://happygitwithr.com/pull-tricky.html">pull tricky</a>.</li>
+<li><a href="https://git-scm.com/book/en/v2">Git basics</a></li>
+<li><a href="https://happygitwithr.com/">Git and R</a></li>
+<li><a href="https://happygitwithr.com/rstudio-git-github.html">Rstudio - git - GitHub</a></li>
+</ul>
+</div>
+</section>
+<section id="self-check" class="level3">
+<h3 class="anchored" data-anchor-id="self-check">Self-Check</h3>
+<div class="scbox">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="http://137.248.191.201:3838/de/git/#section-git-in-a-nutshell"><img src="../images/git-0-self.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="fork-and-branches-on-github" class="level2">
+<h2 class="anchored" data-anchor-id="fork-and-branches-on-github">Fork and Branches on GitHub</h2>
+<section id="learning-objectives-3" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-3">Learning objectives</h3>
+<p>In this lesson you will learn</p>
+<ul>
+<li>What a fork/branch of a GitHub repository is.</li>
+<li>How to create a branch of a GitHub repository.</li>
+<li>How to update a GitHub repository from a branch.</li>
+</ul>
+</section>
+<section id="prerequisites-1" class="level3">
+<h3 class="anchored" data-anchor-id="prerequisites-1">Prerequisites</h3>
+<ul>
+<li>Familiarity with GitHub repositories.</li>
+<li>Git must be installed on your computer.</li>
+<li>A GitHub account!</li>
+</ul>
+</section>
+<section id="what-is-a-forkbranch" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-forkbranch">What is a fork/branch?</h3>
+<p>When working in groups on GitHub projects, it gets annoying when one person has to commit all the code to the repository alone. This is where forks and branches come in. - With branches, you can take a copy of the current GitHub project and make changes on your own computer. Once you and your group have made changes to the code, you can paste the changes back into your original project group. - Branches can also be used if you want to work on one part of a project separately from the other parts. - Forks are very similar, except that they are copies or clones of a complete project in a different location.</p>
+<section id="how-do-i-create-a-branch" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-i-create-a-branch">How do I create a branch?</h4>
+<p>To create a branch from a GitHub repository, go to the main repository you want to work on and click on the dropdown menu that should say “main”. It should look like the following image.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://docs.github.com/assets/cb-78797/mw-1440/images/help/branches/branch-selection-dropdown.webp" style="width:75.0%;height:75.0%" class="figure-img"></p>
+<figcaption class="figure-caption">Branch Menu in GitHub</figcaption>
+</figure>
+</div>
+<p>Once you click on this menu, a text box appears on GitHub saying “Find or create a branch…”, you enter a new name for the branch, e.g. ‘newbranch1’. Since this branch doesn’t exist yet, GitHub asks you if you want to create a branch with the name “newbranch1”. Click on “Create branch: newbranch1” and the new branch will be created for you, as shown in the following image.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://docs.github.com/assets/cb-54840/mw-1440/images/help/branches/create-branch-text.webp" style="width:40.0%;height:40.0%" class="figure-img"></p>
+<figcaption class="figure-caption">Create a new branch</figcaption>
+</figure>
+</div>
+</section>
+<section id="how-do-you-make-a-pull-request" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-make-a-pull-request">How do you make a pull request?</h4>
+<p>A pull request allows the owner of the GitHub project to review your changes to make sure they fit into the current repository and don’t cause conflicts in your repository.</p>
+<p>To make a pull request from your branch, you must first make a change to your branch repository. Once you have made a change to your branch, a yellow bar will appear on your screen asking you if you want to make a pull request. As you can see in the picture below, there is a green button, and as soon as you click on it, you can create a pull request.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://uoftcoders.github.io/rcourse/image/git_lesson/yellow_prompt.png" style="width:100.0%;height:100.0%" class="figure-img"></p>
+<figcaption class="figure-caption">Initialisation of a pull request</figcaption>
+</figure>
+</div>
+<p>Once you click on the button, GitHub will inform you if there are any problems merging the branch with the main project. If there are no problems, GitHub will put a tick and show “Able to merge”. You can then add a title and comment to your pull request to let the repository owner know what you’ve done. Once you have entered a comment and a title, you can click on “Create a pull request”. Once you have done this, a notification will be sent to the repository owner that your changes are ready for review.</p>
+<p>After you submit your request, the GitHub project owner can go to the project’s page and click on the “Pull Requests” tab. This page will display a list of pull requests from which the owner can select your request. Once on the Pull Request page, the owner will see a button that says “Merge pull request” (similar to the image below).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://docs.github.com/assets/images/help/pull_requests/merge_box/pr-reviews-in-merge-box.png" style="width:77.0%;height:77.0%" class="figure-img"></p>
+<figcaption class="figure-caption">Edit a pull request</figcaption>
+</figure>
+</div>
+<p>Once the owner clicks on the green button, he will be asked again if he wants to make the change. When he clicks the button again, the change is merged with the main branch and he sees something like the following picture….</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://uoftcoders.github.io/rcourse/image/git_lesson/delete_branch.png" style="width:100.0%;height:100.0%" class="figure-img"></p>
+<figcaption class="figure-caption">Merge a verified pull request</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="updating-a-repository-in-a-branch-or-fork" class="level3">
+<h3 class="anchored" data-anchor-id="updating-a-repository-in-a-branch-or-fork">Updating a repository in a branch (or fork)</h3>
+<p>When someone in your group makes a change to the master repo, there is a way to update your branch so you can see the changes. When a change is made, the branched repo web page will show that your repo is “1 commit behind the master”. This means that there is 1 change between your fork and the main repository.</p>
+<p>If you want to update your fork, click on the “Changes” button. You will then be taken to a page that says “main is up to date with all commits from branch. Try changing the base”. Click on “Change base”. It will then show if the branch can be merged. If so, click on `Create pull request’ (title and comment for your request) and create a pull request.</p>
+<p>Now click on ‘Merge pull request’, then on ‘Confirm merge’ and your branch will be updated!</p>
+</section>
+<section id="good-to-know-2" class="level3">
+<h3 class="anchored" data-anchor-id="good-to-know-2">Good to know</h3>
+<div class="box ok">
+<ul>
+<li>Learn how to create branches using the terminal: <a href="https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/">Working with Branches</a></li>
+<li>Learn how to use pull requests and issues: <a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-branches">Issues and Pull Requests</a></li>
+<li>Learn how to fork a GitHub repository: <a href="https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo">forking a repository</a></li>
+</ul>
+</div>
+</section>
+<section id="self-check-1" class="level3">
+<h3 class="anchored" data-anchor-id="self-check-1">Self-check</h3>
+<div class="scbox">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="http://137.248.191.201:3838/de/git/#section-github---fork-und-branch"><img src="../images/git-1-self.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="dealing-with-conflicts" class="level2">
+<h2 class="anchored" data-anchor-id="dealing-with-conflicts">Dealing with conflicts</h2>
+<section id="learning-objectives-4" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-4">Learning objectives</h3>
+<p>In this lesson you will learn</p>
+<ul>
+<li>How to deal with conflicts that arise when working with GitHub.</li>
+<li>How to deal with merge conflicts in GitHub.</li>
+</ul>
+</section>
+<section id="prerequisites-2" class="level3">
+<h3 class="anchored" data-anchor-id="prerequisites-2">Prerequisites</h3>
+<ul>
+<li>Familiarity with GitHub.</li>
+<li>Have Git installed.</li>
+<li>Have a GitHub account.</li>
+</ul>
+</section>
+<section id="version-conflict---what-is-it" class="level3">
+<h3 class="anchored" data-anchor-id="version-conflict---what-is-it">Version conflict - what is it?</h3>
+<p>Version conflicts usually occur when different versions of the same file are pushed to the main repository at the same time and the prioritisation of the files is not clear, ie:</p>
+<ul>
+<li>when updating one’s personal GitHub repository (no pull before push).</li>
+<li>when several people are working on the same file at the same time</li>
+</ul>
+</section>
+<section id="push-pull-conflicts" class="level3">
+<h3 class="anchored" data-anchor-id="push-pull-conflicts">Push &amp; Pull conflicts</h3>
+<p>A typical scenario is that you edit something online on GitHub and don’t sync that change to Rstudio at the same time or later. The conflict could be, for example you fix a typo in the README and forget to update the current version in the Rstudio project.</p>
+<p>A more complicated case is when a change has been made in the master repository and someone else in their branch/fork repository has also made a change to the same file/content. the same content. When a pull request is made, GitHub will notice the difference. Again, it may be something as simple as two people updating the README in different ways, causing GitHub to report a problem.</p>
+<p>In this case, you have to manually decide which variant takes precedence.</p>
+<p>If you make a change to your GitHub repository and there is a conflict, R will show you that your version is ahead of the master repository when you commit your change. If you see this, it means there is a difference between the files. If you try to commit and there is a problem, GitHub will tell you something like</p>
+<div class="warning">
+<p>Updates were rejected because the remote repository contains work that you don’t have locally. This is usually caused by another repository pushing to the same reference.</p>
+</div>
+<p>When this message appears, GitHub recommends that you do a pull from your master repository to find the error. Often you will get the error message</p>
+<div class="warning">
+<p>CONFLICT (content): Conflict merging into [file]. Automatic merge failed; resolve conflicts and then commit the result.</p>
+</div>
+<p>The file with the problem is then opened in your RStudio and shows the error found. It shows what changes have been made and what differences there are to the main branch (the changes are shown under ‘&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD’, the contents of the main branch are shown underneath). You need to fix the bug between the two versions, either by keeping what GitHub already has, or by tweaking your change to match what you wanted to do. When you are happy with your change, open the terminal (located in R, a tab above the console). In the terminal, type <code>git add [filename]</code>, press Enter and go back to the Git tab at the top right of the RStudio window. Select the file where the error occurred and overwrite it to fix the error.</p>
+</section>
+<section id="merge-conflicts" class="level3">
+<h3 class="anchored" data-anchor-id="merge-conflicts">Merge conflicts</h3>
+<p>If multiple people are working on the same GitHub repository or you are only using one branch, there is a chance that a <strong>merge conflict</strong> will occur. Merge conflicts occur when changes are made to the main repository and to a branch that do not match. Once a pull request is made, the repository owner must manually review the changes, they cannot then be merged automatically.</p>
+<p>Consequently, GitHub will tell you that it cannot automatically merge the versions, but it will still allow you to make the pull request. If you decide to send the pull request, the repo owner will not be able to click the green <code>merge</code> button, but will see a message saying:</p>
+<p>:: warning This branch has conflicts that need to be resolved. :::</p>
+<p>To the right of this message is the <code>Resolve Conflicts</code> button.</p>
+<p>When you click on the ‘Resolve conflicts’ button, you will be taken to a page that looks similar to push or pull errors. You will see the suggested changes from the branch and main repository. At this point, changes can then be made and finally successfully deployed for a merge with <code>Mark as Resolved</code> and then <code>Confirm Merge</code>. Finally, the owner must click <code>Merge Pull Request</code> and then <code>Commit Merge</code> to make the change in the master repository.</p>
+</section>
+<section id="good-to-know-3" class="level3">
+<h3 class="anchored" data-anchor-id="good-to-know-3">Good to know</h3>
+<div class="box ok">
+<ul>
+<li><p><strong>Always</strong> <code>pull</code> before <code>push</code>, otherwise GitHub will have two different changes stored and won’t know which one to use.</p></li>
+<li><p>For more information about <a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts">handling conflicts</a> in GitHub, see the GitHub Docs.</p></li>
+</ul>
+</div>
+</section>
+<section id="self-check-2" class="level3">
+<h3 class="anchored" data-anchor-id="self-check-2">Self-check</h3>
+<div class="scbox">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="http://137.248.191.201:3838/de/git/#section-github---konflikte-l%C3%B6sen"><img src="../images/git-1-self.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="rstudio---all-inclusive" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio---all-inclusive">RStudio - All Inclusive</h2>
+<section id="learning-objectives-5" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives-5">Learning objectives</h3>
+<ul>
+<li>Using GitHub directly from RStudio</li>
+</ul>
+</section>
+<section id="prerequisites-3" class="level3">
+<h3 class="anchored" data-anchor-id="prerequisites-3">Prerequisites</h3>
+<ul>
+<li>Practice in working with GitHub and git</li>
+</ul>
+</section>
+<section id="integrating-an-existing-github-repo-into-r" class="level3">
+<h3 class="anchored" data-anchor-id="integrating-an-existing-github-repo-into-r">Integrating an existing GitHub repo into R</h3>
+<p>Before working with a GitHub repository in RStudio, make sure you have a GitHub repository to work with.</p>
+<p>After you have created the repository, you can click the green button to get a link to clone the repository. To open it in R, open R and click on the cube with the plus sign to create a new project, click on version control and then on Git. Now paste the URL you copied earlier and create the project. Now you have a project in R that is connected to GitHub. Now you can create new files and upload them to GitHub for others to see.</p>
+</section>
+<section id="explanation-of-the-buttonscommands" class="level3">
+<h3 class="anchored" data-anchor-id="explanation-of-the-buttonscommands">Explanation of the buttons/commands</h3>
+<p>On the top right (depending on the configuration of RStudio) you will find the tabs <code>Environment</code>, <code>History...</code> Select the tab <code>Git</code> to see the Git commands. In this section you can decide which files to upload/delete, which changes to apply, which files to pull from the master repository, which files to push to the master repository. The changes made are checked here and branches can be created or changed. Let’s now look at what the individual commands/buttons do.</p>
+<ul>
+<li><p>Diff` If you click on Diff, a new window opens in R. This window shows all the files that have changed (compared to the main repository) and also the changes you have made. You can also use this window to commit the changes and move them out of the main repository.</p></li>
+<li><p>Commit` Using Commit in the smaller window is similar to using it in the Diff window, you just need to select the files you want to commit to the repository and then commit the changes.</p></li>
+<li><p><code>Pull</code> Pull is pretty self-explanatory, it pulls files from the GitHub repository. It is important to pull files before pushing to avoid possible conflicts with overlapping files.</p></li>
+<li><p><code>Push</code> pushes the files into the GitHub repository. This feature is used when you have finished making changes to your files and are ready to upload them so others can view the new files. The order for uploading these files would be: commit changes, pull from the repository and then push to the repository.</p></li>
+<li><p><code>History</code> The next icon is a small clock that represents the history of your work. It shows the previous commits and what was changed in each commit.</p></li>
+<li><p>Revert, Ignore and Shell’ These commands can be found in a dropdown menu after clicking on the gear next to the clock. With Revert you can undo all changes, with Ignore you can set up a gitignore (useful to block files you don’t want to upload) and with Shell you can open your terminal and execute git commands there.</p></li>
+<li><p>Branches’ The next icon stands for branches. When you click on this icon, you will be asked if you want to create a new branch. As you learned in the Branches module of the Toolkit, branches are useful for testing changes without affecting the main branch in case an error occurs. You can use the drop-down menu to the right of the branch icon to switch between branches.</p></li>
+<li><p><code>Terminal (optional)</code> You can run these GitHub commands with the RStudio commands, but you can also use the terminal in R to do the same. All GitHub commands are in the form “git _____” and you can find them by typing “git” into your terminal. This does the same as the R panel, but if you are more familiar with writing git commands in a terminal, it may work better for you.</p></li>
+</ul>
+<section id="turning-an-r-project-into-a-github-repository" class="level4">
+<h4 class="anchored" data-anchor-id="turning-an-r-project-into-a-github-repository">Turning an R project into a GitHub repository</h4>
+<p>Sometimes you are working on a project in R and you forgot to create a GitHub repository for it. In this case, the package <code>usethis</code> can help you create a repo from within RStudio. With the function <code>usethis::use_git</code> the current project can be converted into a GitHub repo so that the files can be uploaded. - If you run this function for the first time, you will probably get an error, as you need a token from GitHub to do this. After calling <code>usethis::browse_github_token</code> a new window will open asking you to log in to your GitHub account. After logging in, permissions can be set and copied with the token. Once you have copied the token, call <code>usethis::edit_r_environment()</code> and save your token as “GITHUB_PAT=token”.</p>
+<p>Once your token is set and your R is reset, you can use <code>use_git</code> and it will ask you if it is OK to commit your files to GitHub. If you answer yes to this question, you will be asked to restart your RStudio window to open the Git window and upload your files. After restarting RStudio, upload the changed files (if any) using the diff button. Now use <code>usethis::use_github</code> to send your files to a GitHub repository. - <code>use_github</code> will ask you if you have an ssh key, which you probably don’t, so choose <code>https</code>. Then you will be asked if the title and description are acceptable. If so, you can answer yes and upload the file to GitHub!</p>
+</section>
+</section>
+<section id="good-to-know-4" class="level3">
+<h3 class="anchored" data-anchor-id="good-to-know-4">Good to know</h3>
+<div class="successbox">
+<p>For more information on using GitHub in RStudio, see the following link:</p>
+<ul>
+<li>The blog entry <a href="https://resources.github.com/whitepapers/github-and-rstudio/">GitHub &amp; Rstudio</a> shows how to use Git in RStudio and goes into particular detail about the terminal commands.</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kL6L2MNqPHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+</iframe>
+</div>
+</section>
+<section id="self-check-3" class="level3">
+<h3 class="anchored" data-anchor-id="self-check-3">Self-check</h3>
+<div class="scbox">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="http://137.248.191.201:3838/de/git/#section-github---workflow-in-rstudio"><img src="../images/git-3-self.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>The tutorial is based on the <a href="https://dosstoolkit.com/">DoSStoolkit</a>. especially using the module <a href="https://dosstoolkit.com/#git-outta-here">Git outta here</a> by <a href="https://dosstoolkit.com/#contributors">Mariam Walaa &amp; Matthew Wankiewicz</a>. The translations and modifications as well as some of the graphics are by the author of this page.</p>
+<p>The original module can be called with the following R command.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>learnr<span class="sc">::</span><span class="fu">run_tutorial</span>(<span class="st">"git_outta_here"</span>, <span class="at">package =</span> <span class="st">"DoSStoolkit"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->
