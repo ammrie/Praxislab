@@ -131,7 +131,7 @@ graph LR
 
 Mit dem Befehl ist `git status` erhälst du einen Überblick über den Status aller Dateien innerhalb eines initialisierten Repository Ordners. Du solltest in der Lage sein, die Ausgabe dieses Befehls zu interpretieren:
 
-![git status - konzeptionelle Inhalte](../images/64_git-status.PNG){width="65%" height="65%"}
+![git status - konzeptionelle Inhalte](../images/64_git-status.PNG){width="85%" height="85%"}
 
 ### Gut zu wissen
 
