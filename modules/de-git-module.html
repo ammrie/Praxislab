@@ -93,6 +93,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../css/styles.css">
@@ -334,23 +337,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p><img src="../images/github-Rstudio.jpg" class="img-fluid" style="width:75.0%"></p>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.6.1/mermaid.min.js"></script>
+<style>
+svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
+</style>
+<p><img src="../images/github-Rstudio.jpg" class="img-fluid" style="width:100.0%"></p>
 <section id="modulüberblick" class="level2">
 <h2 class="anchored" data-anchor-id="modulüberblick">Modulüberblick</h2>
-<p>In diesem Modul geht es um das Versionskontrollsystem Git, den Cloud-Dienst GitHub und deren Verwendung mit RStudio als IDE.</p>
-<p><code>Git</code> ist ein Versionskontrollsystem, das die Erstellung von Snapshots einer Datei oder sogar eines ganzen Projekts zu bestimmten Zeitpunkten ermöglicht. Auch das Kombinieren dieser Snapshots mit denen von Kolleginnen und Kollegen ist komfortabel möglich.</p>
-<p><code>GitHub</code> ist die bekannteste Cloud-basierte Arbeitsumgebung auf Basis von Git und bietet darüber hinaus eine Vielzahl webbasierter Werkzeuge und Dienste.</p>
-<p><code>RStudio</code> ist als so genannte integrierte Entwicklungsumgebung (IDE) eine typische Desktop-Anwendung, die nicht nur R/Python/JS und Markup Language unterstützt, sondern auch das Lesen/Schreiben, Manipulieren und Visualisieren von Daten und Texten ermöglicht und eine nahezu vollständige Unterstützung bei der Erstellung von Dokumenten in Form von Texten in allen denkbaren Formaten, interaktiven Dokumenten und Websites bietet.</p>
-<p>Neben zahlreichen kollaborativen Diensten und grundlegenden Versionskontrollfunktionen ist das Wichtigste, dass man eigentlich nichts kaputt machen kann.</p>
+<p>In diesem Modul geht es um das Versionskontrollsystem <code>git</code>, den Cloud-Dienst <code>GitHub</code> und deren Verwendung in <code>RStudio</code>.</p>
+<p><code>git</code> ist ein Versionskontrollsystem, das die Erstellung von Snapshots von Dateien oder ganzen Verzeichnisbäumen ermöglicht. Auch das Kombinieren und Vergleichen solcher Snapshots ist komfortabel möglich.</p>
+<p><code>GitHub</code> ist die bekannteste Cloud-basierte Arbeitsumgebung auf Basis von <code>Git</code> und bietet darüber hinaus eine Vielzahl webbasierter Werkzeuge und Dienste.</p>
+<p><code>RStudio</code> ist als so genannte integrierte Entwicklungsumgebung (IDE) eine Desktop-Anwendung, die nicht nur für R/Python generische Programmieruntersützung bietet, sondern auch das wissenschaftliche Schreiben und Dokumentation, von Daten und Texten sehr gut unterstützt- Durch die vollständige Integration von <code>Pandoc</code> und <code>Tex</code> bietet es darüber hinaus eine weitgehende und sehr komfortable Unterstützung bei der Erstellung von Dokumenten in Form von Texten in allen denkbaren Formaten, interaktiven Dokumenten und Websites.</p>
 <section id="lernziele" class="level3">
 <h3 class="anchored" data-anchor-id="lernziele">Lernziele</h3>
-<p>Am Ende des Moduls werdet ihr in der Lage sein, Git, GitHub und Rstudio nahtlos zu verwenden. Ein besonderer Schwerpunkt liegt dabei auf der pragmatischen Anwendung:</p>
+<p>Am Ende des Moduls werdet ihr in der Lage sein, <code>git</code>, <code>GitHub</code> und <code>Rstudio</code> effizient zu verwenden. Ein besonderer Schwerpunkt liegt dabei auf der praktischen Anwendung. Konkret beschäftigen wir uns mit:</p>
 <ul>
-<li>Was ist Versionskontrolle</li>
-<li>Was unterscheidet git und GitHub?</li>
-<li>Git: Pull, Status, Add, Commit, Push</li>
-<li>Umgang mit Konflikten</li>
-<li>Rstudio und GitHub</li>
+<li>Was ist eine Versionskontrolle?</li>
+<li>Was unterscheidet <code>git</code> und <code>GitHub</code>?</li>
+<li>Die zentralen Vorgänge, <code>Pull</code>, <code>Status</code>, <code>Add</code>, <code>Commit</code>, <code>Push</code></li>
+<li>Vermeidung und Auflösung von Versionskonflikten</li>
+<li>Nutzung mit <code>RStudio</code></li>
 </ul>
 </section>
 </section>
@@ -360,37 +366,96 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="lernziele-1">Lernziele</h3>
 <p>In dem Teilmodul <em>Git und GitHub leicht gemacht</em> lernst du:</p>
 <ul>
-<li>das Konzept der Versionskontrolle zu verstehen</li>
-<li>Die Einsatzgebiete von GitHub und Git zu verstehen</li>
+<li>das Konzept der Versionskontrolle</li>
+<li>die Einsatzgebiete von GitHub und Git</li>
 </ul>
 </section>
 <section id="vorkenntnisse" class="level3">
 <h3 class="anchored" data-anchor-id="vorkenntnisse">Vorkenntnisse</h3>
 <ul>
-<li>Mit deinem Dateimanager navigieren und arbeiten</li>
-<li>Ordnerstrukturen verstehen</li>
+<li>mit deinem Dateimanager navigieren und arbeiten</li>
+<li>ein grundlegendes Verständnis von Datei- und Ordnerstrukturen</li>
 </ul>
 </section>
 <section id="überblick" class="level3">
 <h3 class="anchored" data-anchor-id="überblick">Überblick</h3>
-<p>In gängigen Office-Systemen können Sie z.B. AutoSave aktivieren, um kontinuierlich, zu bestimmten Zeiten oder manuell ein Backup zu erstellen. Die Versionskontrolle git funktioniert auf ähnliche Weise für von dir definierte Ordnerverzeichnisse.</p>
-<p>Du hast zum Beispiel einen Ordner, in dem du ein Projekt hast, das aus verschiedenen Dateien besteht (Text, Programmcode, Bilder, Sounddateien usw.) und du möchtest die Änderungen, die du an diesen Dateien gemacht hast, im Auge behalten.</p>
-<p>Git protokolliert alle Änderungen an diesen Dateien. 1. Git mitteilen, dass eine Datei oder ein Verzeichnis verfolgt werden soll. 2. dass der Zustand der Datei zu einem bestimmten Zeitpunkt aufgezeichnet werden soll.</p>
-<p>Im Gegensatz zum kontinuierlichen Backup von z.B. Google Docs (das keine Wiederherstellung erlaubt) ist dieser Prozess notwendigerweise in 2 Schritte aufgeteilt, um definierte Änderungen vornehmen zu können, bevor diese bestätigt und mit einem <em>commit</em> als Snapshot gespeichert werden.</p>
+<p>Was ist eine Versionskontrolle und wofür ist sie gut? Versionskontrollsysteme sind Softwaretools, die Personen bei der Verwaltung von Änderungen an Texten, Quellcode, wissenschaftlichen Analysen oder Dokumentationen unterstützen.</p>
+<p>Im Falle eines Fehlers können die Autor:innen die Änderungen einsehen und mit früheren (Teil-)Versionen vergleichen, um Korrekturen vorzunehmen und gleichzeitig die Unterbrechung ihrer eigenen Arbeit oder der Arbeit von Teammitgliedern zu minimieren.</p>
+<p>Du hast zum Beispiel einen Ordner, in dem du ein Projekt hast, das aus verschiedenen Dateien besteht (Text, Programmcode, Bilder, Sounddateien usw.), und du möchtest die Änderungen verfolgen, die du an diesen Dateien vorgenommen hast.</p>
+<p>Die Software <code>git</code> protokolliert alle Änderungen an diesen Dateien. Wie geht das?</p>
+<p>1. <code>git</code> mitteilen, dass eine Datei oder ein Verzeichnis aufgezeichnet werden soll.</p>
+<p>2. <code>git</code> mitteilen, dass der Zustand der Datei zu einem bestimmten Zeitpunkt aufgezeichnet werden soll.</p>
+<p>Dieser Prozess ist also in zwei Schritte unterteilt, die kontrolliert und ausgelöst werden müssen. Um definierte Änderungen vornehmen zu können, muss festgelegt werden, was überwacht werden soll und es muss explizit bestätigt werden, dass ein definierter Zustand gespeichert wird. Im Prinzip muss also, wie bekannt, eine Momentaufnahme der Datei oder des Projektes bestätigt gespeichert werden.</p>
+<p>Der große Unterschied ist jedoch, dass nur die Änderungen dieses Sicherungsvorganges aufgezeichnet werden und später auch in diesen Teilschritten wiederhergestellt werden können.</p>
 <section id="git---erste-schritte" class="level4">
 <h4 class="anchored" data-anchor-id="git---erste-schritte">Git - Erste Schritte</h4>
 <p>Bei der Verwendung von Git muss zunächst ein Repository <em>in</em> einem Verzeichnis auf dem lokalen Rechner aktiviert werden. Dies geschieht mit dem Befehl <code>git init</code>. Nun weiß Git wo, aber nicht was es verfolgen soll.</p>
-<p><img src="../images/64_git-init.PNG" style="width:75.0%;height:75.0%"></p>
-<p>Während der Arbeit muss Git “informiert” werden, was mit diesen Dateien geschehen soll. Dies geschieht mit den beiden Befehlen <code>git add</code> und <code>git commit</code>.</p>
-<p>Ein wichtiger zusätzlicher Befehl, <code>git push</code>, wird verwendet, um den aktuellen Verzeichnis-Snapshot in ein entferntes Repository (z.B. Github, GitLab) zu übertragen.</p>
-<p><img src="../images/64_add-commit-push.PNG" style="width:75.0%;height:75.0%"></p>
-<p>Der letzte Befehl ist <code>git status</code>. Du solltest diesen Befehl benutzen, wenn du an deinem Projekt arbeitest, damit du weißt, was du noch nicht getrackt hast. Die Ausgabe dieses Befehls besteht aus mehreren Teilen Du solltest in der Lage sein, die Ausgabe dieses Befehls zu interpretieren:</p>
-<p><img src="../images/64_git-status.PNG" style="width:75.0%;height:75.0%"></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    A[Erzeuge einen &lt;br&gt; neuen Ordner ] -- mkdir MeinOrdner --&gt; B[Lokaler Ordner &lt;br&gt; 'MeinOrdner']
+    B -- git init --&gt; C[Lokales Repository &lt;br&gt; 'Mein Ordner']
+    C -.- D(git überwacht &lt;br&gt; 'MeinOrdner' &lt;br&gt; 'kennt' aber Inhalte)
+  
+
+    classDef gr fill:#9f6,stroke:#333,stroke-width:2px
+    classDef bl fill:#6BC9F5,stroke:#333,stroke-width:4px
+    classDef or fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
+    class A bl
+    class B,C gr
+    class D or
+
+%%{init: {'theme':'forest'}}%%
+</pre>
+</div>
+<p>Initialisierung eines Repositories</p>
+</div>
+</div>
+</div>
+<p>Die Veränderungen an Dateien des Projekts werden jdoch <strong>nur</strong> übwerwach falls <code>git</code> ausdrücklich darüber <em>“informiert”</em> wird, was mit diesen Dateien geschehen soll. Dies geschieht mit den beiden Befehlen <code>git add</code> und <code>git commit</code>. Der Befehl, <code>git push</code> wird dann verwendet wenn die bestätigten Verzeichnis-Snapshot in ein entferntes Repository (z.B. Github, GitLab) übertragenm werden sollen.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">graph LR
+    Z(Eine neue Datei wird erstellt)
+    
+    A[Lokales Verzeichnis ] -- git add 'Dateiname' --&gt; B[Datei im &lt;br&gt;Staging Area]
+    B -- git commit --&gt; C[Dateiversion im &lt;br&gt; Lokalen Repository ]
+    C -- git push --&gt; D[Dateiversion im &lt;br&gt; Remote Repository ]
+    
+    AA[Leerer Ordner] -.-&gt; BB(git überwacht die Datei)
+    BB -.-&gt; CC&gt;git sichert lokal &lt;br&gt; aktuellen Zustand der Datei]
+    CC -.-&gt; DD&gt;git sichert  remote &lt;br&gt; aktuellen Zustand der Datei]
+    
+
+    classDef green fill:#9f6,stroke:#333,stroke-width:2px
+    classDef blue fill:#6BC9F5,stroke:#333,stroke-width:4px
+    classDef orange fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
+    class A blue
+    class B,C,D green
+    class Z,DD,CC,AA,BB orange
+
+</pre>
+</div>
+<p>Ablauf Stage-Commit-Push eine Datei</p>
+</div>
+</div>
+</div>
+<p>Mit dem Befehl ist <code>git status</code> erhälst du einen Überblick über den Status aller Dateien innerhalb eines initialisierten Repository Ordners. Du solltest in der Lage sein, die Ausgabe dieses Befehls zu interpretieren:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/64_git-status.PNG" style="width:65.0%;height:65.0%" class="figure-img"></p>
+<figcaption class="figure-caption">git status - konzeptionelle Inhalte</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="gut-zu-wissen" class="level3">
 <h3 class="anchored" data-anchor-id="gut-zu-wissen">Gut zu wissen</h3>
-<div class="successbox ginfo">
+<div class="box ok">
 <p>Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Ressourcen:</p>
 <ul>
 <li><a href="https://git-scm.com/book/en/v2">Pro Git: Kapitel <strong>Git Grundlagen</strong></a></li>
@@ -432,7 +497,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="gut-zu-wissen-1" class="level3">
 <h3 class="anchored" data-anchor-id="gut-zu-wissen-1">Gut zu wissen</h3>
-<div class="successbox ginfo">
+<div class="box ok">
 <ul>
 <li><p>Du versuchst, <code>git commit</code> auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht. Deshalb müssen Sie zuerst <code>git add</code> ausführen.</p></li>
 <li><p>Du versuchst <code>git push</code> auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.</p></li>
@@ -445,7 +510,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="selbst-check" class="level3">
 <h3 class="anchored" data-anchor-id="selbst-check">Selbst-Check</h3>
-<div class="infobox test">
+<div class="infobox">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="http://137.248.191.201:3838/de/git/#section-git-in-a-nutshell"><img src="../images/git-0-self.png" class="img-fluid figure-img"></a></p>
@@ -488,20 +553,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="wie-erstelle-ich-einen-branch" class="level4">
 <h4 class="anchored" data-anchor-id="wie-erstelle-ich-einen-branch">Wie erstelle ich einen Branch?</h4>
 <p>Um einen Branch von einem GitHub Repository zu erstellen, gehe zu dem Hauptrepository, an dem du arbeiten möchtest und klicke auf das Dropdown-Menü, das “main” heißen sollte. Es sollte wie das folgende Bild aussehen.</p>
-<p><img src="https://docs.github.com/assets/cb-78797/mw-1440/images/help/branches/branch-selection-dropdown.webp" style="width:50.0%;height:50.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://docs.github.com/assets/cb-78797/mw-1440/images/help/branches/branch-selection-dropdown.webp" style="width:75.0%;height:75.0%" class="figure-img"></p>
+<figcaption class="figure-caption">Branch Menu in GitHub</figcaption>
+</figure>
+</div>
 <p>Sobald man auf dieses Menü klickt, erscheint auf GitHub ein Textfeld mit der Aufschrift “Find or create a branch…”, man gibt einen neuen Namen für den Zweig ein, z.B. ‘newbranch1’. Da dieser Zweig noch nicht existiert, fragt dich GitHub, ob du einen Zweig mit dem Namen “newbranch1” erstellen möchtest. Klicke auf “Create branch: newbranch1” und der neue Zweig wird für Dich erstellt, wie in der folgenden Abbildung zu sehen ist.</p>
-<p><img src="https://docs.github.com/assets/cb-54840/mw-1440/images/help/branches/create-branch-text.webp" style="width:50.0%;height:50.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://docs.github.com/assets/cb-54840/mw-1440/images/help/branches/create-branch-text.webp" style="width:40.0%;height:40.0%" class="figure-img"></p>
+<figcaption class="figure-caption">Erzeugung eines neuen Branches</figcaption>
+</figure>
+</div>
 </section>
 <section id="wie-stellt-man-einen-pull-request" class="level4">
 <h4 class="anchored" data-anchor-id="wie-stellt-man-einen-pull-request">Wie stellt man einen Pull Request?</h4>
 <p>Eine Pull-Anfrage ermöglicht es dem Eigentümer des GitHub-Projekts, Deine Änderungen zu überprüfen, um sicherzustellen, dass sie in das aktuelle Repository passen und keine Konflikte in Deinem Repository verursachen.</p>
 <p>Um eine Pull-Anfrage von Deinem Zweig aus zu stellen, musst Du zuerst eine Änderung an Deinem Zweig-Repository vornehmen. Sobald Du eine Änderung an Deinem Zweig vorgenommen hast, erscheint ein gelber Balken auf Deinem Bildschirm, der Dich fragt, ob Du eine Pull-Anfrage stellen möchtest. Wie Du auf dem Bild unten sehen kannst, gibt es einen grünen Button, und sobald Du darauf klickst, kannst Du eine Pull-Anfrage erstellen.</p>
-<p><img src="https://uoftcoders.github.io/rcourse/image/git_lesson/yellow_prompt.png" style="width:50.0%;height:50.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://uoftcoders.github.io/rcourse/image/git_lesson/yellow_prompt.png" style="width:100.0%;height:100.0%" class="figure-img"></p>
+<figcaption class="figure-caption">Initialisierung eines Pull Requests</figcaption>
+</figure>
+</div>
 <p>Sobald Du auf den Button klickst, informiert Dich GitHub, ob es Probleme beim Zusammenführen des Zweigs mit dem Hauptprojekt gibt. Wenn es keine Probleme gibt, setzt GitHub ein Häkchen und zeigt “Able to merge” an. Du kannst dann einen Titel und einen Kommentar zu Deiner Pull-Anfrage hinzufügen, um den Besitzer des Repositorys darüber zu informieren, was Du getan hast. Sobald Du einen Kommentar und einen Titel eingegeben hast, kannst Du auf “Create a pull request” klicken. Wenn Du dies getan hast, wird eine Benachrichtigung an den Besitzer des Repositorys gesendet, dass Deine Änderungen zur Überprüfung bereit sind.</p>
 <p>Nachdem Du Deine Anfrage abgeschickt hast, kann der Besitzer des GitHub-Projekts auf die Seite des Projekts gehen und auf den Reiter “Pull Requests” klicken. Auf dieser Seite wird eine Liste von Pull Requests angezeigt, aus der der Eigentümer Deine Anfrage auswählen kann. Sobald der Besitzer auf der Pull Request Seite angekommen ist, sieht er eine Schaltfläche mit der Aufschrift “Merge pull request” (ähnlich der Abbildung unten).</p>
-<p><img src="https://docs.github.com/assets/images/help/pull_requests/merge_box/pr-reviews-in-merge-box.png" style="width:50.0%;height:50.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://docs.github.com/assets/images/help/pull_requests/merge_box/pr-reviews-in-merge-box.png" style="width:77.0%;height:77.0%" class="figure-img"></p>
+<figcaption class="figure-caption">Bearbeitung eines Pull Requests</figcaption>
+</figure>
+</div>
 <p>Sobald der Eigentümer auf die grüne Schaltfläche klickt, wird er erneut gefragt, ob er die Änderung vornehmen möchte. Wenn er erneut auf den Button klickt, wird die Änderung mit dem Hauptzweig zusammengeführt und er sieht etwas wie das folgende Bild…</p>
-<p><img src="https://uoftcoders.github.io/rcourse/image/git_lesson/delete_branch.png" style="width:50.0%;height:50.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://uoftcoders.github.io/rcourse/image/git_lesson/delete_branch.png" style="width:100.0%;height:100.0%" class="figure-img"></p>
+<figcaption class="figure-caption">Mergen eines verifizierten Pull Request</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="ein-repository-in-einem-branch-oder-fork-aktualisieren" class="level3">
@@ -512,7 +602,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="gut-zu-wissen-2" class="level3">
 <h3 class="anchored" data-anchor-id="gut-zu-wissen-2">Gut zu wissen</h3>
-<div class="successbox ginfo">
+<div class="box ok">
 <ul>
 <li>Lerne wie man Branches mit dem Terminal erstellt: <a href="https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/">Arbeiten mit Branches</a></li>
 <li>Lerne die Verwendung von Pull Requests und Issues: <a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-branches">Issues und Pull Requests</a></li>
@@ -522,7 +612,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="selbst-check-1" class="level3">
 <h3 class="anchored" data-anchor-id="selbst-check-1">Selbst-Check</h3>
-<div class="infobox test">
+<div class="infobox">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="http://137.248.191.201:3838/de/git/#section-github---fork-und-branch"><img src="../images/git-1-self.png" class="img-fluid figure-img"></a></p>
@@ -560,9 +650,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="push-pull-konflikte" class="level3">
 <h3 class="anchored" data-anchor-id="push-pull-konflikte">Push &amp; Pull Konflikte</h3>
 <p>Ein typisches Szenario ist, dass Du etwas online auf GitHub bearbeitest und diese Änderung nicht gleichzeitig oder später in Rstudio synchronisierst. Der Konflikt könnte z.B. sein, dass Du einen Tippfehler in der README korrigierst und vergisst, die aktuelle Version im Rstudio-Projekt zu aktualisieren.</p>
-<div class="successbox ok">
-<p>Also <strong>immer</strong> <code>pull</code> vor <code>push</code>, sonst hat GitHub zwei verschiedene Änderungen gespeichert und weiß nicht, welche zu verwenden ist.</p>
-</div>
 <p>Ein komplizierterer Fall ist, wenn eine Änderung im Master-Repository gemacht wurde und jemand anderes in seinem Branch-/Fork-Repository ebenfalls eine Änderung an der gleichen Datei bzw. dem gleichen Inhalt gemacht hat. Wenn eine Pull-Anfrage gestellt wird, wird GitHub den Unterschied bemerken. Auch hier kann es sich um etwas so Einfaches handeln, wie zwei Personen, die die README auf unterschiedliche Weise aktualisieren, was GitHub dazu veranlasst, ein Problem zu melden.</p>
 <p>In diesem Fall muss manuell entschieden werden, welche Variante Vorrang hat.</p>
 <p>Wenn Du eine Änderung an Deinem GitHub-Repository vornimmst und es gibt einen Konflikt, zeigt Dir R an, dass Deine Version dem Haupt-Repository voraus ist, wenn Du Deine Änderung überträgst. Wenn Du dies siehst, bedeutet es, dass es einen Unterschied zwischen den Dateien gibt. Wenn Du versuchst zu pullen und es gibt ein Problem, wird GitHub Dir etwas sagen wie</p>
@@ -587,16 +674,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="gut-zu-wissen-3" class="level3">
 <h3 class="anchored" data-anchor-id="gut-zu-wissen-3">Gut zu wissen</h3>
-<div class="successbox ginfo">
-<p>Weitere Informationen über den Umgang mit Konflikten in GitHub findest Du hier:</p>
+<div class="box ok">
 <ul>
-<li><a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts">Wie gehe ich mit Merge Konflikten um?</a></li>
+<li><p><strong>Immer</strong> <code>pull</code> vor <code>push</code>, sonst hat GitHub zwei verschiedene Änderungen gespeichert und weiß nicht, welche zu verwenden ist.</p></li>
+<li><p>Weitere Informationen über den <a href="https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/addressing-merge-conflicts">Umgang mit Konflikten</a> in GitHub findest Du in den GitHub Docs.</p></li>
 </ul>
 </div>
 </section>
 <section id="selbst-check-2" class="level3">
 <h3 class="anchored" data-anchor-id="selbst-check-2">Selbst-Check</h3>
-<div class="infobox test">
+<div class="infobox">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="http://137.248.191.201:3838/de/git/#section-github---konflikte-l%C3%B6sen"><img src="../images/git-1-self.png" class="img-fluid figure-img"></a></p>
@@ -645,21 +732,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="gut-zu-wissen-4" class="level3">
 <h3 class="anchored" data-anchor-id="gut-zu-wissen-4">Gut zu wissen</h3>
-<div class="successbox ginfo">
+<div class="successbox">
 <p>Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folgendem Link:</p>
 <ul>
 <li>Der Blog-Eintrag <a href="https://resources.github.com/whitepapers/github-and-rstudio/">GitHub &amp; Rstudio</a> zeigt, wie man Git in RStudio benutzt und geht dabei besonders auf die Terminal-Befehle ein.</li>
 </ul>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kL6L2MNqPHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
 </iframe>
-<blockquote class="blockquote">
-
-</blockquote>
 </div>
 </section>
 <section id="selbst-check-3" class="level3">
 <h3 class="anchored" data-anchor-id="selbst-check-3">Selbst-Check</h3>
-<div class="infobox test">
+<div class="infobox">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="http://137.248.191.201:3838/de/git/#section-github---workflow-in-rstudio"><img src="../images/git-3-self.png" class="img-fluid figure-img"></a></p>
