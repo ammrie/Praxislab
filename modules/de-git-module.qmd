@@ -170,7 +170,7 @@ Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Re
 
 ### Selbst-Check
 
-::: { .scbox  }
+::: {.callout-note appearance="minimal"}
 [![](../images/git-0-self.png)](http://137.248.191.201:3838/de/git/#section-git-in-a-nutshell)
 :::
 
@@ -267,7 +267,7 @@ Nun klicke auf `Merge pull request`, dann auf `Confirm merge` und dein Zweig wir
 
 ### Selbst-Check
 
-::: { .scbox  }
+::: {.callout-note appearance="minimal"}
 [![](../images/git-1-self.png)](http://137.248.191.201:3838/de/git/#section-github---fork-und-branch)
 :::
 
@@ -365,7 +365,7 @@ Zuletzt muss der Eigentümer auf `Merge Pull Request` und dann auf `Commit Merge
 
 ### Selbst-Check
 
-::: { .scbox  }
+::: {.callout-note appearance="minimal"}
 [![](../images/git-1-self.png)](http://137.248.191.201:3838/de/git/#section-github---konflikte-l%C3%B6sen)
 :::
 
@@ -475,7 +475,7 @@ Weitere Informationen zur Verwendung von GitHub in RStudio findest Du unter folg
 
 ### Selbst-Check
 
-::: { .scbox  }
+::: {.callout-note appearance="minimal"}
 [![](../images/git-3-self.png)](http://137.248.191.201:3838/de/git/#section-github---workflow-in-rstudio)
 :::
 
