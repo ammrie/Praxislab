@@ -398,14 +398,15 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 <div>
 <div>
 <pre class="mermaid mermaid-js">graph LR
-    A[Erzeuge einen &lt;br&gt; neuen Ordner ] -- mkdir MeinOrdner --&gt; B[Lokaler Ordner &lt;br&gt; 'MeinOrdner']
+    A(Erzeuge einen &lt;br&gt; neuen Ordner) -.-&gt; B[Lokaler Ordner &lt;br&gt; 'MeinOrdner']
     B -- git init --&gt; C[Lokales Repository &lt;br&gt; 'Mein Ordner']
-    C -.- D(git überwacht &lt;br&gt; 'MeinOrdner' &lt;br&gt; 'kennt' aber Inhalte)
+    C -.- D(git überwacht &lt;br&gt; 'MeinOrdner' &lt;br&gt; 'kennt' aber keine Inhalte)
   
 
     classDef gr fill:#9f6,stroke:#333,stroke-width:2px
-    classDef bl fill:#6BC9F5,stroke:#333,stroke-width:4px
+    classDef bl fill:#6BC9F5,stroke:#333,stroke-width:2px,stroke-dasharray: 1
     classDef or fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
+    classDef or2 fill:orange,stroke:#333,stroke-width:3px,stroke-dasharray: 2
     class A bl
     class B,C gr
     class D or
@@ -423,23 +424,23 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 <div>
 <div>
 <pre class="mermaid mermaid-js">graph LR
-    Z(Eine neue Datei wird erstellt)
+    Z(Erzeuge eine &lt;br&gt; neue Datei)
     
-    A[Lokales Verzeichnis ] -- git add 'Dateiname' --&gt; B[Datei im &lt;br&gt;Staging Area]
+    A[Lokales Repository] -- git add 'Dateiname' --&gt; B[Datei im &lt;br&gt;Staging Area]
     B -- git commit --&gt; C[Dateiversion im &lt;br&gt; Lokalen Repository ]
     C -- git push --&gt; D[Dateiversion im &lt;br&gt; Remote Repository ]
     
-    AA[Leerer Ordner] -.-&gt; BB(git überwacht die Datei)
+    AA[Initialisiers &lt;br&gt; Repository] -.-&gt; BB(git überwacht die Datei)
     BB -.-&gt; CC(git sichert lokal &lt;br&gt; aktuellen Zustand der Datei)
     CC -.-&gt; DD(git sichert  remote &lt;br&gt; aktuellen Zustand der Datei)
     
 
     classDef green fill:#9f6,stroke:#333,stroke-width:2px
-    classDef blue fill:#6BC9F5,stroke:#333,stroke-width:4px
+    classDef blue fill:#6BC9F5,stroke:#333,stroke-width:2px,stroke-dasharray: 2
     classDef orange fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
-    class A blue
-    class B,C,D green
-    class Z,DD,CC,AA,BB orange
+    class Z blue
+    class A,B,C,D green
+    class DD,CC,AA,BB orange
 
 </pre>
 </div>
