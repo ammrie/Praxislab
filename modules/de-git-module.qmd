@@ -146,7 +146,7 @@ Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Re
 
 ### Lernziele
 
-In dieser Lektion lernst du
+Basierend auf den Informationen aus dem vorausgegangenen Kapitel lernst Du in dieser Lektion: 
 
 -   ein lokales Projektarchiv in einem Ordner anlegst
 -   Änderungen an einem entfernten Repository vornehmen
@@ -155,23 +155,22 @@ In dieser Lektion lernst du
 ### Voraussetzungen
 
 -   Einrichten eines [GitHub-Accounts](https://github.com/join)
--   Herunterladen der [Git Bash](https://git-scm.com/downloads)
+-   Installiertes [git](https://git-scm.com/downloads)
 
-### Einrichtung von git und GitHub
+### Praktische Anwendung von git und GitHub
 
-Es gibt zwei typische Szenarien für die Einrichtung von Git und GitHub.
+Es gibt zwei typische Szenarien für die Benutzung von Git und GitHub.
 
 1.  du hast das Projekt noch nicht gestartet und möchtest ein GitHub-Repository, das du als Vorlage auf deinen Rechner kopieren (klonen) und dann lokal mit Dateien und Verzeichnissen nach deinen Wünschen füllen kannst.
 2.  Du hast das Projekt bereits lokal gestartet und möchtest es auf GitHub kopieren.
 
-Beide Szenarien werden von Jenny Bryan exzellent erläutert:
+Beide Szenarien werden von Jenny Bryan exzellent erläutert. Bitte lies diese Texte und folge den Anweisungen. 
 
 -   Szenario 1: Happy Git With R: Kapitel 15 [Neues Projekt GitHub](https://happygitwithr.com/new-github-first.html#new-github-first)
 -   Szenario 2: Happy Git With R: Kapitel 17 [Bestehendes Projekt, GitHub](https://happygitwithr.com/existing-github-last.html#existing-github-last)
 
-### Gut zu wissen
+### Typische Probleme
 
-::: {.box .ok}
 -   Du versuchst, `git commit` auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht.
     Deshalb müssen Sie zuerst `git add` ausführen.
 
@@ -183,17 +182,13 @@ Beide Szenarien werden von Jenny Bryan exzellent erläutert:
 ::: warning
 Fehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: ... Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.
 :::
-:::
-
-### Selbst-Check
-
-::: { .scbox  }
-[![](../images/git-0-self.png)](http://137.248.191.201:3838/de/git/#section-git-in-a-nutshell)
-:::
 
 Du weist also dein lokales `git` an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt.
 Der beste Weg, dieses Problem zu vermeiden, ist immer einen `git pull` durchzuführen, bevor man mit dem lokalen Editieren beginnt.
 
+### Gut zu wissen
+
+:::: {.box .ok}
 Für ein besseres Verständnis lies die folgenden Texte:
 
 -   [Pull tricky](https://happygitwithr.com/pull-tricky.html).
@@ -202,6 +197,15 @@ Für ein besseres Verständnis lies die folgenden Texte:
 -   [Rstudio - git - GitHub](https://happygitwithr.com/rstudio-git-github.html)
 
 ::::
+
+### Selbst-Check
+
+::: { .scbox  }
+[![](../images/git-0-self.png)](http://137.248.191.201:3838/de/git/#section-git-in-a-nutshell)
+:::
+
+
+
 
 ## Fork und Branches auf GitHub
 
@@ -312,7 +316,7 @@ In dieser Lektion lernst du
 -   Git installiert haben.
 -   Ein GitHub Konto haben.
 
-### Versionskonflikte was ist das?
+### Versionskonflikt - was ist das?
 
 Versionskonflikte entstehen normalerweise, wenn verschiedene Versionen derselben Datei gleichzeitig in das Hauptrepository gepusht werden und die Priorisierung der Dateien nicht klar ist, also:
 
