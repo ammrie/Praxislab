@@ -421,33 +421,34 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 </div>
 </div>
 </div>
-<p>Die Veränderungen an Dateien des Projekts werden jedoch <strong>nur</strong> dann übwerwacht wenn <code>git</code> ausdrücklich darüber <em>“informiert”</em> wird. Dies geschieht mit dem Befehl <code>git add</code>. Soll eine überwachte Datei gesichert werden erfolgt das mit dem Befehl <code>git commit</code>. Der Befehl, <code>git push</code> wird dann verwendet wenn die bestätigten Verzeichnis-Snapshot in ein entferntes Repository (z.B. Github, GitLab) übertragenm werden sollen.</p>
+<p>Die Veränderungen an Dateien des Projekts werden jedoch <strong>nur</strong> dann übwerwacht wenn <code>git</code> ausdrücklich darüber <em>“informiert”</em> wird. Dies geschieht mit dem Befehl <code>git add</code>. Soll eine überwachte Datei gesichert werden erfolgt das mit dem Befehl <code>git commit</code>. Der Befehl, <code>git push</code> wird dann verwendet wenn die bestätigten Verzeichnis-Snapshot in ein entferntes Repository (z.B. Github, GitLab) übertragen werden sollen.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <div>
 <pre class="mermaid mermaid-js">graph LR
-    Z(Erzeuge eine &lt;br&gt; neue Datei)
+    A[Projektordner &lt;br&gt; 'MeinOrdner'] --&gt; 
+    B[Lokales Repository &lt;br&gt; 'MeinOrdner'] -- Erzeugen einer Datei --&gt;
+    C[Datei im &lt;br&gt;Staging Area] --&gt; 
+    D[Dateiversion im &lt;br&gt; Lokalen Repository ] --&gt; 
+    E[Dateiversion im &lt;br&gt; Remote Repository ]
     
-    A[Lokales Repository] -- git add 'Dateiname' --&gt; B[Datei im &lt;br&gt;Staging Area]
-    B -- git commit --&gt; C[Dateiversion im &lt;br&gt; Lokalen Repository ]
-    C -- git push --&gt; D[Dateiversion im &lt;br&gt; Remote Repository ]
-    
-    AA[Initialisiers &lt;br&gt; Repository] -.-&gt; BB(git überwacht die Datei)
-    BB -.-&gt; CC(git sichert lokal &lt;br&gt; aktuellen Zustand der Datei)
-    CC -.-&gt; DD(git sichert  remote &lt;br&gt; aktuellen Zustand der Datei)
-    
+    AA[Projektordner &lt;br&gt; 'MeinOrdner'] -.git init.-&gt; 
+    BB[Ordner ist als  &lt;br&gt; Repository vorbereitet] -.git add DateiNeu.-&gt;
+    CC(Die DateiNeu wird 'überwacht') -.git commit.-&gt; 
+    DD(Die Datei DateiNeu ist &lt;br&gt; im aktuellen Zustand lokal gespeichert) -.git push.-&gt; 
+    EE(Die DateiNeu  ist &lt;br&gt; auf dem GitHub Repo gespeichrt)
 
     classDef green fill:#9f6,stroke:#333,stroke-width:2px
     classDef blue fill:#6BC9F5,stroke:#333,stroke-width:2px,stroke-dasharray: 2
     classDef orange fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
-    class Z blue
-    class A,B,C,D green
-    class DD,CC,AA,BB orange
+    class A blue
+    class B,C,D,D,E,F green
+    class DD,CC,AA,BB,EE orange
 
 </pre>
 </div>
-<p>Ablauf Stage-Commit-Push eine Datei</p>
+<p>Ablauf init-add-commit-push</p>
 </div>
 </div>
 </div>
