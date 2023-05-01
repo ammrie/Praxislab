@@ -105,30 +105,29 @@ graph LR
 
 
 Die Veränderungen an Dateien des Projekts werden jedoch **nur** dann übwerwacht wenn `git` ausdrücklich darüber  *"informiert"* wird. Dies geschieht mit dem Befehl `git add`.
-Soll eine überwachte Datei gesichert werden erfolgt das mit dem Befehl `git commit`. Der Befehl, `git push` wird dann verwendet wenn die bestätigten Verzeichnis-Snapshot in ein entferntes Repository (z.B. Github, GitLab) übertragenm werden sollen.
+Soll eine überwachte Datei gesichert werden erfolgt das mit dem Befehl `git commit`. Der Befehl, `git push` wird dann verwendet wenn die bestätigten Verzeichnis-Snapshot in ein entferntes Repository (z.B. Github, GitLab) übertragen werden sollen.
 
 ```{mermaid}
-%%| fig-cap: Ablauf Stage-Commit-Push  eine Datei
-
+%%| fig-cap: Ablauf init-add-commit-push  
 graph LR
-    Z(Erzeuge eine <br> neue Datei)
+    A[Projektordner <br> 'MeinOrdner'] --> 
+    B[Lokales Repository <br> 'MeinOrdner'] -- Erzeugen einer Datei -->
+    C[Datei im <br>Staging Area] --> 
+    D[Dateiversion im <br> Lokalen Repository ] --> 
+    E[Dateiversion im <br> Remote Repository ]
     
-    A[Lokales Repository] -- git add 'Dateiname' --> B[Datei im <br>Staging Area]
-    B -- git commit --> C[Dateiversion im <br> Lokalen Repository ]
-    C -- git push --> D[Dateiversion im <br> Remote Repository ]
-    
-    AA[Initialisiers <br> Repository] -.-> BB(git überwacht die Datei)
-    BB -.-> CC(git sichert lokal <br> aktuellen Zustand der Datei)
-    CC -.-> DD(git sichert  remote <br> aktuellen Zustand der Datei)
-    
-
+    AA[Projektordner <br> 'MeinOrdner'] -.git init.-> 
+    BB[Ordner ist als  <br> Repository vorbereitet] -.git add DateiNeu.->
+    CC(Die DateiNeu wird 'überwacht') -.git commit.-> 
+    DD(Die Datei DateiNeu ist <br> im aktuellen Zustand lokal gespeichert) -.git push.-> 
+    EE(Die DateiNeu  ist <br> auf dem GitHub Repo gespeichrt)
 
     classDef green fill:#9f6,stroke:#333,stroke-width:2px
     classDef blue fill:#6BC9F5,stroke:#333,stroke-width:2px,stroke-dasharray: 2
     classDef orange fill:orange,stroke:#333,stroke-width:1px,stroke-dasharray: 3
-    class Z blue
-    class A,B,C,D green
-    class DD,CC,AA,BB orange
+    class A blue
+    class B,C,D,D,E,F green
+    class DD,CC,AA,BB,EE orange
 
 
 ```
