@@ -76,7 +76,7 @@ Im Prinzip muss also, wie bekannt, eine Momentaufnahme der Datei oder des Projek
 
 Der große Unterschied ist jedoch, dass nur die Änderungen dieses Sicherungsvorganges aufgezeichnet werden und später auch in diesen Teilschritten wiederhergestellt werden können.
 
-#### Git - Erste Schritte
+### Git - Erste Schritte
 
 Bei der Verwendung von Git muss zunächst ein Repository *in* einem Verzeichnis auf dem lokalen Rechner aktiviert werden.
 Dies geschieht mit dem Befehl `git init`.
@@ -140,26 +140,8 @@ Mit dem Befehl ist `git status` erhälst du einen Überblick über den Status al
 
 ![git status - konzeptionelle Inhalte](../images/64_git-status.PNG){width="85%" height="85%"}
 
-### Gut zu wissen
 
-::: {.callout-tip appearance="minimal"}
-Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Ressourcen:
-
--   [Pro Git: Kapitel **Git Grundlagen**](https://git-scm.com/book/en/v2)
--   [Happy Git mit R](https://happygitwithr.com/)
-:::
-
-## Git/GitHub: pull, status, add, commit, push
-
-### Lernziele
-
-Basierend auf den Informationen aus dem vorausgegangenen Kapitel lernst Du in dieser Lektion: 
-
--   ein lokales Repository zu verwalten
--   mit einem entfernten Repository zu arbeiten
-
-
-### Praktische Anwendung von git und GitHub
+### Git/GitHub: pull, status, add, commit, push
 
 Es gibt zwei typische Szenarien für die Benutzung von Git und GitHub.
 
@@ -188,11 +170,15 @@ Fehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammen
 Du weist also dein lokales `git` an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt.
 Der beste Weg, dieses Problem zu vermeiden, ist immer einen `git pull` durchzuführen, bevor man mit dem lokalen Editieren beginnt.
 
+
+
 ### Gut zu wissen
 
 ::: {.callout-tip appearance="minimal"}
-Für ein besseres Verständnis lies die folgenden Texte:
+Wenn du mehr über Git erfahren möchtest, findest du hier weitere hilfreiche Ressourcen:
 
+-   [Pro Git: Kapitel **Git Grundlagen**](https://git-scm.com/book/en/v2)
+-   [Happy Git mit R](https://happygitwithr.com/)
 -   [Pull tricky](https://happygitwithr.com/pull-tricky.html).
 -   [Git Grundlagen](https://git-scm.com/book/en/v2)
 -   [Git und R](https://happygitwithr.com/)
