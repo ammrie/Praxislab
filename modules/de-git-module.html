@@ -281,7 +281,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#lernziele-2" id="toc-lernziele-2" class="nav-link" data-scroll-target="#lernziele-2">Lernziele</a></li>
   <li><a href="#voraussetzungen" id="toc-voraussetzungen" class="nav-link" data-scroll-target="#voraussetzungen">Voraussetzungen</a></li>
-  <li><a href="#einrichtung-von-git-und-github" id="toc-einrichtung-von-git-und-github" class="nav-link" data-scroll-target="#einrichtung-von-git-und-github">Einrichtung von git und GitHub</a></li>
+  <li><a href="#praktische-anwendung-von-git-und-github" id="toc-praktische-anwendung-von-git-und-github" class="nav-link" data-scroll-target="#praktische-anwendung-von-git-und-github">Praktische Anwendung von git und GitHub</a></li>
+  <li><a href="#typische-probleme" id="toc-typische-probleme" class="nav-link" data-scroll-target="#typische-probleme">Typische Probleme</a></li>
   <li><a href="#gut-zu-wissen-1" id="toc-gut-zu-wissen-1" class="nav-link" data-scroll-target="#gut-zu-wissen-1">Gut zu wissen</a></li>
   <li><a href="#selbst-check" id="toc-selbst-check" class="nav-link" data-scroll-target="#selbst-check">Selbst-Check</a></li>
   </ul></li>
@@ -298,7 +299,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#lernziele-4" id="toc-lernziele-4" class="nav-link" data-scroll-target="#lernziele-4">Lernziele</a></li>
   <li><a href="#vorausetzungen-1" id="toc-vorausetzungen-1" class="nav-link" data-scroll-target="#vorausetzungen-1">Vorausetzungen</a></li>
-  <li><a href="#versionskonflikte-was-ist-das" id="toc-versionskonflikte-was-ist-das" class="nav-link" data-scroll-target="#versionskonflikte-was-ist-das">Versionskonflikte was ist das?</a></li>
+  <li><a href="#versionskonflikt---was-ist-das" id="toc-versionskonflikt---was-ist-das" class="nav-link" data-scroll-target="#versionskonflikt---was-ist-das">Versionskonflikt - was ist das?</a></li>
   <li><a href="#push-pull-konflikte" id="toc-push-pull-konflikte" class="nav-link" data-scroll-target="#push-pull-konflikte">Push &amp; Pull Konflikte</a></li>
   <li><a href="#merge-konflikte" id="toc-merge-konflikte" class="nav-link" data-scroll-target="#merge-konflikte">Merge Konflikte</a></li>
   <li><a href="#gut-zu-wissen-3" id="toc-gut-zu-wissen-3" class="nav-link" data-scroll-target="#gut-zu-wissen-3">Gut zu wissen</a></li>
@@ -468,7 +469,7 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 <h2 class="anchored" data-anchor-id="gitgithub-pull-status-add-commit-push">Git/GitHub: pull, status, add, commit, push</h2>
 <section id="lernziele-2" class="level3">
 <h3 class="anchored" data-anchor-id="lernziele-2">Lernziele</h3>
-<p>In dieser Lektion lernst du</p>
+<p>Basierend auf den Informationen aus dem vorausgegangenen Kapitel lernst Du in dieser Lektion:</p>
 <ul>
 <li>ein lokales Projektarchiv in einem Ordner anlegst</li>
 <li>Änderungen an einem entfernten Repository vornehmen</li>
@@ -479,25 +480,24 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 <h3 class="anchored" data-anchor-id="voraussetzungen">Voraussetzungen</h3>
 <ul>
 <li>Einrichten eines <a href="https://github.com/join">GitHub-Accounts</a></li>
-<li>Herunterladen der <a href="https://git-scm.com/downloads">Git Bash</a></li>
+<li>Installiertes <a href="https://git-scm.com/downloads">git</a></li>
 </ul>
 </section>
-<section id="einrichtung-von-git-und-github" class="level3">
-<h3 class="anchored" data-anchor-id="einrichtung-von-git-und-github">Einrichtung von git und GitHub</h3>
-<p>Es gibt zwei typische Szenarien für die Einrichtung von Git und GitHub.</p>
+<section id="praktische-anwendung-von-git-und-github" class="level3">
+<h3 class="anchored" data-anchor-id="praktische-anwendung-von-git-und-github">Praktische Anwendung von git und GitHub</h3>
+<p>Es gibt zwei typische Szenarien für die Benutzung von Git und GitHub.</p>
 <ol type="1">
 <li>du hast das Projekt noch nicht gestartet und möchtest ein GitHub-Repository, das du als Vorlage auf deinen Rechner kopieren (klonen) und dann lokal mit Dateien und Verzeichnissen nach deinen Wünschen füllen kannst.</li>
 <li>Du hast das Projekt bereits lokal gestartet und möchtest es auf GitHub kopieren.</li>
 </ol>
-<p>Beide Szenarien werden von Jenny Bryan exzellent erläutert:</p>
+<p>Beide Szenarien werden von Jenny Bryan exzellent erläutert. Bitte lies diese Texte und folge den Anweisungen.</p>
 <ul>
 <li>Szenario 1: Happy Git With R: Kapitel 15 <a href="https://happygitwithr.com/new-github-first.html#new-github-first">Neues Projekt GitHub</a></li>
 <li>Szenario 2: Happy Git With R: Kapitel 17 <a href="https://happygitwithr.com/existing-github-last.html#existing-github-last">Bestehendes Projekt, GitHub</a></li>
 </ul>
 </section>
-<section id="gut-zu-wissen-1" class="level3">
-<h3 class="anchored" data-anchor-id="gut-zu-wissen-1">Gut zu wissen</h3>
-<div class="box ok">
+<section id="typische-probleme" class="level3">
+<h3 class="anchored" data-anchor-id="typische-probleme">Typische Probleme</h3>
 <ul>
 <li><p>Du versuchst, <code>git commit</code> auszuführen, nachdem du Änderungen an einer Datei vorgenommen hast, aber du trackst diese Datei(en) nicht. Deshalb müssen Sie zuerst <code>git add</code> ausführen.</p></li>
 <li><p>Du versuchst <code>git push</code> auszuführen, um Deine Aktualisierungen in das entfernte Repository zu übertragen, aber dieses existiert nicht.</p></li>
@@ -506,6 +506,18 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 <div class="warning">
 <p>Fehler: Deine lokalen Änderungen an den folgenden Dateien würden beim Zusammenführen überschrieben: … Bitte übertrage oder speichere deine Änderungen vor dem Zusammenführen.</p>
 </div>
+<p>Du weist also dein lokales <code>git</code> an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt. Der beste Weg, dieses Problem zu vermeiden, ist immer einen <code>git pull</code> durchzuführen, bevor man mit dem lokalen Editieren beginnt.</p>
+</section>
+<section id="gut-zu-wissen-1" class="level3">
+<h3 class="anchored" data-anchor-id="gut-zu-wissen-1">Gut zu wissen</h3>
+<div class="box ok">
+<p>Für ein besseres Verständnis lies die folgenden Texte:</p>
+<ul>
+<li><a href="https://happygitwithr.com/pull-tricky.html">Pull tricky</a>.</li>
+<li><a href="https://git-scm.com/book/en/v2">Git Grundlagen</a></li>
+<li><a href="https://happygitwithr.com/">Git und R</a></li>
+<li><a href="https://happygitwithr.com/rstudio-git-github.html">Rstudio - git - GitHub</a></li>
+</ul>
 </div>
 </section>
 <section id="selbst-check" class="level3">
@@ -517,15 +529,6 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 </figure>
 </div>
 </div>
-<p>Du weist also dein lokales <code>git</code> an, deine eigenen Änderungen hinzuzufügen, ohne die Änderungen deines Teamkollegen zu berücksichtigen - ein klassischer Loyalitätskonflikt. Der beste Weg, dieses Problem zu vermeiden, ist immer einen <code>git pull</code> durchzuführen, bevor man mit dem lokalen Editieren beginnt.</p>
-<p>Für ein besseres Verständnis lies die folgenden Texte:</p>
-<ul>
-<li><a href="https://happygitwithr.com/pull-tricky.html">Pull tricky</a>.</li>
-<li><a href="https://git-scm.com/book/en/v2">Git Grundlagen</a></li>
-<li><a href="https://happygitwithr.com/">Git und R</a></li>
-<li><a href="https://happygitwithr.com/rstudio-git-github.html">Rstudio - git - GitHub</a></li>
-</ul>
-<p>::::</p>
 </section>
 </section>
 <section id="fork-und-branches-auf-github" class="level2">
@@ -639,8 +642,8 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 <li>Ein GitHub Konto haben.</li>
 </ul>
 </section>
-<section id="versionskonflikte-was-ist-das" class="level3">
-<h3 class="anchored" data-anchor-id="versionskonflikte-was-ist-das">Versionskonflikte was ist das?</h3>
+<section id="versionskonflikt---was-ist-das" class="level3">
+<h3 class="anchored" data-anchor-id="versionskonflikt---was-ist-das">Versionskonflikt - was ist das?</h3>
 <p>Versionskonflikte entstehen normalerweise, wenn verschiedene Versionen derselben Datei gleichzeitig in das Hauptrepository gepusht werden und die Priorisierung der Dateien nicht klar ist, also:</p>
 <ul>
 <li>wenn man sein persönliches GitHub-Repository aktualisiert (kein Pull vor Push).</li>
@@ -754,7 +757,7 @@ svg[id^="mermaid-"] { min-width: 50%; max-width: 100%; }
 </section>
 <section id="danksagung" class="level2">
 <h2 class="anchored" data-anchor-id="danksagung">Danksagung</h2>
-<p>Das Tutorial basiert auf dem <a href="https://dosstoolkit.com/">DoSStoolkit</a>. Sowohl die Inhalte als auch die Self Assessments basieren dem Modul <a href="https://dosstoolkit.com/#git-outta-here">Git outta here</a> von <a href="https://dosstoolkit.com/#contributors">Mariam Walaa &amp; Matthew Wankiewicz</a>. Die Übersetzungen und Veränderungen vom Autor dieser Seite.</p>
+<p>Das Tutorial basiert auf dem <a href="https://dosstoolkit.com/">DoSStoolkit</a>. insbesondere unter Nutzung des Moduls <a href="https://dosstoolkit.com/#git-outta-here">Git outta here</a> von <a href="https://dosstoolkit.com/#contributors">Mariam Walaa &amp; Matthew Wankiewicz</a>. Die Übersetzungen und Veränderungen sowie eininge der Graiken sind vom Autor dieser Seite.</p>
 <p>Das Originalmodul kann mit dem folgenden R-Befehl aufgerufen werden.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>learnr<span class="sc">::</span><span class="fu">run_tutorial</span>(<span class="st">"git_outta_here"</span>, <span class="at">package =</span> <span class="st">"DoSStoolkit"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
