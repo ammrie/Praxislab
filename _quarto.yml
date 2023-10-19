@@ -5,10 +5,10 @@ project:
 website:
   open-graph: true
   page-navigation: false  
-  title: "gisma knowledge base"
+  title: "PraxisLab"
   site-url: https://gisma-courses.github.io/gisma-knowledge-base
   
-  repo-url: https://github.com/gisma-courses/gisma-knowledge-base
+  repo-url: https://github.com/ammrie/Praxislab
   repo-actions: [edit, issue]
     
   page-footer: "gisma (2021)" 
@@ -24,7 +24,7 @@ website:
 
     tools: 
       - icon: github
-        href: https://github.com/gisma-courses/gisma-knowledge-base
+        href: https://github.com/ammrie/Praxislab
         text: "gisma repo" 
 
 
